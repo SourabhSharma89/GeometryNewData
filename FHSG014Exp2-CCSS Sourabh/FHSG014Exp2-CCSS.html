@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html class="full" lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9,10,11 IE=EDGE" />
+<meta name="viewport" content="width=device-width">
+<link type="text/css" rel="stylesheet" href="https://www.educosoft.com/sharedSite/HTML5Common/MFExample/RFHC_baseForExample_V2.css">
+<script src="template_files/jquery/jquery.min.js"></script>
+<script src="template_files/jquery/calci.js"></script> 
+<script src="template_files/jquery/functionUses.js"></script>
+<script src="template_files/jquery/svg.js"></script>
+<script src="content_files/content.js"></script>
+
+<script src="content_files/app.js"></script> 
+<script src="https://www.educosoft.com/sharedSite/HTML5Common/MFExample/baseForExample_V1.js"></script>
+<script src="template_files/jquery/middleForAll.js"></script>
+<link type="text/css" rel="stylesheet" href="content_files/content.css">
+<link type="text/css" rel="stylesheet" href="template_files/css/ExpCalci.css">
+<script src="template_files/jquery/container_height.js"></script>
+<script src="https://www.educosoft.com/sharedSite/HTML5Common/MFExample/ExampleDataSave.js"></script> 
+</head>
+<body>
+
+<div class="warning">
+
+<div class="OrientImage"><img src="image/orientationExample.png" alt="Orientation Change" class="orient"></div>
+
+</div>
+
+
+ 
+
+<div id='LoadingDiv' style="text-align:center; user-select:none"><img src="image/Loading.gif" style="width:20%"/></div>
+<script>
+ var height = $(window).innerHeight();
+ 
+ var LoadingDivHeight = $('#LoadingDiv').height();
+ 
+ var finalHeight = (height-LoadingDivHeight)/2;
+
+  $('#LoadingDiv').css({'margin-top':finalHeight+"px"})
+  ////////////////////////////////////////////////////////////////
+	 $('img').on('dragstart', function(event) { event.preventDefault();});
+  ///////////////////////////////////////////////////////////////
+</script>
+<div class="container-fluid" id='QuesDiv' style="display:none">
+
+
+
+<div class="header">
+    <div class="new_h">
+        <div class="section1"><h3>Objective: <font color='#009'>  The Basic Operations  </font></h3></div><!-- section1 closed-->
+        <div class="wholeSection">
+        <div class="section2">
+            <input type="button" value="Try Again" class="newSet headerButton" onClick="nextQuesGeneration()">
+            <input type="button" value="Solution" class="solution headerButton" onClick="showSolution()">
+        </div><!-- section2 closed-->
+        <div class="section3">
+            <div class="questionSection">
+               <div class="question">
+             <div style="">
+             
+                     <div style="line-height:160%;">
+                     Find the coordinates of the corresponding point if <strong style="white-space:nowrap;">P&hairsp;(&hairsp;<span class="val1"></span>, <span class="val2"></span>&hairsp;)</strong> is rotated <span style="white-space:nowrap;">through <strong>270°</strong></span> <em><strong>clockwise</strong></em>.
+                     </div>
+             </div> 
+             
+             
+           
+           <!--<div style="">Does this scatter plot show a positive association, negative association, or no association?</div> -->
+       </div><!-- div question-->
+                <div class="ClickToAnsDiv"> Click here to enter answer </div> 
+            </div>	<!-- questionSection closed-->    
+            
+            <div class="inputAndDoneSpace">
+                <table class="InputAndDoneTbl">            
+                    <tr>
+                        
+                        <td class="InptDnTd1 brd" style="vertical-align:top;">
+                        <table style="width:100%;">
+                        <tr>
+                        <td style="width:60%;text-align:right;" class="ELC">
+                        <span style="white-space:nowrap">
+                        <span style="visibility:;"><span style="color:#C00"></span></span>
+                        </span>
+                        </td>
+                        <td style="width:22%;">
+                        <div class="inputDiv" style="position:relative; display:flex;">
+                                <strong style="color:red;">P'&hairsp;</strong><input type="text" class="input1 input" id="inputText" style="text-transform:lowercase;" spellcheck="false" tabindex="1" onKeyPress="keyPressed(event)" onFocus="myFocus(this)" autocomplete="off"/><span class="absolute TickMark TickMarkNew"><b class="red1 red Wrng1">&#10006;</b><b class="green1 green Wrt1">&#10004;</b></span>
+                            </div>
+                        </td>
+                        <td style="width:12%;">
+                        <div class="doneDiv">
+                                <button class="done1" onClick="doneButton()" tabindex="3">Done</button>
+                            </div>
+                            </td>
+                        </tr>
+                        
+                        
+                         </table>   
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                    
+                    
+                    
+                    
+                     <!-- -->
+                        <td class="InptDnTd1" colspan="1" style="height:1.5em; text-align:right; position:relative;"> 
+                            <!--<div class="fntsz visibility">S</div>-->
+                            
+                            <div class="prompt_New partialcorrect_New"><b>Partially Correct</b></div>
+                            <div class="prompt_New blankMessage_New LandScapeblankMessage"><b>Enter the value.</b></div>
+                            <div class="prompt_New prompt2 LandScapeblankMessage"><b class="TF1">Please Enter the Parentheses.</b></div>
+                           
+                            <div class="remark" style="position:absolute; top:0.2em; right:0em;">
+                                <div class="respond bold" style="color:#339966;"><span id="FB_TxtBox"></span></div>
+                            </div> 
+                       </td>
+                        <td class="InptDnTd2" colspan="1" style="height:1.5em; position:relative;"> 
+                          <!--<div class="remark" style="position:absolute; top:0.5em; left:5em;">
+                                <div class="respond bold" style="color:#339966;"><span id="FB_TxtBox"></span></div>
+                            </div> -->
+                           
+                       </td>
+                    </tr>
+               </table>
+            </div>   
+        </div>	<!-- section3 closed-->
+        </div>	<!-- wholeSection closed-->
+       </div>	<!-- new_h closed-->
+       
+       <div class="section4 KeypadArea calc">
+        <div class="KeypadBoundary">
+            <div class="keypadNote"><b>Use me to enter the answer</b></div>
+            <div class="keypadKeys">
+                <button class="calc_btn new_calc_btn" value="1">1</button>
+                <button class="calc_btn new_calc_btn" value="2">2</button>
+                <button class="calc_btn new_calc_btn" value="3">3</button>
+                <button class="calc_btn new_calc_btn" value="4">4</button>
+                <button class="calc_btn new_calc_btn" value="5">5</button>
+                <button class="calc_btn new_calc_btn" value="6">6</button>
+    
+                <button class="back TCB  ThreeCommonBtns" value="back">Back</button>
+    
+                <button class="calc_btn new_calc_btn" value="7">7</button>
+                <button class="calc_btn new_calc_btn" value="8">8</button>
+                <button class="calc_btn new_calc_btn" value="9">9</button>  
+                <button class="calc_btn new_calc_btn" value="0">0</button>
+                <button class="calc_btn new_calc_btn spec_char vb subtract" id="minus" value="-" data-value="– "><b>–</b></button>
+                <button class="calc_btn new_calc_btn spec_char vb subtract rel" id="comma" value="," data-value=", "><b class="Spcom">,</b></button>
+                <!--<button class="calc_btn new_calc_btn spec_char vb subtract" id="plus" value="+" data-value=" + "><b>+</b></button>-->
+    
+                <button class="delete newDelBtn TCB  ThreeCommonBtns"  value="delete">Delete</button>
+    
+               
+                <!--<button class="calc_btn new_calc_btn spec_char vb subtract" id="slash" value="/" data-value=" / "><b>/</b></button>
+                <button class="calc_btn new_calc_btn spec_char vb subtract" id="OpenBrac" value="(" data-value="( "><b>(</b></button>
+                <button class="calc_btn new_calc_btn spec_char vb subtract" id="CloseBrac" value=")" data-value=" )"><b>)</b></button>-->
+                <button class="calc_btn new_calc_btn spec_char vb subtract spec_char1" id="OpenBrac" value="(" data-value="( ">(</button> 
+                <button class="calc_btn new_calc_btn spec_char vb subtract spec_char1" id="CloseBrac" value=")" data-value=" )">)</button>
+                <button class="calc_btn new_calc_btn spec_char vb subtract spec_char1 hidden" id="great1eq" value="≥" data-value=" ≥ ">≥</button>
+                <button class="calc_btn new_calc_btn spec_char vb subtract spec_char1 hidden" id="less1eq" value="≤" data-value=" ≤ ">≤</button>
+                <button class="calc_btn new_calc_btn spec_char vb subtract spec_char1 hidden" id="dot" value="." data-value="."><b class="Middot">.</b></button>
+               
+                
+                 
+               
+     
+                <!--<button class="calc_btn new_calc_btn spec_char vb subtract hidden" id="equal" value="=" data-value=" = "><b>=</b></button>
+                <button class="calc_btn new_calc_btn spec_char vb subtract hidden" id="minus" value="-" data-value=" – "><b>–</b></button>-->
+                <button class="calc_btn new_calc_btn spec_char vb subtract hidden" id="slash" value="/" data-value=" / "><b>/</b></button>
+                
+                <button class="clear newClearBtn TCB  ThreeCommonBtns" value="Clear">Clear</button>
+                
+                
+            </div>	<!-- keypadKeys closed-->            
+        </div>	<!-- KeypadBoundary closed-->        
+    </div>	<!-- section4 closed-->    
+    </div>	<!-- header closed-->
+    
+    <div class="container">
+        <div class="AreaForKeypadAndInputInDevice">
+            <div class="KeypadBoundary KeyPadKeyBoundaryDevice calc">
+                <div class="keypadNote keypadNoteDevice"><b>Use me to enter the answer</b></div>
+                <div class="keypadKeys keypadKeysDevice">
+                    <button class="calc_btn KeyPadKeyDevice" value="1">1</button>
+                    <button class="calc_btn KeyPadKeyDevice" value="2">2</button>
+                    <button class="calc_btn KeyPadKeyDevice" value="3">3</button>
+                    <button class="calc_btn KeyPadKeyDevice" value="4">4</button>
+                        
+                    <button class="back ThreeCommonBtns  KeyPadKeyDevice" value="back">Back</button>
+                                              
+                    <button class="calc_btn KeyPadKeyDevice" value="5">5</button>
+                    <button class="calc_btn KeyPadKeyDevice" value="6">6</button>
+                    <button class="calc_btn KeyPadKeyDevice" value="7">7</button>
+                    <button class="calc_btn KeyPadKeyDevice" value="8">8</button>
+                    
+                    <button class="delete ThreeCommonBtns KeyPadKeyDevice"  value="delete">Delete</button>
+                    
+                    <button class="calc_btn KeyPadKeyDevice" value="9">9</button>  
+                    <button class="calc_btn KeyPadKeyDevice" value="0">0</button>
+                    <button class="calc_btn KeyPadKeyDevice vb subtract" id="minus" value="-" data-value="– "><b>–</b></button>
+                    <button class="calc_btn KeyPadKeyDevice vb subtract" id="comma" value="," data-value=", "><b class="">,</b></button>
+                    
+                    <button class="clear ThreeCommonBtns KeyPadKeyDevice" value="Clear">Clear</button>
+                    
+                    
+                    
+                    
+                    
+                <button class="calc_btn KeyPadKeyDevice vb subtract" id="OpenBrac" value="(" data-value="( ">(</button> 
+                <button class="calc_btn KeyPadKeyDevice vb subtract" id="CloseBrac" value=")" data-value=" )">)</button>
+                
+                
+                
+                <button class="calc_btn KeyPadKeyDevice vb subtract hidden" id="dot" value="." data-value="."><b class="Middot">.</b></button>
+               
+               
+                
+                 
+               
+     
+    <!--<button class="calc_btn   KeyPadKeyDevice vb subtract" id="equal" value="=" data-value=" = "><b>=</b></button>-->
+    <!--<button class="calc_btn   KeyPadKeyDevice vb subtract hidden" id="dot" value="." data-value="."><b>.</b></button>
+    <button class="calc_btn   KeyPadKeyDevice vb subtract hidden" id="slash" value="/" data-value=" / "><b>/</b></button>-->
+                
+                
+                
+
+                    <!--<button class="calc_btn KeyPadKeyDevice vb subtract" id="Charx" value="x" data-value="x "><b>x</b></button>-->
+                    <!--
+                    <button class="calc_btn KeyPadKeyDevice vb subtract" id="slash" value="/" data-value=" / "><b>/</b></button>
+                    <button class="calc_btn KeyPadKeyDevice vb subtract" id="OpenBrac" value="(" data-value="( "><b>(</b></button>
+                    <button class="calc_btn KeyPadKeyDevice vb subtract" id="CloseBrac" value=")" data-value=" )"><b>)</b></button>
+                    -->
+                </div>	<!-- keypadKeys closed-->
+            </div>	<!-- KeypadBoundary closed-->
+            
+            <div class="inputAndDoneSpaceFordevice">
+                <table class="InputAndDoneTbl">            
+                   <tr>
+                        <td class=" brd" style="vertical-align:top;" colspan="2">
+                        <table style="width:100%;">
+                        
+                        <tr>
+                    
+                    
+                    
+                    
+                     <!-- -->
+                        <td class="InptDnTd1" colspan="2" style="height:1.5em; text-align:right; position:relative;"> 
+                            <div class="remark" style="position:absolute; top:0.5em; left:5em; white-space:nowrap;">
+                                <div class="respond bold" style="color:#339966;"><span id="FB_TxtBox"></span></div>
+                            </div> 
+                             
+                            <div class="prompt_New partialcorrect_New"><b>Partially Correct</b></div>
+                            <div class="prompt_New blankMessage_New LandScapeblankMessage"><b>Enter the value.</b></div>
+                            <div class="prompt_New prompt2 LandScapeblankMessage"><b class="TF1">Please Enter the Parentheses.</b></div>
+                       </td>
+                        
+                    </tr>
+                        <tr>
+                        <td style="width:20%; text-align:right; color:blue;">
+                        
+                        </td>
+                        <td style="width:50%;">
+                        <div class="inputDiv" style="position:relative; display:flex; align-items:center;">
+                                <strong style="color:red;">P'&hairsp;</strong><input type="text" class="input1 input" id="inputText" style="text-transform:lowercase;" spellcheck="false" tabindex="1" onKeyPress="keyPressed(event)" onFocus="myFocus(this)" autocomplete="off"/><span class="absolute TickMark"><b class="red1 red Wrng1">&#10006;</b><b class="green1 green Wrt1">&#10004;</b></span>
+                            </div>
+                        </td>
+                        <td style="width:30%;">
+                        <div class="doneDiv">
+                                <button class="done1" onClick="doneButton()">Done</button>
+                            </div>
+                        </td>
+                        </tr>
+                        
+                        
+                         </table>   
+                        </td>
+                       
+                    </tr>
+                    
+                    
+                     
+               </table> 
+            </div>
+        </div><!-- AreaForKeypadAndInputInDevice -->
+    
+    <div class="solutionContainer"> 
+    <div class="SolutionRemark"><div class="solutionText"><i>Solution</i>:</div></div>
+    <div class="solutionMainSteps">
+        <div class="middle" style="width:100%;">
+        <div class="Step11">
+     
+    <table class="factab" style="white-space:nowrap;">
+    <tr class="NewImgDiv" style="display:flex;">
+  
+    <td style="padding-top:0; vertical-align:top">
+    <table class="ver1">
+
+            <tr>
+            <td class="" colspan="3" style="padding-top:0em">On rotation through <strong>270°</strong>, anticlockwise about origin</td>
+            </tr>
+            
+            <tr style="">
+            <td class="" style="text-align:right;"><strong style="white-space:nowrap;">P&hairsp;( <span class=""><em><strong>x</strong></em></span>,&nbsp; <strong><em>y</em></strong> )</strong></td>
+            <td class="" style=" width:9em; position:relative;"><div class="AntiDiv">anticlockwise rotation</div><div class="AntiDiv1">through 270°</div><span style="visibility:hidden;">1</span><img src="image/arrow.png"class="Graph Img12"/><span style="visibility:hidden;">1</span></td>
+            <td class="" style="text-align:left;"><strong style="white-space:nowrap;">P'&hairsp;( <span class=""><em>– <strong>y</strong></em></span>,&nbsp; <strong><em>x</em></strong> )</strong></td>
+            </tr>
+            <tr style="">
+            <td class="" style="text-align:right; padding-top:2em;"><strong style="white-space:nowrap;">P&hairsp;(&hairsp;<span class="val1"></span>, <span class="val2"></span>&hairsp;)</strong></td>
+            <td class="" style=" width:9em; position:relative; padding-top:2em;"><div class="AntiDiv11">anticlockwise rotation</div><div class="AntiDiv12">through 270°</div><span style="visibility:hidden;">1</span><img src="image/arrow.png"class="Graph Img12"/><span style="visibility:hidden;">1</span></td>
+            <td class="" style="text-align:left; padding-top:2em;"><strong style="white-space:nowrap; color:red;">P'&hairsp;(&hairsp;<span class="val2_new"></span>, <span class="val1_new1"></span>&hairsp;)</strong></td>
+            </tr>
+            
+
+    </table>  
+
+    </td>
+    
+   
+    
+    </tr>
+    <tr>
+       <div class="GraphSvg_div" style="width:65%;">     
+<!--<svg class="svg1" viewBox="0 22 500 455">-->
+    
+  <svg class="svg1" viewBox="0 22 500 455">
+		  
+          <defs>
+              <clipPath id="clipPath" class="clip1">
+                  <rect x="49" y="49" width="401" height="401" stroke="#85CDE6" stroke-width="1" fill="transparent" class="rectngle"/>
+              </clipPath>
+          </defs>
+        
+         <defs>
+            <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L0,6 L9,3 z" fill="blue" />
+            </marker>
+          </defs>	
+         	
+            
+        <line x1="30" y1="50" x2="60" y2="50" style="stroke:#FFF;stroke-width:2" class="line00 line"  />    <!-- Top Left corner line-->
+        <line x1="430" y1="50" x2="460" y2="50" style="stroke:#FFF;stroke-width:2" class="line01 line"  />  <!--Top right corner Line-->
+        <line x1="430" y1="450" x2="460" y2="450" style="stroke:#FFF;stroke-width:2" class="line171 line"/>   <!--Bottom Right corner Line-->
+        <line x1="30" y1="450" x2="60" y2="450" style="stroke:#FFF;stroke-width:2" class="line172 line"/>   <!-- Bottom Left corner Line-->
+            
+                
+        <line x1="50" y1="50" x2="450" y2="50" style="stroke:#85CDE6;stroke-width:2;" class="line0 line"  />
+        <line x1="50" y1="75" x2="450" y2="75" style="stroke:#85CDE6;stroke-width:2" class="line1 line" />
+        <line x1="50" y1="100" x2="450" y2="100" style="stroke:#85CDE6;stroke-width:2" class="line2 line" />
+        <line x1="50" y1="125" x2="450" y2="125" style="stroke:#85CDE6;stroke-width:2" class="line3 line"/>
+        <line x1="50" y1="150" x2="450" y2="150" style="stroke:#85CDE6;stroke-width:2" class="line4 line"/>
+        <line x1="50" y1="175" x2="450" y2="175" style="stroke:#85CDE6;stroke-width:2" class="line5 line"/>
+        <line x1="50" y1="200" x2="450" y2="200" style="stroke:#85CDE6;stroke-width:2" class="line6 line"/>
+        <line x1="50" y1="225" x2="450" y2="225" style="stroke:#85CDE6;stroke-width:2" class="line7 line"/>
+        
+        <line x1="50" y1="275" x2="450" y2="275" style="stroke:#85CDE6;stroke-width:2" class="line9 line"/>
+        <line x1="50" y1="300" x2="450" y2="300" style="stroke:#85CDE6;stroke-width:2" class="line10 line"/>
+        <line x1="50" y1="325" x2="450" y2="325" style="stroke:#85CDE6;stroke-width:2" class="line11 line"/>
+        <line x1="50" y1="350" x2="450" y2="350" style="stroke:#85CDE6;stroke-width:2" class="line13 line"/>
+        <line x1="50" y1="375" x2="450" y2="375" style="stroke:#85CDE6;stroke-width:2" class="line14 line"/>
+        <line x1="50" y1="400" x2="450" y2="400" style="stroke:#85CDE6;stroke-width:2" class="line15 line"/>
+        <line x1="50" y1="425" x2="450" y2="425" style="stroke:#85CDE6;stroke-width:2" class="line16 line"/>
+        <line x1="50" y1="450" x2="450" y2="450" style="stroke:#85CDE6;stroke-width:2" class="line17 line"/>
+        
+        <polygon points="30,250 40,240 30,250 40,260 " stroke="#000" stroke-width="3.5" fill="transparent" class="rect1"/>
+        <polygon points="470,250 460,240 470,250 460,260 " stroke="#000" stroke-width="3.5" fill="transparent" class="rect1"/>
+        
+        <text x="0" y="230" stroke="#000" stroke-width="1" class="txt">– x</text>
+        <text x="462" y="230" stroke="#000" stroke-width="1" class="txt">x</text>
+        
+        <line x1="50" y1="50" x2="50" y2="450" style="stroke:#85CDE6;stroke-width:2" class="line18 line"/>
+        <line x1="75" y1="50" x2="75" y2="450" style="stroke:#85CDE6;stroke-width:2" class="line19 line"/>
+        <line x1="100" y1="50" x2="100" y2="450" style="stroke:#85CDE6;stroke-width:2" class="line20 line"/>
+        <line x1="125" y1="50" x2="125" y2="450" style="stroke:#85CDE6;stroke-width:2" class="line21 line"/>
+        <line x1="150" y1="50" x2="150" y2="450" style="stroke:#85CDE6;stroke-width:2" class="line22 line"/>
+        <line x1="175" y1="50" x2="175" y2="450" style="stroke:#85CDE6;stroke-width:2" class="line23 line"/>
+        <line x1="200" y1="50" x2="200" y2="450" style="stroke:#85CDE6;stroke-width:2" class="line24 line"/>
+        <line x1="225" y1="50" x2="225" y2="450" style="stroke:#85CDE6;stroke-width:2" class="line25 line"/>
+        
+        <line x1="275" y1="50" x2="275" y2="450" style="stroke:#85CDE6;stroke-width:2" class="line27 line"/>
+        <line x1="300" y1="50" x2="300" y2="450" style="stroke:#85CDE6;stroke-width:2" class="line28 line"/>
+        <line x1="325" y1="50" x2="325" y2="450" style="stroke:#85CDE6;stroke-width:2" class="line29 line"/>
+        <line x1="350" y1="50" x2="350" y2="450" style="stroke:#85CDE6;stroke-width:2" class="line30 line"/>
+        <line x1="375" y1="50" x2="375" y2="450" style="stroke:#85CDE6;stroke-width:2" class="line31 line"/>
+        <line x1="400" y1="50" x2="400" y2="450" style="stroke:#85CDE6;stroke-width:2" class="line32 line"/>
+        <line x1="425" y1="50" x2="425" y2="450" style="stroke:#85CDE6;stroke-width:2" class="line33 line"/>
+        <line x1="450" y1="50" x2="450" y2="450" style="stroke:#85CDE6;stroke-width:2" class="line34 line"/>
+		        
+        <polygon points="250,30 240,40 250,30 260,40 " stroke="#000" stroke-width="3.5" fill="transparent" class="rect1"/>
+        <polygon points="250,470 240,460 250,470 260,460 " stroke="#000" stroke-width="3.5" fill="transparent" class="rect1"/>
+        <text x="210" y="37" stroke="#000" stroke-width="1" class="txt">y</text>
+        <text x="186" y="471" stroke="#000" stroke-width="1" class="txt">– y</text> 
+        
+        <line x1="30" y1="250" x2="470" y2="250" style="stroke:#000;stroke-width:3.5" class="line8 line"/>    <!--X-axis-->
+        <line x1="250" y1="30" x2="250" y2="470" style="stroke:#000;stroke-width:3.5" class="line26 line"/>  <!--Y-axis-->
+        
+        <line x1="30" y1="450" x2="60" y2="450" style="stroke:blue;stroke-width:2.5;clip-path:url(#clipPath);marker-end:" class="final_line"/> 
+        <line x1="30" y1="450" x2="60" y2="450" style="stroke:blue;stroke-width:2.5;clip-path:url(#clipPath);marker-end:" class="final_line2"/>
+        
+        <circle cx="50" cy="50" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcle1" />
+        <circle cx="50" cy="50" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcle2" />
+        <circle cx="50" cy="50" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcle3" />
+        
+        
+        
+<circle cx="50" cy="50" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl crcl1" onmouseover="ReturnClass1('-8$8')" onClick="ReturnClass('50@50')" />
+<circle cx="50" cy="75" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-8$7')" onClick="ReturnClass('50@75')"/>
+<circle cx="50" cy="100" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-8$6')" onClick="ReturnClass('50@100')"/>
+<circle cx="50" cy="125" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-8$5')" onClick="ReturnClass('50@125')"/>
+<circle cx="50" cy="150" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-8$4')" onClick="ReturnClass('50@150')"/>
+<circle cx="50" cy="175" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-8$3')" onClick="ReturnClass('50@175')"/>
+<circle cx="50" cy="200" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-8$2')" onClick="ReturnClass('50@200')"/>
+<circle cx="50" cy="225" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-8$1')" onClick="ReturnClass('50@225')"/>
+<circle cx="50" cy="250" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-8$0')" onClick="ReturnClass('50@250')"/>
+<circle cx="50" cy="275" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-8$-1')" onClick="ReturnClass('50@275')"/>
+<circle cx="50" cy="300" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-8$-2')" onClick="ReturnClass('50@300')"/>
+<circle cx="50" cy="325" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-8$-3')" onClick="ReturnClass('50@325')"/>
+<circle cx="50" cy="350" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-8$-4')" onClick="ReturnClass('50@350')"/>
+<circle cx="50" cy="375" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-8$-5')" onClick="ReturnClass('50@375')"/>
+<circle cx="50" cy="400" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-8$-6')" onClick="ReturnClass('50@400')"/>
+<circle cx="50" cy="425" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-8$-7')" onClick="ReturnClass('50@425')"/>
+<circle cx="50" cy="450" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-8$-8')" onClick="ReturnClass('50@450')"/>
+
+<circle cx="75" cy="50" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-7$8')" onClick="ReturnClass('75@50')"/>
+<circle cx="75" cy="75" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-7$7')" onClick="ReturnClass('75@75')"/>
+<circle cx="75" cy="100" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-7$6')" onClick="ReturnClass('75@100')"/>
+<circle cx="75" cy="125" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-7$5')" onClick="ReturnClass('75@125')"/>
+<circle cx="75" cy="150" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-7$4')" onClick="ReturnClass('75@150')"/>
+<circle cx="75" cy="175" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-7$3')" onClick="ReturnClass('75@175')"/>
+<circle cx="75" cy="200" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-7$2')" onClick="ReturnClass('75@200')"/>
+<circle cx="75" cy="225" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-7$1')" onClick="ReturnClass('75@225')"/>
+<circle cx="75" cy="250" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-7$0')" onClick="ReturnClass('75@250')"/>
+<circle cx="75" cy="275" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-7$-1')" onClick="ReturnClass('75@275')"/>
+<circle cx="75" cy="300" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-7$-2')" onClick="ReturnClass('75@300')"/>
+<circle cx="75" cy="325" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-7$-3')" onClick="ReturnClass('75@325')"/>
+<circle cx="75" cy="350" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-7$-4')" onClick="ReturnClass('75@350')"/>
+<circle cx="75" cy="375" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-7$-5')" onClick="ReturnClass('75@375')"/>
+<circle cx="75" cy="400" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-7$-6')" onClick="ReturnClass('75@400')"/>
+<circle cx="75" cy="425" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-7$-7')" onClick="ReturnClass('75@425')"/>
+<circle cx="75" cy="450" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-7$-8')" onClick="ReturnClass('75@450')"/>
+
+<circle cx="100" cy="50" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-6$8')" onClick="ReturnClass('100@50')"/>
+<circle cx="100" cy="75" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-6$7')" onClick="ReturnClass('100@75')"/>
+<circle cx="100" cy="100" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-6$6')" onClick="ReturnClass('100@100')"/>
+<circle cx="100" cy="125" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-6$5')" onClick="ReturnClass('100@125')"/>
+<circle cx="100" cy="150" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-6$4')" onClick="ReturnClass('100@150')"/>
+<circle cx="100" cy="175" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-6$3')" onClick="ReturnClass('100@175')"/>
+<circle cx="100" cy="200" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-6$2')" onClick="ReturnClass('100@200')"/>
+<circle cx="100" cy="225" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-6$1')" onClick="ReturnClass('100@225')"/>
+<circle cx="100" cy="250" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-6$0')" onClick="ReturnClass('100@250')"/>
+<circle cx="100" cy="275" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-6$-1')" onClick="ReturnClass('100@275')"/>
+<circle cx="100" cy="300" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-6$-2')" onClick="ReturnClass('100@300')"/>
+<circle cx="100" cy="325" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-6$-3')" onClick="ReturnClass('100@325')"/>
+<circle cx="100" cy="350" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-6$-4')" onClick="ReturnClass('100@350')"/>
+<circle cx="100" cy="375" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-6$-5')" onClick="ReturnClass('100@375')"/>
+<circle cx="100" cy="400" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-6$-6')" onClick="ReturnClass('100@400')"/>
+<circle cx="100" cy="425" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-6$-7')" onClick="ReturnClass('100@425')"/>
+<circle cx="100" cy="450" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-6$-8')" onClick="ReturnClass('100@450')"/>
+      
+<circle cx="125" cy="50" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-5$8')" onClick="ReturnClass('125@50')"/>
+<circle cx="125" cy="75" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-5$7')" onClick="ReturnClass('125@75')"/>
+<circle cx="125" cy="100" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-5$6')" onClick="ReturnClass('125@100')"/>
+<circle cx="125" cy="125" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-5$5')" onClick="ReturnClass('125@125')"/>
+<circle cx="125" cy="150" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-5$4')" onClick="ReturnClass('125@150')"/>
+<circle cx="125" cy="175" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-5$3')" onClick="ReturnClass('125@175')"/>
+<circle cx="125" cy="200" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-5$2')" onClick="ReturnClass('125@200')"/>
+<circle cx="125" cy="225" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-5$1')" onClick="ReturnClass('125@225')"/>
+<circle cx="125" cy="250" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-5$0')" onClick="ReturnClass('125@250')"/>
+<circle cx="125" cy="275" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-5$-1')" onClick="ReturnClass('125@275')"/>
+<circle cx="125" cy="300" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-5$-2')" onClick="ReturnClass('125@300')"/>
+<circle cx="125" cy="325" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-5$-3')" onClick="ReturnClass('125@325')"/>
+<circle cx="125" cy="350" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-5$-4')" onClick="ReturnClass('125@350')"/>
+<circle cx="125" cy="375" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-5$-5')" onClick="ReturnClass('125@375')"/>
+<circle cx="125" cy="400" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-5$-6')" onClick="ReturnClass('125@400')"/>
+<circle cx="125" cy="425" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-5$-7')" onClick="ReturnClass('125@425')"/>
+<circle cx="125" cy="450" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-5$-8')" onClick="ReturnClass('125@450')"/>
+
+<circle cx="150" cy="50" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-4$8')" onClick="ReturnClass('150@50')"/>
+<circle cx="150" cy="75" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-4$7')" onClick="ReturnClass('150@75')"/>
+<circle cx="150" cy="100" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-4$6')" onClick="ReturnClass('150@100')"/>
+<circle cx="150" cy="125" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-4$5')" onClick="ReturnClass('150@125')"/>
+<circle cx="150" cy="150" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-4$4')" onClick="ReturnClass('150@150')"/>
+<circle cx="150" cy="175" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-4$3')" onClick="ReturnClass('150@175')"/>
+<circle cx="150" cy="200" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-4$2')" onClick="ReturnClass('150@200')"/>
+<circle cx="150" cy="225" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-4$1')" onClick="ReturnClass('150@225')"/>
+<circle cx="150" cy="250" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-4$0')" onClick="ReturnClass('150@250')"/>
+<circle cx="150" cy="275" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-4$-1')" onClick="ReturnClass('150@275')"/>
+<circle cx="150" cy="300" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-4$-2')" onClick="ReturnClass('150@300')"/>
+<circle cx="150" cy="325" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-4$-3')" onClick="ReturnClass('150@325')"/>
+<circle cx="150" cy="350" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-4$-4')" onClick="ReturnClass('150@350')"/>
+<circle cx="150" cy="375" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-4$-5')" onClick="ReturnClass('150@375')"/>
+<circle cx="150" cy="400" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-4$-6')" onClick="ReturnClass('150@400')"/>
+<circle cx="150" cy="425" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-4$-7')" onClick="ReturnClass('150@425')"/>
+<circle cx="150" cy="450" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-4$-8')" onClick="ReturnClass('150@450')"/>
+
+<circle cx="175" cy="50" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-3$8')" onClick="ReturnClass('175@50')"/>
+<circle cx="175" cy="75" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-3$7')" onClick="ReturnClass('175@75')"/>
+<circle cx="175" cy="100" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-3$6')" onClick="ReturnClass('175@100')"/>
+<circle cx="175" cy="125" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-3$5')" onClick="ReturnClass('175@125')"/>
+<circle cx="175" cy="150" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-3$4')" onClick="ReturnClass('175@150')"/>
+<circle cx="175" cy="175" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-3$3')" onClick="ReturnClass('175@175')"/>
+<circle cx="175" cy="200" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-3$2')" onClick="ReturnClass('175@200')"/>
+<circle cx="175" cy="225" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-3$1')" onClick="ReturnClass('175@225')"/>
+<circle cx="175" cy="250" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-3$0')" onClick="ReturnClass('175@250')"/>
+<circle cx="175" cy="275" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-3$-1')" onClick="ReturnClass('175@275')"/>
+<circle cx="175" cy="300" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-3$-2')" onClick="ReturnClass('175@300')"/>
+<circle cx="175" cy="325" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-3$-3')" onClick="ReturnClass('175@325')"/>
+<circle cx="175" cy="350" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-3$-4')" onClick="ReturnClass('175@350')"/>
+<circle cx="175" cy="375" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-3$-5')" onClick="ReturnClass('175@375')"/>
+<circle cx="175" cy="400" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-3$-6')" onClick="ReturnClass('175@400')"/>
+<circle cx="175" cy="425" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-3$-7')" onClick="ReturnClass('175@425')"/>
+<circle cx="175" cy="450" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-3$-8')" onClick="ReturnClass('175@450')"/>
+
+<circle cx="200" cy="50" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-2$8')" onClick="ReturnClass('200@50')"/>
+<circle cx="200" cy="75" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-2$7')" onClick="ReturnClass('200@75')"/>
+<circle cx="200" cy="100" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-2$6')" onClick="ReturnClass('200@100')"/>
+<circle cx="200" cy="125" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-2$5')" onClick="ReturnClass('200@125')"/>
+<circle cx="200" cy="150" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-2$4')" onClick="ReturnClass('200@150')"/>
+<circle cx="200" cy="175" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-2$3')" onClick="ReturnClass('200@175')"/>
+<circle cx="200" cy="200" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-2$2')" onClick="ReturnClass('200@200')"/>
+<circle cx="200" cy="225" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-2$1')" onClick="ReturnClass('200@225')"/>
+<circle cx="200" cy="250" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-2$0')" onClick="ReturnClass('200@250')"/>
+<circle cx="200" cy="275" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-2$-1')" onClick="ReturnClass('200@275')"/>
+<circle cx="200" cy="300" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-2$-2')" onClick="ReturnClass('200@300')"/>
+<circle cx="200" cy="325" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-2$-3')" onClick="ReturnClass('200@325')"/>
+<circle cx="200" cy="350" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-2$-4')" onClick="ReturnClass('200@350')"/>
+<circle cx="200" cy="375" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-2$-5')" onClick="ReturnClass('200@375')"/>
+<circle cx="200" cy="400" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-2$-6')" onClick="ReturnClass('200@400')"/>
+<circle cx="200" cy="425" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-2$-7')" onClick="ReturnClass('200@425')"/>
+<circle cx="200" cy="450" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-2$-8')" onClick="ReturnClass('200@450')"/>
+
+<circle cx="225" cy="50" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-1$8')" onClick="ReturnClass('225@50')"/>
+<circle cx="225" cy="75" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-1$7')" onClick="ReturnClass('225@75')"/>
+<circle cx="225" cy="100" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-1$6')" onClick="ReturnClass('225@100')"/>
+<circle cx="225" cy="125" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-1$5')" onClick="ReturnClass('225@125')"/>
+<circle cx="225" cy="150" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl"  onmouseover="ReturnClass1('-1$4')" onClick="ReturnClass('225@150')"/>
+<circle cx="225" cy="175" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-1$3')" onClick="ReturnClass('225@175')"/>
+<circle cx="225" cy="200" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-1$2')" onClick="ReturnClass('225@200')"/>
+<circle cx="225" cy="225" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-1$1')" onClick="ReturnClass('225@225')"/>
+<circle cx="225" cy="250" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-1$0')" onClick="ReturnClass('225@250')"/>
+<circle cx="225" cy="275" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-1$-1')" onClick="ReturnClass('225@275')"/>
+<circle cx="225" cy="300" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-1$-2')" onClick="ReturnClass('225@300')"/>
+<circle cx="225" cy="325" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-1$-3')" onClick="ReturnClass('225@325')"/>
+<circle cx="225" cy="350" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-1$-4')" onClick="ReturnClass('225@350')"/>
+<circle cx="225" cy="375" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-1$-5')" onClick="ReturnClass('225@375')"/>
+<circle cx="225" cy="400" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-1$-6')" onClick="ReturnClass('225@400')"/>
+<circle cx="225" cy="425" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('-1$-7')" onClick="ReturnClass('225@425')"/>
+<circle cx="225" cy="450" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('-1$-8')" onClick="ReturnClass('225@450')"/>
+
+<circle cx="250" cy="50" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('0$8')" onClick="ReturnClass('250@50')"/>
+<circle cx="250" cy="75" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('0$7')" onClick="ReturnClass('250@75')"/>
+<circle cx="250" cy="100" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('0$6')" onClick="ReturnClass('250@100')"/>
+<circle cx="250" cy="125" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('0$5')" onClick="ReturnClass('250@125')"/>
+<circle cx="250" cy="150" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('0$4')" onClick="ReturnClass('250@150')"/>
+<circle cx="250" cy="175" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('0$3')" onClick="ReturnClass('250@175')"/>
+<circle cx="250" cy="200" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('0$2')" onClick="ReturnClass('250@200')"/>
+<circle cx="250" cy="225" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('0$1')" onClick="ReturnClass('250@225')"/>
+<circle cx="250" cy="250" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl"  onmouseover="ReturnClass1('0$0')" onClick="ReturnClass('250@250')"/>
+<circle cx="250" cy="275" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('0$-1')" onClick="ReturnClass('250@275')"/>
+<circle cx="250" cy="300" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('0$-2')"  onClick="ReturnClass('250@300')"/>
+<circle cx="250" cy="325" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('0$-3')" onClick="ReturnClass('250@325')"/>
+<circle cx="250" cy="350" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('0$-4')" onClick="ReturnClass('250@350')"/>
+<circle cx="250" cy="375" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('0$-5')" onClick="ReturnClass('250@375')"/>
+<circle cx="250" cy="400" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('0$-6')" onClick="ReturnClass('250@400')"/>
+<circle cx="250" cy="425" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('0$-7')"  onClick="ReturnClass('250@425')"/>
+<circle cx="250" cy="450" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('0$-8')"  onClick="ReturnClass('250@450')"/>
+
+<circle cx="275" cy="50" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('1$8')" onClick="ReturnClass('275@50')"/>
+<circle cx="275" cy="75" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('1$7')" onClick="ReturnClass('275@75')"/>
+<circle cx="275" cy="100" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('1$6')" onClick="ReturnClass('275@100')"/>
+<circle cx="275" cy="125" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('1$5')" onClick="ReturnClass('275@125')"/>
+<circle cx="275" cy="150" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('1$4')" onClick="ReturnClass('275@150')"/>
+<circle cx="275" cy="175" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('1$3')" onClick="ReturnClass('275@175')"/>
+<circle cx="275" cy="200" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('1$2')" onClick="ReturnClass('275@200')"/>
+<circle cx="275" cy="225" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('1$1')" onClick="ReturnClass('275@225')"/>
+<circle cx="275" cy="250" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('1$0')" onClick="ReturnClass('275@250')"/>
+<circle cx="275" cy="275" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl"  onmouseover="ReturnClass1('1$-1')" onClick="ReturnClass('275@275')"/>
+<circle cx="275" cy="300" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('1$-2')" onClick="ReturnClass('275@300')"/>
+<circle cx="275" cy="325" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('1$-3')" onClick="ReturnClass('275@325')"/>
+<circle cx="275" cy="350" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('1$-4')" onClick="ReturnClass('275@350')"/>
+<circle cx="275" cy="375" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('1$-5')" onClick="ReturnClass('275@375')"/>
+<circle cx="275" cy="400" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('1$-6')" onClick="ReturnClass('275@400')"/>
+<circle cx="275" cy="425" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('1$-7')" onClick="ReturnClass('275@425')"/>
+<circle cx="275" cy="450" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('1$-8')" onClick="ReturnClass('275@450')"/>
+
+<circle cx="300" cy="50" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('2$8')" onClick="ReturnClass('300@50')"/>
+<circle cx="300" cy="75" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('2$7')" onClick="ReturnClass('300@75')"/>
+<circle cx="300" cy="100" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('2$6')" onClick="ReturnClass('300@100')"/>
+<circle cx="300" cy="125" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('2$5')" onClick="ReturnClass('300@125')"/>
+<circle cx="300" cy="150" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('2$4')" onClick="ReturnClass('300@150')"/>
+<circle cx="300" cy="175" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('2$3')" onClick="ReturnClass('300@175')"/>
+<circle cx="300" cy="200" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('2$2')" onClick="ReturnClass('300@200')"/>
+<circle cx="300" cy="225" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('2$1')" onClick="ReturnClass('300@225')"/>
+<circle cx="300" cy="250" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('2$0')" onClick="ReturnClass('300@250')"/>
+<circle cx="300" cy="275" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('2$-1')" onClick="ReturnClass('300@275')"/>
+<circle cx="300" cy="300" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('2$-2')" onClick="ReturnClass('300@300')"/>
+<circle cx="300" cy="325" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('2$-3')" onClick="ReturnClass('300@325')"/>
+<circle cx="300" cy="350" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('2$-4')" onClick="ReturnClass('300@350')"/>
+<circle cx="300" cy="375" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('2$-5')"  onClick="ReturnClass('300@375')"/>
+<circle cx="300" cy="400" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('2$-6')" onClick="ReturnClass('300@400')"/>
+<circle cx="300" cy="425" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('2$-7')" onClick="ReturnClass('300@425')"/>
+<circle cx="300" cy="450" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('2$-8')" onClick="ReturnClass('300@450')"/>
+
+<circle cx="325" cy="50" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('3$8')" onClick="ReturnClass('325@50')"/>
+<circle cx="325" cy="75" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('3$7')" onClick="ReturnClass('325@75')"/>
+<circle cx="325" cy="100" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('3$6')" onClick="ReturnClass('325@100')"/>
+<circle cx="325" cy="125" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('3$5')" onClick="ReturnClass('325@125')"/>
+<circle cx="325" cy="150" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('3$4')" onClick="ReturnClass('325@150')"/>
+<circle cx="325" cy="175" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('3$3')" onClick="ReturnClass('325@175')"/>
+<circle cx="325" cy="200" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('3$2')" onClick="ReturnClass('325@200')"/>
+<circle cx="325" cy="225" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('3$1')" onClick="ReturnClass('325@225')"/>
+<circle cx="325" cy="250" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('3$0')" onClick="ReturnClass('325@250')"/>
+<circle cx="325" cy="275" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('3$-1')" onClick="ReturnClass('325@275')"/>
+<circle cx="325" cy="300" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('3$-2')" onClick="ReturnClass('325@300')"/>
+<circle cx="325" cy="325" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('3$-3')" onClick="ReturnClass('325@325')"/>
+<circle cx="325" cy="350" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('3$-4')" onClick="ReturnClass('325@350')"/>
+<circle cx="325" cy="375" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('3$-5')" onClick="ReturnClass('325@375')"/>
+<circle cx="325" cy="400" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('3$-6')" onClick="ReturnClass('325@400')"/>
+<circle cx="325" cy="425" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('3$-7')" onClick="ReturnClass('325@425')"/>
+<circle cx="325" cy="450" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('3$-8')" onClick="ReturnClass('325@450')"/>
+        
+<circle cx="350" cy="50" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('4$8')" onClick="ReturnClass('350@50')"/>
+<circle cx="350" cy="75" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('4$7')" onClick="ReturnClass('350@75')"/>
+<circle cx="350" cy="100" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('4$6')" onClick="ReturnClass('350@100')"/>
+<circle cx="350" cy="125" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('4$5')" onClick="ReturnClass('350@125')"/>
+<circle cx="350" cy="150" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('4$4')" onClick="ReturnClass('350@150')"/>
+<circle cx="350" cy="175" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('4$3')" onClick="ReturnClass('350@175')"/>
+<circle cx="350" cy="200" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('4$2')" onClick="ReturnClass('350@200')"/>
+<circle cx="350" cy="225" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('4$1')" onClick="ReturnClass('350@225')"/>
+<circle cx="350" cy="250" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('4$0')" onClick="ReturnClass('350@250')"/>
+<circle cx="350" cy="275" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('4$-1')" onClick="ReturnClass('350@275')"/>
+<circle cx="350" cy="300" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('4$-2')" onClick="ReturnClass('350@300')"/>
+<circle cx="350" cy="325" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('4$-3')" onClick="ReturnClass('350@325')"/>
+<circle cx="350" cy="350" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('4$-4')" onClick="ReturnClass('350@350')"/>
+<circle cx="350" cy="375" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('4$-5')" onClick="ReturnClass('350@375')"/>
+<circle cx="350" cy="400" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('4$-6')" onClick="ReturnClass('350@400')"/>
+<circle cx="350" cy="425" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('4$-7')" onClick="ReturnClass('350@425')"/>
+<circle cx="350" cy="450" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('4$-8')" onClick="ReturnClass('350@450')"/>
+
+ <circle cx="375" cy="50" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('5$8')" onClick="ReturnClass('375@50')"/>
+<circle cx="375" cy="75" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('5$7')" onClick="ReturnClass('375@75')"/>
+<circle cx="375" cy="100" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('5$6')" onClick="ReturnClass('375@100')"/>
+<circle cx="375" cy="125" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('5$5')" onClick="ReturnClass('375@125')"/>
+<circle cx="375" cy="150" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('5$4')" onClick="ReturnClass('375@150')"/>
+<circle cx="375" cy="175" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('5$3')" onClick="ReturnClass('375@175')"/>
+<circle cx="375" cy="200" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('5$2')" onClick="ReturnClass('375@200')"/>
+<circle cx="375" cy="225" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('5$1')" onClick="ReturnClass('375@225')"/>
+<circle cx="375" cy="250" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('5$0')" onClick="ReturnClass('375@250')"/>
+<circle cx="375" cy="275" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('5$-1')" onClick="ReturnClass('375@275')"/>
+<circle cx="375" cy="300" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('5$-2')" onClick="ReturnClass('375@300')"/>
+<circle cx="375" cy="325" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('5$-3')" onClick="ReturnClass('375@325')"/>
+<circle cx="375" cy="350" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('5$-4')" onClick="ReturnClass('375@350')"/>
+<circle cx="375" cy="375" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('5$-5')"  onClick="ReturnClass('375@375')"/>
+<circle cx="375" cy="400" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('5$-6')" onClick="ReturnClass('375@400')"/>
+<circle cx="375" cy="425" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('5$-7')" onClick="ReturnClass('375@425')"/>
+<circle cx="375" cy="450" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('5$-8')" onClick="ReturnClass('375@450')"/>
+
+ <circle cx="400" cy="50" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('6$8')" onClick="ReturnClass('400@50')"/>
+<circle cx="400" cy="75" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('6$7')" onClick="ReturnClass('400@75')"/>
+<circle cx="400" cy="100" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('6$6')" onClick="ReturnClass('400@100')"/>
+<circle cx="400" cy="125" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('6$5')" onClick="ReturnClass('400@125')"/>
+<circle cx="400" cy="150" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('6$4')" onClick="ReturnClass('400@150')"/>
+<circle cx="400" cy="175" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('6$3')"  onClick="ReturnClass('400@175')"/>
+<circle cx="400" cy="200" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('6$2')"  onClick="ReturnClass('400@200')"/>
+<circle cx="400" cy="225" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('6$1')" onClick="ReturnClass('400@225')"/>
+<circle cx="400" cy="250" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('6$0')" onClick="ReturnClass('400@250')"/>
+<circle cx="400" cy="275" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('6$-1')" onClick="ReturnClass('400@275')"/>
+<circle cx="400" cy="300" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('6$-2')" onClick="ReturnClass('400@300')"/>
+<circle cx="400" cy="325" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('6$-3')" onClick="ReturnClass('400@325')"/>
+<circle cx="400" cy="350" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('6$-4')" onClick="ReturnClass('400@350')"/>
+<circle cx="400" cy="375" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('6$-5')" onClick="ReturnClass('400@375')"/>
+<circle cx="400" cy="400" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('6$-6')" onClick="ReturnClass('400@400')"/>
+<circle cx="400" cy="425" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('6$-7')" onClick="ReturnClass('400@425')"/>
+<circle cx="400" cy="450" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('6$-8')" onClick="ReturnClass('400@450')"/>
+
+<circle cx="425" cy="50" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('7$8')" onClick="ReturnClass('425@50')"/>
+<circle cx="425" cy="75" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('7$7')" onClick="ReturnClass('425@75')"/>
+<circle cx="425" cy="100" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('7$6')" onClick="ReturnClass('425@100')"/>
+<circle cx="425" cy="125" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('7$5')" onClick="ReturnClass('425@125')"/>
+<circle cx="425" cy="150" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('7$4')" onClick="ReturnClass('425@150')"/>
+<circle cx="425" cy="175" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('7$3')" onClick="ReturnClass('425@175')"/>
+<circle cx="425" cy="200" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('7$2')" onClick="ReturnClass('425@200')"/>
+<circle cx="425" cy="225" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('7$1')" onClick="ReturnClass('425@225')"/>
+<circle cx="425" cy="250" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('7$0')" onClick="ReturnClass('425@250')"/>
+<circle cx="425" cy="275" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('7$-1')" onClick="ReturnClass('425@275')"/>
+<circle cx="425" cy="300" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('7$-2')" onClick="ReturnClass('425@300')"/>
+<circle cx="425" cy="325" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('7$-3')" onClick="ReturnClass('425@325')"/>
+<circle cx="425" cy="350" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('7$-4')" onClick="ReturnClass('425@350')"/>
+<circle cx="425" cy="375" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('7$-5')" onClick="ReturnClass('425@375')"/>
+<circle cx="425" cy="400" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('7$-6')" onClick="ReturnClass('425@400')"/>
+<circle cx="425" cy="425" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('7$-7')" onClick="ReturnClass('425@425')"/>
+<circle cx="425" cy="450" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('7$-8')" onClick="ReturnClass('425@450')"/>
+
+<circle cx="450" cy="50" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('8$8')" onClick="ReturnClass('450@50')"/>
+<circle cx="450" cy="75" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('8$7')" onClick="ReturnClass('450@75')"/>
+<circle cx="450" cy="100" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('8$6')" onClick="ReturnClass('450@100')"/>
+<circle cx="450" cy="125" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('8$5')" onClick="ReturnClass('450@125')"/>
+<circle cx="450" cy="150" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('8$4')" onClick="ReturnClass('450@150')"/>
+<circle cx="450" cy="175" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('8$3')" onClick="ReturnClass('450@175')"/>
+<circle cx="450" cy="200" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('8$2')" onClick="ReturnClass('450@200')"/>
+<circle cx="450" cy="225" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('8$1')" onClick="ReturnClass('450@225')"/>
+<circle cx="450" cy="250" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('8$0')" onClick="ReturnClass('450@250')"/>
+<circle cx="450" cy="275" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('8$-1')" onClick="ReturnClass('450@275')"/>
+<circle cx="450" cy="300" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('8$-2')" onClick="ReturnClass('450@300')"/>
+<circle cx="450" cy="325" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('8$-3')" onClick="ReturnClass('450@325')"/>
+<circle cx="450" cy="350" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('8$-4')" onClick="ReturnClass('450@350')"/>
+<circle cx="450" cy="375" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('8$-5')" onClick="ReturnClass('450@375')"/>
+<circle cx="450" cy="400" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('8$-6')" onClick="ReturnClass('450@400')"/>
+<circle cx="450" cy="425" r="4" fill="#C00" stroke="#C00" stroke-width="4"  class="crcl" onmouseover="ReturnClass1('8$-7')" onClick="ReturnClass('450@425')"/>
+<circle cx="450" cy="450" r="4" fill="#C00" stroke="#C00" stroke-width="4" class="crcl" onmouseover="ReturnClass1('8$-8')"  onClick="ReturnClass('450@450')"/>
+
+
+<text x="50" y="50" font-family="sans-serif" fill="#000" class="txt txt1 bold">A</text>
+<text x="50" y="50" font-family="sans-serif" fill="#000" class="txt txt2 bold">B</text>
+
+
+
+</svg>
+
+<span class="ShowCoOrdinates"></span>
+
+</div>
+    </tr>
+    
+    </table> 
+  
+        </div>
+        </div>		<!-- middle end --> 
+    </div><!-- solutionMainSteps end -->
+    </div>	<!-- solutionContainer closed-->
+    </div>	<!-- container closed-->
+    
+    <div class="footer">
+    <table class="FooterTable">
+        <tr>
+            <td class="FtrTab_Td1" width="10%"><img src="image/print.png" class="print"/> </td>
+            <td class="FtrTab_Td2" width="10%"><img src="image/AutoRun.png" class="autorun"/></td>
+            <td class="FtrTab_Td3" width="50%">
+                <div class="SpaceBarDiv"><button class="SpaceBarButton spacebar" onClick="spacebarClickFunction()">Click or Press Spacebar to Continue</button></div>
+            </td>
+            <td class="FtrTab_Td4" width="30%"><div class="Copyright">Copyright © 2005 – 2019 <span class="ForDeviceCopy">Educo Int. Inc.</span></div></td>
+        </tr>
+    </table>
+    </div>	<!-- footer closed-->
+    </div>		<!-- container-fluid closed-->
+    </body>
+    </html>

@@ -1,0 +1,1970 @@
+@charset "utf-8";
+/*.clear
+{
+	margin-left:6%;
+}*/
+.visibility
+{
+	visibility:hidden;
+}
+tr,td{
+	/*border:1px solid #CCC;*/
+}
+.pre
+{
+	display:inline-block;
+}
+.bold
+{
+	font-weight:bold;
+}
+.red_color
+{
+	color:#c00;
+}
+.blue_color
+{
+	color:#00c;
+}
+.inputAndDoneSpace {
+    float: right;
+    width: 75%;
+    margin-left: 0%;
+}
+.InptDnTd0
+{
+	width:30%;
+	padding-top:2%;
+	text-align:right;
+}
+.InptDnTd1
+{
+	width:45%;
+	
+}
+.InptDnTd2
+{
+	width:25%;
+	
+}
+.doneDiv
+{
+	width:100%;
+}
+
+.MinusInfinity,.Infinity
+{
+	font-size:15px;
+}
+.mar
+{
+	margin-top:1%;
+}
+.SolutionRemark
+{
+	background:white;
+}
+.steps
+{
+	height:15px;
+}
+.red1,.red2,.red3
+{
+	color:red;	
+	font-size:135%;
+	font-weight:bold;
+}
+
+.green1,.green2,.green3
+{
+	color:green;
+	font-size:95%;
+	font-weight:bold;
+}
+.remark
+{
+	float:left;
+	width:100%;
+	padding-top:0%;
+}
+.Partial
+{	
+	color:#00F;
+	font-weight:bold;
+}
+.InputAndDoneTbl 
+{
+    width: 100%;
+    float: right;
+}
+
+.solutionMainSteps {
+    width: 100%;
+    margin-left: 0%;
+}
+.prompt_New
+{
+	z-index:100;
+}
+.inputAndDoneSpaceFordevice
+{
+	width:100%;
+	margin-left:0%;
+}
+.blankMessage_New {
+    width: auto;
+    margin-left: 48%;
+}
+.hidden{
+	visibility:hidden;
+	}
+.normal{
+	font-weight:normal;
+	}
+.bord{
+	
+	border-right:2px solid;
+	border-bottom:2px solid;
+	}
+
+.tab td{
+	padding:5px;
+	}
+.border1{
+	border-bottom:1px solid;
+	}
+.tab1{
+	border-collapse:collapse;
+	}
+	.fraction{ line-height:110%;}
+.fraction > span {
+    display: block;
+    padding-top: 0.0em;
+}
+.forAutoWidth{
+	white-space:nowrap;
+	}
+.forAutoWidth td{
+	white-space:nowrap;
+	}
+.fraction span.fdn {border-top: 0.07em solid black;}
+.blue span.fdn {border-top: 0.07em solid #00c;}
+.red span.fdn {border-top: 0.07em solid #c00;}
+.left_border{
+	border-left:2px solid;
+	}
+
+.pre1{
+	white-space:pre;
+	}
+.landscape{
+	display:block;
+	}
+.portrait{
+	display:none;
+	}
+
+.inputAndDoneSpace {
+    float: right;
+    width: 73%;
+    margin-left: 0%;
+}
+.inline1{
+	display:inline-block;
+	border-right:2px solid;
+	border-bottom:2px solid;
+	}
+.border{
+	border-bottom:2px solid;
+	}
+.tab2{
+	border-collapse:collapse;
+	}
+.tab1 td {
+    padding-top: 18px;
+}
+.tab1{
+	margin-left:auto;
+	margin-right:auto;
+	}
+.tab3{
+	border-left:2px solid;
+	}
+.tab3 {
+    border-left: 2px solid;
+    margin-left: 8%;
+}
+.tab1 {
+    white-space: nowrap;
+    WIDTH: 74%;
+}
+.tab1 td{
+	white-space:nowrap;
+	}
+
+.pre2 {
+   
+    display: inline-block;
+}
+.f_size {
+    font-size: 1.3em;
+    color: #00c;
+}
+.right{
+text-align:right;	
+	}
+.center{
+	text-align:center;
+	}
+.bullet {
+    color: #c00;
+    font-size: 1.6em;
+    width: 5%;
+}
+.cls_arro{
+	color:#00c;
+	}
+.cls_arro {
+    color: #00c;
+    font-size: 1.6em;
+  
+}
+.full {
+    display: flex;
+}
+.div1{
+	
+	display:inline-block;
+	float:left;
+	
+	
+	}
+.div2 {
+    width:13em!important;
+    display: inline-block;
+    float: left;
+border-left:2px solid;
+}
+
+.inputAndDoneSpace {
+    float: right;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 2%;
+}
+
+
+.InputAndDoneTbl {
+    width: 100%;
+    float: right;
+}
+.InptDnTd1 {
+    width: 22%;
+    
+}
+.InptDnTd2 {
+    width: 5%;
+  
+}
+.InptDnTd3 {
+    width: 22%;
+  
+}
+.InptDnTd4{
+	  width: 5%;
+  
+	}
+	
+.InptDnTd5{
+	 width: 22%;
+  
+	}
+.InptDnTd6{
+	 width: 5%;
+    
+	}
+.InptDnTd7{
+	width:10%;
+	}
+
+.InptDnTd0{
+	width:9%;
+	white-space:nowrap;
+	}
+.clr{
+	color:#00c;
+	font-size:.9em;
+	text-align:center;
+	}
+.clr1{
+	font-size:.9em;
+	}
+.top{
+	vertical-align: -0.2em;
+	}
+.prompt_New  {
+    width: auto;
+   margin-left: 38%;
+}
+.hidden1{
+	visibility:hidden;
+	font-size:160%;
+	}
+.remark {
+    float: left;
+    width: 95%;
+    padding-top: 0%;
+    display: inline-block;
+}
+.clr1 {
+    font-size: .9em;
+}.ClickToAnsDiv {
+   
+    margin-top: 3%;
+}
+.KeypadBoundary {
+    width: 98%;
+             }
+			.table1 {
+				margin:0 auto;
+				margin-right:3%;
+				}
+				
+				.vector {
+    width: 0.7em;
+    vertical-align: 0.55em;
+    margin-left: -0.6em;
+	font-size: 1.08em;
+}
+.Graph {
+   
+	padding-left:0em;
+}
+.ImgDiv{ order:2; padding-top:1em!important;}
+.ver1 td{ padding-top:0em;}
+.AntiDiv {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 0.80em;
+    color: deeppink;
+    top: 20%;
+    left: 4%;
+}
+.AntiDiv1 {position: absolute;white-space: nowrap;font-size: 0.85em;color: deeppink;bottom: 15%;left: 22%;}
+.AntiDiv11 {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 0.80em;
+    color: deeppink;
+    top: 20%;
+    left: 4%;
+}
+.AntiDiv12 {position: absolute;white-space: nowrap;font-size: 0.80em;color: deeppink;bottom: 15%;left: 22%;}
+.GraphSvg_div{ width:28%!important;order: 2;pointer-events: none!important;}
+.final_line{stroke-dasharray: 10!important;}
+.final_line2{stroke: red!important;}
+.txt{ font-size:19px;}
+.Graph{ width:8em;}
+.TDWidth{ padding-right:1em; border-right:1px solid green;}
+.TDWidth1{ padding-left:1em;}
+@media (min-width: 450px) and (max-width: 530px)
+{
+.mar
+{
+	margin-top:1% ;
+}
+.blankMessage_New, .incomplete_New 
+{
+    margin-top: 2%;
+    margin-left: 30%;
+}
+
+
+
+ 
+.InptDnTd0 {
+    width: 16%;
+}
+.InptDnTd1,.InptDnTd3,.InptDnTd5 {
+    width: 22%;
+}
+.InptDnTd2,.InptDnTd4,.InptDnTd6 {
+    width: 6%;
+}
+
+}
+
+@media (min-width: 531px) and (max-width: 610px)
+{
+.mar
+{
+	margin-top:1%;
+	
+}
+.blankMessage_New, .incomplete_New 
+{
+    margin-top: 6%;
+    margin-left: 30%;
+}
+
+
+
+.forAutoWidth {
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+
+
+.border {
+    border-bottom: 1px solid;
+}
+.tab3 {
+    border-left: 1px solid;
+    margin-left: 5%;
+}
+
+
+.doneDiv {
+    width: 62%;
+}
+
+
+
+.InptDnTd0 {
+    width: 16%;
+}
+.InptDnTd1,.InptDnTd3,.InptDnTd5 {
+    width: 22%;
+}
+.InptDnTd2,.InptDnTd4,.InptDnTd6 {
+    width: 6%;
+}
+
+
+}
+
+@media (min-width: 611px) and (max-width: 690px)
+{
+.mar
+{
+	margin-top:1%;
+}
+.blankMessage_New, .incomplete_New 
+{
+    margin-top: 6%;
+    margin-left: 30%;
+}
+
+
+
+
+
+.solutionMainSteps {
+    width: 100%;
+    margin-left: 0%;
+}
+
+.forAutoWidth {
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+.remark {
+	width:100%;
+	}
+.ClickToAnsDiv {
+    width: auto;
+    white-space: nowrap;
+    margin-top: 3%;
+}
+.forAutoWidth {
+	margin-left:auto;
+	margin-right:auto;
+	}
+.border {
+    border-bottom: 1px solid;
+}
+.tab3 {
+    border-left: 1px solid;
+    margin-left: 5%;
+}
+
+
+.clr {
+    color: #00c;
+    font-size: 0.8em;
+    text-align: center;
+}
+.InputAndDoneTbl {
+    width: 100%;
+    float: right;
+}
+.clr {
+    color: #00c;
+    font-size: 0.78em;
+    text-align: center;
+}
+.InputAndDoneTbl {
+    width: 100%;
+    float: right;
+}
+.top1{
+	vertical-align:0.6em;
+	}
+.doneDiv {
+    width: 62%;
+}
+.InptDnTd0 {
+    width: 16%;
+}
+.InptDnTd1,.InptDnTd3,.InptDnTd5 {
+    width: 22%;
+}
+.InptDnTd2,.InptDnTd4,.InptDnTd6 {
+    width: 6%;
+}
+.div1 {
+    width: 42%;
+}
+.div2 {
+    width: 57%;
+  
+}
+}
+
+@media (min-width: 691px) and (max-width: 770px)
+{
+.mar
+{
+	margin-top:1% ;
+}
+.blankMessage_New, .incomplete_New 
+{
+    margin-top: 6%;
+    margin-left: 30%;
+}
+
+
+
+.solutionMainSteps {
+    width: 100%;
+    margin-left: 0%;
+}
+
+.forAutoWidth {
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+
+
+.pre{
+	white-space:normal;
+	}
+
+.ClickToAnsDiv {
+    width: auto;
+    white-space: nowrap;
+    margin-top: 6%;
+}
+.solutionMainSteps {
+    width: 100%;
+    margin-left: 0%;
+}
+.forAutoWidth {
+	margin-left:auto;
+	margin-right:auto;
+	}
+.hidden {
+    visibility: hidden;
+    
+}
+.tab1 {
+    white-space: nowrap;
+    WIDTH: 83%;
+}
+
+.clr {
+    color: #00c;
+    font-size: 0.78em;
+    text-align: center;
+}
+.InputAndDoneTbl {
+    width: 100%;
+    float: right;
+}
+.top1{
+	vertical-align:0.6em;
+	}
+	.div2 {
+    width: 55%;
+    display: inline-block;
+    float: left;
+    border-left: 2px solid;
+}
+.div1 {
+    width: 44%;
+    display: inline-block;
+    float: left;
+}
+.clr {
+    color: #00c;
+    font-size: 0.68em;
+    text-align: center;
+}
+.red1, .red2, .red3 {
+
+    font-size: 132%;
+ 
+}
+.green1, .green2, .green3 {
+   
+    font-size: 132%;
+   
+}
+.doneDiv {
+    width: 62%;
+}
+.InptDnTd0 {
+    width: 16%;
+}
+.InptDnTd1,.InptDnTd3,.InptDnTd5 {
+    width: 22%;
+}
+.InptDnTd2,.InptDnTd4,.InptDnTd6 {
+    width: 6%;
+}
+.div1 {
+    width: 45%;
+}
+.div2 {
+    width: 53%;
+}
+}
+
+@media (min-width: 771px) and (max-width: 850px)
+{
+.mar
+{
+	margin-top:1% ;
+}
+.blankMessage_New, .incomplete_New 
+{
+    margin-top: 6%;
+    margin-left: 30%;
+}
+
+.solutionMainSteps {
+    width: 100%;
+    margin-left: 0%;
+}
+
+.forAutoWidth {
+	margin-left:auto;
+	margin-right:auto;
+	}
+.ClickToAnsDiv {
+    width: auto;
+    white-space: nowrap;
+    margin-top: 3%;
+}
+.solutionMainSteps {
+    width: 100%;
+    margin-left: 0%;
+}
+.forAutoWidth {
+	margin-left:auto;
+	margin-right:auto;
+	}
+.hidden {
+    visibility: hidden;
+    font-size: 10px;
+}
+.border {
+    border-bottom: 1px solid;
+}
+.tab3 {
+    border-left: 1px solid;
+    margin-left: 8%;
+}
+.inline1 {
+    display: inline-block;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.div1 {
+    width: 44%;
+    display: inline-block;
+    float: left;
+}
+.clr {
+    color: #00c;
+    font-size: 0.68em;
+    text-align: center;
+}
+.div2 {
+    width: 55%;
+    display: inline-block;
+    float: left;
+    border-left: 2px solid;
+}
+.clr {
+    color: #00c;
+    font-size: 0.58em;
+    text-align: center;
+}
+.InputAndDoneTbl {
+    width: 100%;
+    float: right;
+}
+.red1, .red2, .red3 {
+
+    font-size: 132%;
+ 
+}
+.green1, .green2, .green3 {
+   
+    font-size: 132%;
+   
+}
+.top1{
+	vertical-align:0.6em;
+	}
+.doneDiv {
+    width: 62%;
+}
+.InptDnTd0 {
+    width: 16%;
+}
+.InptDnTd1,.InptDnTd3,.InptDnTd5 {
+    width: 22%;
+}
+.InptDnTd2,.InptDnTd4,.InptDnTd6 {
+    width: 6%;
+}
+.div1 {
+    width: 45%;
+}
+.div2 {
+    width: 53%;
+}
+}
+
+@media (min-width: 851px) and (max-width: 930px)
+{
+.mar
+{
+	margin-top:1%;
+}
+.blankMessage_New, .incomplete_New 
+{
+    margin-top: 12%;
+    margin-left: 30%;
+}
+
+
+.solutionMainSteps {
+    width: 100%;
+    margin-left: 0%;
+}
+.forAutoWidth {
+	margin-left:auto;
+	margin-right:auto;
+	}
+.ClickToAnsDiv {
+    width: auto;
+    white-space: nowrap;
+    margin-top: 4%;
+}
+.hidden {
+    visibility: hidden;
+    font-size: 10px;
+}
+.border {
+    border-bottom: 1px solid;
+}
+.tab3 {
+    border-left: 1px solid;
+    margin-left: 8%;
+}
+.inline1 {
+    display: inline-block;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.top1{
+	vertical-align:0.6em;
+	}
+.InputAndDoneTbl {
+    width: 100%;
+    float: right;
+}
+.clr {
+    color: #00c;
+    font-size: 0.7em;
+    text-align: center;
+}
+.doneDiv {
+    width: 62%;
+}
+.InptDnTd0 {
+    width: 16%;
+}
+.InptDnTd1,.InptDnTd3,.InptDnTd5 {
+    width: 22%;
+}
+.InptDnTd2,.InptDnTd4,.InptDnTd6 {
+    width: 6%;
+}
+.div1 {
+    width: 45%;
+}
+.div2 {
+    width: 53%;
+}
+}
+
+@media (min-width: 931px) and (max-width: 1010px)
+{
+.blankMessage_New, .incomplete_New 
+{
+    margin-top: 12%;
+    margin-left: 30%;
+}
+
+.solutionMainSteps {
+    width: 100%;
+    margin-left: 0%;
+}
+.forAutoWidth {
+	margin-left:auto;
+	margin-right:auto;
+	}
+.ClickToAnsDiv {
+    width: auto;
+    white-space: nowrap;
+    margin-top: 6%;
+}
+.hidden {
+    visibility: hidden;
+    font-size: 10px;
+}
+.border {
+    border-bottom: 1px solid;
+}
+.tab3 {
+    border-left: 1px solid;
+    margin-left: 8%;
+}
+.inline1 {
+    display: inline-block;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.top1{
+	vertical-align:0.6em;
+	}
+.InputAndDoneTbl {
+    width: 100%;
+    float: right;
+}
+.clr {
+    color: #00c;
+    font-size: 0.7em;
+    text-align: center;
+}
+.doneDiv {
+    width: 62%;
+}
+.InptDnTd0 {
+    width: 16%;
+}
+.InptDnTd1,.InptDnTd3,.InptDnTd5 {
+    width: 22%;
+}
+.InptDnTd2,.InptDnTd4,.InptDnTd6 {
+    width: 6%;
+}
+.div1 {
+    width: 45%;
+}
+.div2 {
+    width: 53%;
+}
+}
+@media (min-width: 450px) and (max-width: 1100px)
+{
+.PromptClip{ right:0em!important;}
+}
+@media (min-width: 1011px) and (max-width: 1100px)
+{
+.blankMessage_New, .incomplete_New 
+{
+    margin-top: 23%;
+    margin-left: 30%;
+}
+
+.ClickToAnsDiv {
+    width: auto;
+    white-space: nowrap;
+    margin-top: 4%;
+}
+.solutionMainSteps {
+    width: 100%;
+    margin-left: 0%;
+}
+.forAutoWidth {
+	margin-left:auto;
+	margin-right:auto;
+	}
+.fr1{
+	border-right:1px solid;
+	}
+.hidden {
+    visibility: hidden;
+    font-size: 10px;
+}
+.border {
+    border-bottom: 1px solid;
+}
+.tab3 {
+    border-left: 1px solid;
+    margin-left: 8%;
+}
+.inline1 {
+    display: inline-block;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.top1{
+	vertical-align:0.6em;
+	}
+.InputAndDoneTbl {
+    width: 100%;
+    float: right;
+}
+.clr {
+    color: #00c;
+    font-size: 0.7em;
+    text-align: center;
+}
+.doneDiv {
+    width: 62%;
+}
+.InptDnTd0 {
+    width: 16%;
+}
+.InptDnTd1,.InptDnTd3,.InptDnTd5 {
+    width: 22%;
+}
+.InptDnTd2,.InptDnTd4,.InptDnTd6 {
+    width: 6%;
+}
+.div1 {
+    width: 45%;
+}
+.div2 {
+    width: 53%;
+}
+}
+@media (min-width: 450px) and (max-width: 1100px)
+{
+	.input{ font-size:75%!important;}
+}
+@media (min-width: 1101px) and (max-width: 1400px)
+{
+.clr {
+    color: #00c;
+    font-size: 0.8em;
+    text-align: center;
+}
+.top1{
+	vertical-align: 0.8em;
+	}
+.top {
+    vertical-align: -0.3em;
+}
+.div2 {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    border-left: 2px solid;
+}
+.div1 {
+    width: 48%;
+    display: inline-block;
+    float: left;
+}
+.bullet {
+    color: #c00;
+    font-size: 1.6em;
+    width: 6%;
+}
+.top_t{
+	vertical-align:0em;
+	}
+.h_f{
+	font-size:0%;
+	}
+.tab_t{
+	margin-left:2%;
+	}
+.InputAndDoneTbl {
+    width: 100%;
+    float: right;
+}
+.clr1 {
+    font-size: 0.8em;
+}
+
+
+
+
+}
+
+
+
+@media (min-width: 1401px) and (max-width: 1550px)
+{
+.clr {
+    color: #00c;
+    font-size: 0.8em;
+    text-align: center;
+}
+.top1{
+	vertical-align: 0.8em;
+	}
+.top {
+    vertical-align: -0.3em;
+}
+.div2 {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    border-left: 2px solid;
+}
+.div1 {
+    width: 48%;
+    display: inline-block;
+    float: left;
+}
+.bullet {
+    color: #c00;
+    font-size: 1.6em;
+    width: 6%;
+}
+.top_t{
+	vertical-align:0em;
+	}
+.h_f{
+	font-size:0%;
+	}
+.tab_t{
+	margin-left:2%;
+	}
+.InputAndDoneTbl {
+    width: 100%;
+    float: right;
+}
+.clr1 {
+    font-size: 0.8em;
+}
+
+
+
+
+}
+
+@media (min-width: 1551px) and (max-width: 1700px)
+{
+.clr {
+    color: #00c;
+    font-size: 0.8em;
+    text-align: center;
+}
+.top1{
+	vertical-align: 0.8em;
+	}
+.top {
+    vertical-align: -0.3em;
+}
+.div2 {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    border-left: 2px solid;
+}
+.div1 {
+    width: 48%;
+    display: inline-block;
+    float: left;
+}
+.bullet {
+    color: #c00;
+    font-size: 1.6em;
+    width: 6%;
+}
+.top_t{
+	vertical-align:0em;
+	}
+.h_f{
+	font-size:0%;
+	}
+.tab_t{
+	margin-left:2%;
+	}
+.InputAndDoneTbl {
+    width: 100%;
+    float: right;
+}
+.clr1 {
+    font-size: 0.8em;
+}
+
+
+
+
+}
+
+@media (min-width: 1701px) and (max-width: 1850px)
+{
+
+.clr {
+    color: #00c;
+    font-size: 0.8em;
+    text-align: center;
+}
+.top1{
+	vertical-align: 0.8em;
+	}
+.top {
+    vertical-align: -0.3em;
+}
+.div2 {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    border-left: 2px solid;
+}
+.div1 {
+    width: 48%;
+    display: inline-block;
+    float: left;
+}
+.bullet {
+    color: #c00;
+    font-size: 1.6em;
+    width: 6%;
+}
+.top_t{
+	vertical-align:0em;
+	}
+.h_f{
+	font-size:0%;
+	}
+.tab_t{
+	margin-left:2%;
+	}
+.InputAndDoneTbl {
+    width: 100%;
+    float: right;
+}
+.clr1 {
+    font-size: 0.8em;
+}
+
+
+
+
+}
+
+@media (min-width: 1851px) and (max-width: 2000px)
+{
+.clr {
+    color: #00c;
+    font-size: 0.8em;
+    text-align: center;
+}
+.top1{
+	vertical-align: 0.8em;
+	}
+.top {
+    vertical-align: -0.3em;
+}
+.div2 {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    border-left: 2px solid;
+}
+.div1 {
+    width: 48%;
+    display: inline-block;
+    float: left;
+}
+.bullet {
+    color: #c00;
+    font-size: 1.6em;
+    width: 6%;
+}
+.top_t{
+	vertical-align:0em;
+	}
+.h_f{
+	font-size:0%;
+	}
+.tab_t{
+	margin-left:2%;
+	}
+.InputAndDoneTbl {
+    width: 100%;
+    float: right;
+}
+.clr1 {
+    font-size: 0.8em;
+}
+
+
+
+
+
+}
+
+@media (min-width: 2001px)
+{
+.clr {
+    color: #00c;
+    font-size: 0.8em;
+    text-align: center;
+}
+.top1{
+	vertical-align: 0.8em;
+	}
+.top {
+    vertical-align: -0.3em;
+}
+.div2 {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    border-left: 2px solid;
+}
+.div1 {
+    width: 48%;
+    display: inline-block;
+    float: left;
+}
+.bullet {
+    color: #c00;
+    font-size: 1.6em;
+    width: 6%;
+}
+.top_t{
+	vertical-align:0em;
+	}
+.h_f{
+	font-size:0%;
+	}
+.tab_t{
+	margin-left:2%;
+	}
+.InputAndDoneTbl {
+    width: 100%;
+    float: right;
+}
+.clr1 {
+    font-size: 0.8em;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 370px) and (orientation:portrait)
+{
+.solutionMainSteps 
+{
+    width: 93%;
+    margin-left: 7%;
+}
+.mar
+{
+	margin-top:4%;
+}
+.blankMessage_New, .incomplete_New
+{
+    margin-top: 297px;
+    margin-left: 30%;
+}
+
+
+
+.forAutoWidth{
+	border-collapse:collapse;
+	}
+
+
+.tab2{
+	margin-left:22%;
+	}
+
+.hidden1{
+	visibility:hidden;
+	}
+.ClickToAnsDiv {
+    margin-top: 21px;
+}
+.forAutoWidth1 {
+	    margin-left: auto;
+    margin-right: auto;
+	}
+	.InptDnTd1 {
+    width: 25%;
+    padding-top: 2%;
+}
+.border {
+    border-bottom: 1px solid;
+}
+.inline1 {
+    display: inline-block;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+.question {
+    margin-top: 4px;
+}
+.blankMessage_New {
+	margin-left::20px;
+	}
+.top1{
+	vertical-align: 0.8em;
+	}	
+}
+
+
+@media (min-width: 371px) and (max-width: 420px) and (orientation:portrait)
+{ 
+
+}
+
+
+@media (min-width: 421px) and (max-width: 470px) and (orientation:portrait)
+{
+.solutionMainSteps 
+{
+    width: 93%;
+    margin-left: 7%;
+}
+.mar
+{
+	margin-top:4%;
+}
+.blankMessage_New, .incomplete_New {
+    margin-top: 305px;
+    margin-left: 30%;
+}
+
+
+.tab2{
+	margin-left:22%;
+	}
+
+.hidden1{
+	visibility:hidden;
+	}
+.ClickToAnsDiv {
+    margin-top: 25px;
+}
+.forAutoWidth1 {
+	    margin-left: auto;
+    margin-right: auto;
+	}
+.top1{
+	vertical-align: 0.8em;
+	}
+.top2{
+	vertical-align: 0.2em;
+	}
+
+}
+
+@media (min-width: 471px) and (max-width: 520px) and (orientation:portrait)
+{
+.solutionMainSteps 
+{
+    width: 93%;
+    margin-left: 7%;
+}
+.mar
+{
+	margin-top:4%;
+}
+.blankMessage_New, .incomplete_New {
+    margin-top: 305px;
+    margin-left: 30%;
+}
+
+.tab2{
+	margin-left:22%;
+	}
+
+.hidden1{
+	visibility:hidden;
+	}
+.ClickToAnsDiv {
+    margin-top: 25px;
+}
+.forAutoWidth1 {
+	    margin-left: auto;
+    margin-right: auto;
+	}
+.top1{
+	vertical-align: 0.8em;
+	}
+.top2 {
+    vertical-align: 0em;
+}
+
+}
+
+
+@media (min-width: 521px) and (max-width: 560px) and (orientation:portrait)
+{
+.solutionMainSteps 
+{
+    width: 93%;
+    margin-left: 7%;
+}
+.mar
+{
+	margin-top:4%;
+}
+.blankMessage_New, .incomplete_New {
+    margin-top: 315px;
+    margin-left: 40%;
+}
+
+
+.tab2{
+	margin-left:22%;
+	}
+
+.hidden1{
+	visibility:hidden;
+	}
+.ClickToAnsDiv {
+    margin-top: 25px;
+}
+.forAutoWidth1 {
+	    margin-left: auto;
+    margin-right: auto;
+	}
+	.top1{
+	vertical-align: 0.8em;
+	}
+.top2 {
+    vertical-align: 0em;
+}
+.InptDnTd1 {
+    width: 22%;
+    
+}
+.InptDnTd2 {
+    width: 5%;
+  
+}
+.InptDnTd3 {
+    width: 22%;
+  
+}
+.InptDnTd4{
+	  width: 5%;
+  
+	}
+	
+.InptDnTd5{
+	 width: 22%;
+  
+	}
+.InptDnTd6{
+	 width: 5%;
+    
+	}
+.InptDnTd7{
+	width:10%;
+	}
+
+.InptDnTd0{
+	width:9%;
+	white-space:nowrap;
+	}
+}
+
+
+@media (min-width: 561px) and (max-width: 640px) and (orientation:portrait)
+{
+.solutionMainSteps 
+{
+    width: 93%;
+    margin-left: 7%;
+}
+.mar
+{
+	margin-top:4%;
+}
+.blankMessage_New, .incomplete_New {
+    margin-top: 315px;
+    margin-left: 40%;
+}
+
+
+
+
+.tab2{
+	margin-left:22%;
+	}
+
+.hidden1{
+	visibility:hidden;
+	}
+.ClickToAnsDiv {
+    margin-top: 25px;
+}
+
+
+.forAutoWidth1 {
+	    margin-left: auto;
+    margin-right: auto;
+	}
+.top1{
+	vertical-align: 0.8em;
+	}
+.InptDnTd1 {
+    width: 22%;
+    
+}
+.InptDnTd2 {
+    width: 5%;
+  
+}
+.InptDnTd3 {
+    width: 22%;
+  
+}
+.InptDnTd4{
+	  width: 5%;
+  
+	}
+	
+.InptDnTd5{
+	 width: 22%;
+  
+	}
+.InptDnTd6{
+	 width: 5%;
+    
+	}
+.InptDnTd7{
+	width:10%;
+	}
+
+.InptDnTd0{
+	width:9%;
+	white-space:nowrap;
+	}
+
+.top2 {
+    vertical-align: 0em;
+}
+
+}
+
+
+@media (min-width:641px) and (max-width: 720px) and (orientation:portrait)
+{
+.solutionMainSteps 
+{
+    width: 93%;
+    margin-left: 7%;
+}
+.mar
+{
+	margin-top:4%;
+}
+.blankMessage_New, .incomplete_New {
+    margin-top: 360px;
+    margin-left: 40%;
+}
+
+.tab2{
+	margin-left:22%;
+	}
+
+.hidden1{
+	visibility:hidden;
+	}
+.ClickToAnsDiv {
+    margin-top: 25px;
+}
+.forAutoWidth1 {
+	    margin-left: auto;
+    margin-right: auto;
+	}
+.top1{
+	vertical-align: 0.8em;
+	}
+.top2 {
+    vertical-align: 0em;
+}
+
+}
+
+
+@media (min-width: 721px) and (max-width: 800px) and (orientation:portrait)
+{
+.solutionMainSteps 
+{
+    width: 93%;
+    margin-left: 7%;
+}
+.mar
+{
+	margin-top:4%;
+}
+.blankMessage_New, .incomplete_New {
+    margin-top: 400px;
+    margin-left: 40%;
+}
+
+.tab2{
+	margin-left:22%;
+	}
+
+.hidden1{
+	visibility:hidden;
+	}
+.ClickToAnsDiv {
+    margin-top: 25px;
+}
+.forAutoWidth1 {
+	    margin-left: auto;
+    margin-right: auto;
+	}
+.top1{
+	vertical-align: 0.8em;
+	}
+.top2 {
+    vertical-align: 0em;
+}
+}
+
+
+@media (min-width: 801px) and (max-width: 880px) and (orientation:portrait)
+{
+.solutionMainSteps 
+{
+    width: 93%;
+    margin-left: 7%;
+}
+.mar
+{
+	margin-top:4%;
+}
+.blankMessage_New, .incomplete_New {
+    margin-top: 415px;
+    margin-left: 40%;
+}
+
+.tab2{
+	margin-left:22%;
+	}
+
+.hidden1{
+	visibility:hidden;
+	}
+.ClickToAnsDiv {
+    margin-top: 25px;
+}
+.forAutoWidth1 {
+	    margin-left: auto;
+    margin-right: auto;
+	}
+.top1{
+	vertical-align: 0.8em;
+	}
+.top2 {
+    vertical-align: 0em;
+}
+}
+
+
+@media (min-width: 881px) and (max-width: 960px) and (orientation:portrait)
+{
+.solutionMainSteps 
+{
+    width: 93%;
+    margin-left: 7%;
+}
+.mar
+{
+	margin-top:4%;
+}
+.blankMessage_New, .incomplete_New {
+    margin-top: 380px;
+    margin-left: 64%;
+}
+
+
+
+
+
+.tab2{
+	margin-left:22%;
+	}
+
+.hidden1{
+	visibility:hidden;
+	}
+.ClickToAnsDiv {
+    margin-top: 25px;
+}
+
+.forAutoWidth1 {
+	    margin-left: auto;
+    margin-right: auto;
+	}
+
+.top1{
+	vertical-align: 0.8em;
+	}
+.top2 {
+    vertical-align: 0em;
+}
+}
+
+@media (min-width: 961px) and (max-width: 1040px) and (orientation:portrait)
+{
+.solutionMainSteps 
+{
+    width: 93%;
+    margin-left: 7%;
+}
+.mar
+{
+	margin-top:4%;
+}
+.blankMessage_New, .incomplete_New {
+    margin-top: 520px;
+    margin-left: 43%;
+}
+.tab2{
+	margin-left:22%;
+	}
+
+.hidden1{
+	visibility:hidden;
+	}
+.ClickToAnsDiv {
+    margin-top: 25px;
+}
+.forAutoWidth1 {
+	    margin-left: auto;
+    margin-right: auto;
+	}
+.top1{
+	vertical-align: 0.8em;
+	}
+}
+
+
+@media (min-width: 1041px)  and (orientation:portrait)
+{
+.solutionMainSteps 
+{
+    width: 93%;
+    margin-left: 7%;
+}
+.mar
+{
+	margin-top:4%;
+}               
+.blankMessage_New, .incomplete_New {
+    margin-top: 540px;
+    margin-left: 43%;
+}
+.tab2{
+	margin-left:22%;
+	}
+
+.hidden1{
+	visibility:hidden;
+	}
+.ClickToAnsDiv {
+    margin-top: 25px;
+}
+.forAutoWidth1 {
+	    margin-left: auto;
+    margin-right: auto;
+	}
+.top1{
+	vertical-align: 0.8em;
+	}	
+}
+@media (min-width: 320px) and (orientation:portrait){
+.landscape{
+	display:none;
+	}	
+.portrait{
+	display:block;
+	}
+	.border {
+    border-bottom: 1px solid;
+}
+.inline1 {
+    display: inline-block;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.question {
+    margin-top: 4px;
+}
+
+.div1 {
+    width: 97%;
+    display: inline-block;
+    float: left;
+}
+.div2 {
+    width: 97%;
+    display: inline-block;
+    float: left;
+    border-left: 0px solid;
+}
+.div2 {
+    width: 97%;
+    display: inline-block;
+    float: left;
+    border-left: 0px solid;
+   
+}
+
+.div1 {
+    width: 90%;
+    display: inline-block;
+    float: left;
+}
+.clr {
+    color: #00c;
+    font-size: 0.8em;
+    text-align: center;
+}
+.InputAndDoneTbl {
+    width: 100%;
+    float: right;
+}
+.doneDiv {
+    width: 63%;
+}
+.table1 {
+    margin: 0%;
+    margin-right: 0%;
+	
+}
+
+.PromptClip{ right:0em!important;}
+.PortNeedHelp{ display:flex; flex-direction:column;}
+.TDWidth{ border:none;}
+.solutionMainSteps {
+    width: 99%;
+    margin-left: 0%;
+}
+.leftTest{ text-align:left!important;}
+	}
+	
+	
+/*----- 27 -------*/
+
+ 
+/*----- 27 -------*/
+
+.tab:focus,.done1:focus
+{
+	outline:none;
+}
+.remark{display:inline-block;}
+.header {
+	
+	background-image: none;
+ 	
+}
+
+
+
+.SolutionRemark
+{
+	float:left;
+	display:inline-block;
+}
+.doneDiv{
+	float:none;	
+		}
+
+.prompt_New,.remark{
+	position:absolute;
+	line-height:100%;
+	width:auto;
+	margin-left:unset;
+	margin-top::unset;
+	float:none;
+	display:inline-block;
+	vertical-align:top;
+	top:0.2em;
+	right:0em;
+	}
+.remark{
+	padding-top:0px;
+	}	
+.ClickToAnsDiv{
+	position:absolute;
+	margin-left:0%;
+	margin-right:0%;
+	margin-top:0%;
+	bottom:2%;
+	right:2%;
+	}	
+	.header{
+		position:relative;
+		}
+
+.inputAndDoneSpaceFordevice {
+
+    margin-top: 0px;
+
+}
+.NotesForF {
+    position: absolute;
+    bottom: -82%;
+    left: -19%;
+    white-space: nowrap;
+    font-size: 0.75em;
+    color: deeppink;
+}
+ .PromptClip{right: -3.2em;}
+ .GraphSvg_div{ pointer-events:none!important;}
+ .GraphSvg_div{ width:100%!important;}
+ .landscape{display: flex;justify-content: center;}

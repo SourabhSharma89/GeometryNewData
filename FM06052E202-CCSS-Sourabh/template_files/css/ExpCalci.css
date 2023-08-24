@@ -1,0 +1,393 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header
+{
+	min-height:50px;
+	position:relative;
+}
+
+.vb{
+	vertical-align:bottom;
+}
+.newTabBtn{
+	width:22%;
+	margin-left:2%;
+	margin-top:8px;
+}
+.commaBtn{
+	position:absolute;
+	left:40%;
+	top:-25%;
+}
+
+
+@media (min-width: 450px) and (max-width: 530px)
+{
+	  .newTabBtn {
+		margin-top: 1px;
+	  } 	
+}
+
+@media (min-width: 531px) and (max-width: 610px)
+{
+	  .newTabBtn {
+		margin-top: 1px;
+	  } 	
+}
+ 
+@media (min-width: 611px) and (max-width: 690px)
+{
+	  .newTabBtn {
+        height: 17px;
+		margin-top: 0.5px;
+	  } 		
+}
+
+@media (min-width: 691px) and (max-width: 770px)
+{
+	  .newTabBtn {
+        height: 18px;
+		margin-top: 4px;
+	  } 	
+}
+
+@media (min-width: 771px) and (max-width: 850px)
+{
+	  .newTabBtn {
+        height: 18px;
+		margin-top: 4px;
+	  } 	
+}
+
+
+@media (min-width: 1101px) and (max-width: 1400px) 
+{	
+
+	.RootInfo 
+	{ 
+		top: 3%;   
+	}
+	.spec_char
+	{
+		font-size:14px;	
+	}
+.commaBtn{
+	font-size:18px;
+}
+
+ .vb,.TCB
+	{
+		height:26px;
+	}
+	
+	.newTabBtn{
+	margin-top: 8px;
+	margin-left: 2%;
+	height:26px;
+	width:22%;
+}
+}
+ 
+	
+	
+@media (min-width: 1401px) and (max-width: 1550px)
+{
+	.dropdownSquareRoot 
+	{
+		margin-top: 2% !important;
+	}
+	
+	.vb,.TCB
+	{
+		height:28px;
+	}
+	.spec_char
+	{
+		font-size:18px;
+	}
+	.commaBtn{
+	font-size:22px;
+}
+.newTabBtn{
+	margin-top: 8px;
+	margin-left: 2%;
+	height:28px;
+	width:22%;
+}
+
+
+}
+@media (min-width: 1551px) and (max-width: 1700px) 
+{
+	.dropdownSquareRoot
+	{
+		margin-top: 1.8% !important;
+	}
+	.ArrowUpDsk
+	{
+		position: absolute;
+		width: 4.3% !important;
+	}
+	
+	.vb,.TCB
+	{
+		height:30px;
+	}
+	.spec_char
+	{
+		font-size:18px;
+	}
+	.commaBtn{
+	font-size:22px;
+}
+.newTabBtn{
+	margin-top: 8px;
+	margin-left: 2%;
+	height:30px;
+	width:22%;
+}
+ 
+}	
+@media (min-width: 1701px) and (max-width: 1850px)
+{
+	.dropdownSquareRoot
+	{
+		margin-top: 1.8% !important;
+	}
+	.ArrowUpDsk
+	{
+		position: absolute;
+		width: 4.3% !important;
+	}
+	
+	.vb,.TCB
+	{
+		height:30px;
+	}
+	.spec_char
+	{
+		font-size:18px;
+	}
+	.commaBtn{
+	font-size:22px;
+}
+.newTabBtn{
+	margin-top: 8px;
+	margin-left: 2%;
+	height:30px;
+	width:22%;
+}
+
+}
+@media (min-width: 1851px) and (max-width: 2000px)
+{
+	.dropdownSquareRoot
+	{
+		margin-top: 2% !important; 
+	}
+	.ArrowUpDsk
+	{
+		position: absolute;
+		width: 3.8% !important;
+	}  
+	.vb,.TCB
+	{
+		height:32px;
+	}
+	.spec_char
+	{
+		font-size:20px;
+	}
+		.commaBtn{
+	font-size:24px;
+}
+.newTabBtn{
+	margin-top: 8px;
+	margin-left: 2%;
+	height:32px;
+	width:22%;
+}
+}
+@media (min-width: 2001px)
+{
+	.vb,.TCB
+	{
+		height:34px;
+	}
+	.spec_char
+	{
+		font-size:22px;
+	}	
+	.commaBtn{
+	font-size:28px;
+}
+.newTabBtn{
+	margin-top: 8px;
+	margin-left: 2%;
+	height:34px;
+	width:22%;
+}
+}
+
+
+
+/*/////////////////////////////////////////////////////////*/
+.HowGridPloating
+{
+    width: 100%;
+	 border: 2px solid green;
+    padding: 0.2em!important;
+    padding-left: 0.5em!important;
+	position:absolute;
+	font-size:0.75em;
+	background-color:#cc990038;
+	left:100%;
+	top:5%;
+	font-family: cursive;
+	color:blue;
+
+}	
+.new_h
+{
+    width: 69% ;
+}
+.new_calc_btn
+{
+    margin-left: 2%;
+	width:10%;
+}
+/*.SolutionRemark
+{
+    position: absolute;
+    bottom: 0%;
+    left: 2%;
+	background:none;
+	width:90%;
+}*/
+
+.newSqrtBtn{
+	width:22%;
+}
+.ClickToAnsDiv{
+	z-index:10;
+}
+.TCB
+{
+	margin-left: 3%;
+    width: 18%;
+}
+.newClearBtn
+{
+	margin-left:-1%;
+}
+.newDelBtn
+{
+	margin-left:3%;
+}
+
+
+
+
+/*/////////////////////////////*/
+.RootBtn1
+{
+    width: 100%;
+    height: 100%;
+}
+
+.ArrowUpDsk
+{
+	z-index:1;
+    position: absolute;
+    width: 5%;
+    top: 93%;
+	left:13%;
+}
+.RootInfo
+{
+	background:white;
+	z-index:5;
+    position: absolute;
+    right: 3.5%;
+    top: 3.6%;
+}
+.dropdownSquareRoot
+{
+    margin-left: 2%;
+}
+/*/////////////////////////////////////////////////////////*/
+
+.newSqrtBtn{
+	width:22%;
+	margin-top:8px;
+	}
+	
+
+/*//////////////////////FOR ROOT///////////////////////////*/
+.mainRootDiv
+{
+    position:relative;
+    display:inline-block;
+}		
+.Rootline1
+{
+    height:85%;	
+    position:absolute;
+    border-right:1.5px solid ;
+    left:0%;
+    transform-origin:bottom right;
+    transform:rotate(10deg);
+}		
+.Rootline2
+{
+    height:40%;	
+    position:absolute;
+    border-right:1.5px solid ;
+    left:0%;
+    bottom:15%;
+    transform-origin:bottom right;
+    transform:rotate(-30deg);
+}		
+.Rootline3
+{
+    height:40%;	
+    position:absolute;
+    border-right:1.5px solid ;
+    bottom:100%;
+    transform-origin:bottom right;
+    transform:rotate(-90deg);
+}
+.Rootline4 
+{
+    height: 40%;
+    position: absolute;
+    border-left: 15px solid white;
+    top: 16%;
+    right: 0;
+    transform-origin: top right;
+    transform: rotate(90deg);
+    z-index: 37;
+}
+.contentDiv
+{
+    display:inline-block;	
+}
+.RootborderTop
+{
+    border-top:2px solid ;
+}
+.ClickToAnsDiv{
+	position:absolute;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+	bottom:2%;
+	right:2%;
+}
+.inputAndDoneSpaceFordevice {
+    margin-top: 0px;
+}
+.header{
+	position:relative;
+}/*/////////////////////////////////////////////////////////*/

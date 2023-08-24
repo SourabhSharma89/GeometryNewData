@@ -1,0 +1,126 @@
+@media (min-width: 450px) and (max-width: 530px) {
+.input {height: 12px !important;}
+.done1 {width: 48px !important;height: 20px!important;}
+} 
+
+@media (min-width: 531px) and (max-width: 610px) {
+.input {height: 12px !important;}
+.done1 {width: 48px !important;height: 20px!important;}
+
+}
+
+@media (min-width: 611px) and (max-width: 690px) {
+.input {height: 15px !important;}
+.done1 {font-size: 12px!important;  width: 48px !important;height: 20px!important;}
+}
+
+@media (min-width: 691px) and (max-width: 770px) {
+.input {height: 18px !important;}
+.done1 {font-size: 15px!important; width: 55px !important;height: 25px!important;}
+}
+
+@media (min-width: 771px) and (max-width: 850px) {
+.input {height: 24px !important;}
+.done1 {font-size: 15px!important; width: 55px !important;height: 25px!important;}
+} 
+
+@media (min-width: 851px) and (max-width: 930px) {
+.input {height: 22px !important;}
+.done1 {font-size: 15px!important; width: 58px !important;height: 30px!important;}
+} 
+
+@media (min-width: 931px) and (max-width: 1010px) {
+.input {height: 27px !important;}
+.done1 {font-size: 15px!important; width: 65px !important;height: 30px!important;}
+}
+
+@media (min-width: 1011px) and (max-width: 1100px) {
+.input {height: 22px !important;}
+.done1 {font-size: 15px!important; width: 60px !important;height: 35px!important;}
+} 
+
+@media (min-width: 1101px) and (max-width: 1285px) {				
+.input {height: 22px !important;}
+.done1 {font-size: 15px!important; width: 67px !important;height: 35px!important;}
+} 
+
+@media (min-width: 1286px) and (max-width: 1400px) {
+} 
+
+@media (min-width: 1401px) and (max-width: 1550px) {
+} 
+
+@media (min-width: 1551px) and (max-width: 1700px) {
+}
+
+@media (min-width: 1701px) and (max-width: 1850px) {
+} 
+
+@media (min-width: 1851px) and (max-width: 2000px) {	
+} 
+
+@media (min-width: 2001px) {
+}
+
+
+
+ 					/*<-- Portrait-->*/
+
+
+@media (min-width: 320px) and (orientation:portrait){
+}
+
+
+@media (min-width: 320px) and (max-width: 370px) and (orientation:portrait) {
+.done1 { font-size: 11px!important; width: 40px !important;height: 25px!important;}
+.input{ height: 17px!important;}
+
+} @media (min-width: 371px) and (max-width: 420px) and (orientation:portrait) {
+.done1 { font-size: 11px!important; width: 40px !important;height: 25px!important;}
+.input{ height: 20px!important;}
+} @media (min-width: 421px) and (max-width: 470px) and (orientation:portrait) {
+.done1 { font-size: 11px!important; width: 40px !important;height: 25px!important;}
+.input{ height: 20px!important;}
+
+
+} @media (min-width: 471px) and (max-width: 520px) and (orientation:portrait) {
+.done1 { font-size: 11px!important; width: 55px !important; height: 25px!important; }
+.input{ height: 20px!important;}
+
+
+} @media (min-width: 521px) and (max-width: 560px) and (orientation:portrait) {
+.done1 { font-size: 11px!important; width: 55px !important; height: 25px!important; }
+.input{ height: 20px!important;}
+
+} @media (min-width: 561px) and (max-width: 640px) and (orientation:portrait) {
+.done1 { font-size: 11px!important; width: 55px !important; height: 25px!important; }
+.input{ height: 20px!important;}
+
+} @media (min-width:641px) and (max-width: 720px) and (orientation:portrait) {
+.done1 { font-size: 11px!important; width: 55px !important; height: 25px!important; }
+.input{ height: 20px!important;}
+
+} @media (min-width: 721px) and (max-width: 800px) and (orientation:portrait) {
+.done1 { font-size: 11px!important; width: 55px !important; height: 25px!important; }
+.input{ height: 20px!important;}
+
+} @media (min-width: 801px) and (max-width: 880px) and (orientation:portrait) {
+.done1 { font-size: 11px!important; width: 55px !important; height: 25px!important; }
+.input{ height: 20px!important;}
+
+} @media (min-width: 881px) and (max-width: 960px) and (orientation:portrait) {
+.done1 { font-size: 11px!important; width: 55px !important; height: 25px!important; }
+.input{ height: 20px!important;}
+
+} @media (min-width: 961px) and (max-width: 1040px) and (orientation:portrait) {
+.done1 { font-size: 11px!important; width: 55px !important; height: 25px!important; }
+.input{ height: 25px!important;}
+
+} @media (min-width: 1041px) and (orientation:portrait) {
+.done1 { font-size: 11px!important; width: 55px !important; height: 25px!important; }
+.input{ height: 25px!important;}
+
+} 
+
+
+

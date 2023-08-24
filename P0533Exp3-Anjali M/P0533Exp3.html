@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html class="full" lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9,10,11 IE=EDGE" />
+<meta name="viewport" content="width=device-width">
+
+
+<link type="text/css" rel="stylesheet" href="https://www.educosoft.com/sharedSite/HTML5Common/MFExample/RFHC_baseForExample_V2.css">
+<script src="template_files/jquery/jquery.min.js"></script>
+<script src="template_files/jquery/calci.js"></script> 
+<script src="template_files/jquery/functionUses.js"></script>
+<script src="content_files/content.js"></script>
+<script src="content_files/app.js"></script> 
+<script src="https://www.educosoft.com/sharedSite/HTML5Common/MFExample/baseForExample_V1.js"></script>
+<script src="template_files/jquery/middleForAll.js"></script>
+<link type="text/css" rel="stylesheet" href="content_files/content.css">
+<link type="text/css" rel="stylesheet" href="template_files/css/ExpCalci.css">
+<script src="template_files/jquery/container_height.js"></script>
+
+<!--<link type="text/css" rel="stylesheet" href="template_files/css/RFHC_baseForExample_V2.css">
+<script src="template_files/jquery/jquery.min.js"></script>
+<script src="template_files/jquery/calci.js"></script> 
+<script src="template_files/jquery/functionUses.js"></script>
+<script src="content_files/content.js"></script>
+<script src="content_files/app.js"></script> 
+<script src="template_files/jquery/baseForExample_V1.js"></script>
+<script src="template_files/jquery/middleForAll.js"></script> 
+<link type="text/css" rel="stylesheet" href="content_files/content.css">
+-->
+</head>
+<body>
+
+
+<div class="warning">
+
+<div class="OrientImage"><img src="image/orientationExample.png" alt="Orientation Change" class="orient"></div>
+
+</div>
+
+<div class="container-fluid">
+<div class="header">
+<div class="new_h">
+	<div class="section1"><h3>Objective: <font color='#009'> Graphing Logarithmic Functions  </font></h3></div><!-- section1 closed-->
+    <div class="wholeSection">
+	<div class="section2">
+    	<input type="button" value="New Version" class="newSet headerButton" onClick="nextQuesGeneration()">
+        <input type="button" value="Solution" class="solution headerButton" onClick="showSolution()">
+    </div><!-- section2 closed-->
+    <div class="section3">
+    	<div class="questionSection">
+            <div class="question bold">
+            	<span class="normal">Find the zero(s), vertical asymptote and domain of the function</span>&nbsp;&nbsp;<span class="pre2">
+                         <span class="blue_color">  <i>f</i> ( <i>x</i> ) &nbsp;=&nbsp;  log <sub><small>2</small></sub> ( <span class="val1"></span> <i>x</i> &nbsp;–&nbsp; <span class="val2"></span> )</span><span class="normal">.</span></span>
+         
+         
+            </div><!-- div question-->
+        	<div class="ClickToAnsDiv"> Click here to enter answer </div> 
+        </div>	<!-- questionSection closed-->
+        
+      <div class="inputAndDoneSpace">        
+        <table class="InputAndDoneTbl">
+           <tr>
+             
+              <td colspan="3" class="clr"><b>Zero of the function</b></td>
+               <td colspan="2"  class="blue_color clr1"><b>Vertical asymptote</b></td>
+                <td colspan=""  class="clr"><b>Domain</b></td>
+           </tr>
+        	<tr>
+        	
+                  <td class="bold InptDnTd0"><!--<i>x</i><span class="hidden">1</span>=<span class="hidden">1</span>--></td>
+                <td class="InptDnTd1">    
+                    <div class="inputDiv"><input type="text" class="input1 input" id="inputText" style="text-transform:lowercase;" spellcheck="false" tabindex="1" onKeyPress="keyPressed(event)" onFocus="myFocus(this)" autocomplete="off"/></div>
+            	</td>
+                <td class="InptDnTd2">
+                	<span class="green1">&#10004;</span> <span class="red1">&#10006;</span>
+                </td>
+          
+        		
+                 
+                <td class="InptDnTd3">    
+                    <div class="inputDiv" style="position:relative;"><div class="NotesForF">(Enter Fraction in Parentheses)</div><input type="text" class="input2 input" id="inputText1" style="text-transform:lowercase;" spellcheck="false" tabindex="2" onKeyPress="keyPressed(event)" onFocus="myFocus(this)" autocomplete="off"/></div>
+            	</td>
+                <td class="InptDnTd4">
+                	<span class="green2">&#10004;</span> <span class="red2">&#10006;</span>
+                </td>
+                 <td class="InptDnTd5">    
+                    <div class="inputDiv"><input type="text" class="input3 input" id="inputText2" style="text-transform:lowercase;" spellcheck="false" tabindex="3" onKeyPress="keyPressed(event)" onFocus="myFocus(this)" autocomplete="off"/></div>
+            	</td>
+                <td class="InptDnTd6">
+                	<span class="green3">&#10004;</span> <span class="red3">&#10006;</span>
+                </td>
+                <td class="InptDnTd7">
+                     <div class="doneDiv">
+                        <button class="done1" tabindex="4" onClick="doneButton()">Done</button>
+                    </div>
+                 </td>
+            </tr>
+            <tr>
+            	
+        		<td class="InptDnTd1" style="text-align:center;position:relative; padding-top:1em;" colspan="7">
+ 					<span class="hidden1 fntsz pre">S</span> <div class="remark">
+                         <span class="incorrect">Incorrect!</span>
+                         <span class="correct">Correct!</span>
+                         <span class="Partial">Partially Correct!</span>
+                     </div>
+                    <div class="prompt_New blankMessage_New LandScapeblankMessage"><b>Enter the value.</b></div>
+                    <div class="prompt_New PromptClip"><b>Please Enter the Parentheses.</b></div>
+                    <div class="prompt_New PromptMess"><b>Enter Fraction in Parentheses.</b></div>
+                    <div class="prompt_New incomplete_New"><b>Incomplete Answer.</b></div>
+ 
+                 </td>
+                 
+                 
+             
+            </tr>
+            </table>
+           
+        </div><!-- inputAndDoneSpace closed-->
+
+    </div>	<!-- section3 closed-->    
+    </div>	<!-- wholeSection closed-->  
+   </div>	<!-- new_h closed-->
+   
+    <div class="section4 KeypadArea">
+    	<div class="KeypadBoundary">
+        <div class="keypadNote"><b>Use me to enter the answer</b></div>
+          <div class="keypadKeys">
+          
+                  <button class="calc_btn new_calc_btn" value="1">1</button>
+                  <button class="calc_btn new_calc_btn" value="2">2</button>
+                  <button class="calc_btn new_calc_btn" value="3">3</button>
+                  <button class="calc_btn new_calc_btn" value="4">4</button>
+                  <button class="calc_btn new_calc_btn" value="5">5</button>
+                  <button class="calc_btn new_calc_btn" value="6">6</button>
+                   
+                  <button class="back ThreeCommonBtns TCB" value="back">Back</button>
+                  
+                
+                  <button class="calc_btn new_calc_btn" value="7">7</button>
+                  <button class="calc_btn new_calc_btn" value="8">8</button>
+                  <button class="calc_btn new_calc_btn" value="9">9</button>  
+                  <button class="calc_btn new_calc_btn" value="0">0</button>
+                  <button class="calc_btn new_calc_btn subtract spec_char vb" id="minus" value="-" data-value=" – "><b>–</b></button>
+                  <button class="calc_btn new_calc_btn subtract spec_char vb" id="plus" value="+" data-value="+ "><b>+</b></button>
+                  
+                  <button class="delete newDelBtn ThreeCommonBtns TCB"  value="delete">Delete</button>
+             
+                  <button class="calc_btn new_calc_btn subtract spec_char vb" id="sless" value="/" data-value=" / "><b>/</b></button>
+                  <button class="calc_btn new_calc_btn subtract spec_char vb" id="br1" value="(" data-value="( "><b>(</b></button>
+                  <button class="calc_btn new_calc_btn subtract spec_char vb" id="br2" value=")" data-value=" )"><b>)</b></button> 
+                  <button class="calc_btn new_calc_btn subtract spec_char vb" id="greater" value=">" data-value=" > "><b>></b></button>
+                  <button class="calc_btn new_calc_btn subtract spec_char vb" id="lessthen" value="<" data-value=" < "><b><</b></button>
+                  <button class="calc_btn new_calc_btn subtract spec_char vb" id="equal" value="=" data-value=" = "><b>=</b></button>
+                  
+                  
+                  <button class="clear newClearBtn ThreeCommonBtns TCB" value="Clear">Clear</button>
+                  
+                  <button class="calc_btn new_calc_btn subtract spec_char vb" id="infinity" value="∞" data-value=" ∞ "><b>∞</b></button>
+                  <button class="calc_btn new_calc_btn subtract spec_char vb" id="comma" value="," data-value=", "><b>,</b></button>
+                  <button class="calc_btn new_calc_btn subtract spec_char vb" id="x" value="x" data-value=" x "><b>x</b></button>
+                  <button class="calc_btn newTabBtn tab subtract ThreeCommonBtns"><b>Tab &nbsp; &#8644;</b></button> 
+                   
+          </div>	<!-- keypadKeys closed-->
+          
+          
+          
+      </div>	<!-- KeypadBoundary closed-->
+        
+        
+    </div>	<!-- section4 closed-->
+    
+    
+</div>	<!-- header closed-->
+
+<div class="container">
+
+
+<div class="AreaForKeypadAndInputInDevice">
+    
+     <div class="KeypadBoundary KeyPadKeyBoundaryDevice" tabindex="3">
+        	<div class="keypadNote keypadNoteDevice"><b>Use me to enter the answer</b></div>
+            <div class="keypadKeys keypadKeysDevice">
+            
+                    <button class="calc_btn KeyPadKeyDevice" value="1">1</button>
+                    <button class="calc_btn KeyPadKeyDevice" value="2">2</button>
+                    <button class="calc_btn KeyPadKeyDevice" value="3">3</button>
+                    <button class="calc_btn KeyPadKeyDevice" value="4">4</button>
+                          
+                    <button class="back ThreeCommonBtns  KeyPadKeyDevice" value="back">Back</button>
+                    
+                    <button class="calc_btn KeyPadKeyDevice" value="5">5</button>
+                    <button class="calc_btn KeyPadKeyDevice" value="6">6</button>
+                    <button class="calc_btn KeyPadKeyDevice" value="7">7</button>
+                    <button class="calc_btn KeyPadKeyDevice" value="8">8</button>
+                    
+                    <button class="delete ThreeCommonBtns KeyPadKeyDevice"  value="delete">Delete</button>
+                    
+                    <button class="calc_btn KeyPadKeyDevice" value="9">9</button>  
+                    <button class="calc_btn KeyPadKeyDevice" value="0">0</button>
+                    <button class="calc_btn subtract KeyPadKeyDevice" id="minus" value="-" data-value="– "><b>–</b></button>
+                    <button class="calc_btn subtract KeyPadKeyDevice" id="plus" value="+" data-value="+ "><b>+</b></button>
+                     
+                    <button class="clear ThreeCommonBtns KeyPadKeyDevice" value="Clear">Clear</button>
+                    
+                    <button class="calc_btn subtract KeyPadKeyDevice" id="sless" value="/" data-value=" / "><b>/</b></button>
+                 <!-- 
+                    <button class="calc_btn subtract" id="cap" value="x²" data-value="x²"><b>x <small><sup>2</sup></small></b></button>-->
+                      <button class="calc_btn subtract KeyPadKeyDevice" id="br1" value="(" data-value="( "><b>(</b></button>
+                    <button class="calc_btn subtract KeyPadKeyDevice" id="br2" value=")" data-value=" )"><b>)</b></button> 
+                    <button class="calc_btn subtract KeyPadKeyDevice" id="greater" value=">" data-value=" > "><b>></b></button>
+                          <button class="calc_btn subtract KeyPadKeyDevice" id="lessthen" value="<" data-value=" < "><b><</b></button>
+                     <button class="calc_btn subtract KeyPadKeyDevice" id="equal" value="=" data-value=" = "><b>=</b></button>
+                     <button class="calc_btn subtract KeyPadKeyDevice" id="infinity" value="∞" data-value=" ∞ "><b>∞</b></button>
+                  <button class="calc_btn subtract KeyPadKeyDevice" id="comma" value="," data-value=", "><b>,</b></button>
+                      <button class="calc_btn subtract KeyPadKeyDevice" id="x" value="x" data-value=" x "><b>x</b></button>
+                    <button class="calc_btn tab subtract ThreeCommonBtns KeyPadKeyDevice"><b>Tab &nbsp; &#8644;</b></button> 
+                    
+                  <!--  <button class="calc_btn subtract KeyPadKeyDevice" id="Minusinf" value="–∞" data-value="– ∞ "><b>– ∞</b></button>                
+                    <button class="calc_btn subtract KeyPadKeyDevice" id="inf" value="∞" data-value="∞"><b>∞</b></button>
+                    <button class="calc_btn subtract KeyPadKeyDevice" id="comma" value="," data-value=", "><b>,</b></button> 
+                       -->
+                    
+            </div>	<!-- keypadKeys closed-->
+            
+             
+            
+            
+            
+            
+        </div>	<!-- KeypadBoundary closed-->
+        
+        <div class="inputAndDoneSpaceFordevice">
+          <table class="InputAndDoneTbl">
+          	<tr>
+            	<td class="InptDnTd0"></td>
+            	<td class="InptDnTd1" colspan="5" style="position:relative;">
+                	<div class="prompt_New blankMessage_New portraitblankMessage pre"><b>Enter the value.</b></div>
+                    <div class="prompt_New PromptMess" style="top:0em;"><b>Enter Fraction in Parentheses.</b></div>
+                    <div class="prompt_New PromptClip" style="top:0em;"><b>Please Enter the Parentheses.</b></div>
+                        <div class="visibility pre fntsz">S</div>
+                        <div class="remark pre">
+                            <span class="incorrect">Incorrect!</span>
+                            <span class="correct">Correct!</span>
+                            <span class="Partial">Partially Correct!</span>
+                        </div>
+                </td>
+            </tr>
+        	 <tr>
+              <td colspan="2" class="clr"><b>Zero of the function</b></td>
+               <td colspan="2"  class="clr"><b>Vertical asymptote</b></td>
+                <td colspan="2"  class="clr"><b>Domain</b></td>
+           </tr>
+        	<tr>
+        	
+                  <td class="bold InptDnTd0"></td>
+                <td class="InptDnTd1">    
+                    <div class="inputDiv"><input type="text" class="input1 input" id="inputText" style="text-transform:lowercase;" spellcheck="false" tabindex="1" onKeyPress="keyPressed(event)" onFocus="myFocus(this)" autocomplete="off"/></div>
+            	</td>
+                <td class="InptDnTd2">
+                	<span class="green1">&#10004;</span> <span class="red1">&#10006;</span>
+                </td>
+          
+        		
+                 
+                <td class="InptDnTd3">    
+                    <div class="inputDiv" style="position:relative;"><div class="NotesForF">(Enter Fraction in Parentheses)</div><input type="text" class="input2 input" id="inputText1" style="text-transform:lowercase;" spellcheck="false" tabindex="2" onKeyPress="keyPressed(event)" onFocus="myFocus(this)" autocomplete="off"/></div>
+            	</td>
+                <td class="InptDnTd4">
+                	<span class="green2">&#10004;</span> <span class="red2">&#10006;</span>
+                </td>
+                 <td class="InptDnTd5">    
+                    <div class="inputDiv"><input type="text" class="input3 input" id="inputText2" style="text-transform:lowercase;" spellcheck="false" tabindex="3" onKeyPress="keyPressed(event)" onFocus="myFocus(this)" autocomplete="off"/></div>
+            	</td>
+                <td class="InptDnTd6">
+                	<span class="green3">&#10004;</span> <span class="red3">&#10006;</span>
+                </td>
+            </tr>
+            <tr>
+               <td class="InptDnTd7" colspan="7">
+                     <div class="doneDiv">
+                        <button class="done1" onClick="doneButton()">Done</button>
+                    </div>
+                 </td>
+                 
+            </tr>
+            </table>
+        </div>
+    
+    
+    </div><!-- AreaForKeypadAndInputInDevice -->
+
+
+
+	<div class="solutionContainer">
+    
+     
+	<div class="SolutionRemark" style="background:white">
+    	<div class="solutionText"><i>Solution</i>:</div>
+    </div>
+    
+    
+    
+    <div class="solutionMainSteps">
+   
+    	<div class="middle">
+            <div class="landscape">
+            <div class="full">
+              <div class="div1">
+            <table class="bold table1 ">
+                <tr>
+                   <td class="bullet"> <span class="top1 top_t vert_top">&#8226 </span></td>
+                   <td colspan="5"><span class="normal">To find the zeros of the function, we solve the equation</span></td>
+                </tr>
+                <tr>
+                   <td></td>
+                   <td class="right">log <sub><small>2</small></sub> ( <span class="val1"></span> <i>x</i> &nbsp;–&nbsp; <span class="val2"></span> ) <span class="hidden">1</span>=<span class="hidden">1</span>0</td>
+                   <td class="center"><span class="hidden">11</span><span class="f_size"> &#8658 </span><span class="hidden">1</span></td>
+                   <td class="right"> <span class="val1"></span> <i>x</i> &nbsp;–&nbsp; <span class="val2"></span>  </td>               
+                    <td class="center"><span class="hidden">1</span>=<span class="hidden">1</span></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                   <td></td>
+                   <td></td>
+                     <td class="center"><span class="hidden">11</span><span class="f_size"> &#8658 </span><span class="hidden">1</span></td>
+                     <td class="right"><span class="val1"></span> <i>x</i></td>
+                      <td class="center"><span class="hidden">1</span>=<span class="hidden">1</span></td>
+                      <td><span class="val3"></span></td>
+                </tr>
+                  <tr>
+                   <td></td>
+                   <td></td>
+                     <td class="center"><span class="hidden">11</span><span class="f_size"> &#8658 </span><span class="hidden">1</span></td>
+                     <td class="right"><i>x</i></td>
+                      <td class="center"><span class="hidden">1</span>=<span class="hidden">1</span></td>
+                      <td><span class="val4"></span></td>
+                </tr>
+                <tr>
+                   <td></td>
+                   <td colspan="5"><span class="normal">Thus</span>,  <span class="red_color">(&hairsp;<span class="val4"></span>, 0&hairsp;) </span> <span class="normal">is the zero of the function.</span>  </td>
+                </tr>
+            </table>
+            </div>
+             <div class="div2">
+            <table class="bold  tab_t">
+                <tr>
+                       <td class="bullet"><span class="top1"><span class="hidden h_f">1</span>&#8226 </span></td>
+                    <td><span class="normal">For the vertical asymptote, we set the argument of the logarithm to zero. We get:</span></td>
+                </tr>
+                <tr>
+                   <td></td>
+                   <td><span class="val1"></span> <i>x</i> &nbsp;–&nbsp; <span class="val2"></span> <span class="hidden">1</span>=<span class="hidden">1</span> 0 <span class="hidden">11</span><span class="f_size"> &#8658 </span><span class="hidden">11</span> <span class="val1"></span> <i>x</i> <span class="hidden">1</span>=<span class="hidden">1</span> <span class="val2"></span> <span class="hidden">11</span><span class="f_size"> &#8658 </span><span class="hidden">11</span>    <span class="">   <i>x</i><span class="hidden">1</span>=<span class="hidden">1</span><div class="fraction ">
+                            <span class="fup"><span class="val2"></span></span>
+                            <span class="bar">/</span>
+                            <span class="fdn"><span class="val1"></span></span>
+                            </div></span>
+                      </td>
+                </tr>
+                <tr>
+                   <td></td>
+                    <td><span class="normal">Therefore,</span> &nbsp;<span class="red_color"><i>x</i> <span class="hidden">1</span>=<span class="hidden">1</span> <span class="val2"></span> / <span class="val1"></span> </span> <span class="normal">is the vertical asymptote of the function.</span></td>
+                </tr>
+                <tr>
+                   <td class="bullet"><span class="top "><span class="hidden h_f">1</span>&#8226 </span></td>
+                  <td><span class="normal">Domain:  </span><span class="val1"></span> <i>x</i> &nbsp;>&nbsp; <span class="val2"></span> <span class="hidden">11</span><span class="f_size"> &#8658 </span><span class="hidden">11</span> <span class="red_color"><i>x</i> &nbsp;>&nbsp; <span class="val2"></span> / <span class="val1"></span><span style="visibility:hidden;">.1</span><em>or</em><span style="visibility:hidden;">.1</span>(&hairsp;<span class="val2"></span> / <span class="val1"></span>, ∞&hairsp;)</span><span class="normal"></span> </td>
+                </tr>
+            </table>
+            </div>
+            </div>
+            </div>
+            
+            
+            <div class="portrait">
+            <div class="full">
+              <div class="div1">
+            <table class="bold table1">
+                <tr>
+                   <td class="bullet"><span class="top1 top2">&#8226 </span></td>
+                   <td colspan="5"><span class="normal">To find the zeros of the function, we solve the equation</span></td>
+                </tr>
+                <tr>
+                   <td></td>
+                    <td></td>
+                   <td class="right">log <sub><small>2</small></sub> ( <span class="val1"></span> <i>x</i> &nbsp;–&nbsp; <span class="val2"></span> )</td>
+                   <td> <span class="hidden">1</span>=<span class="hidden">1</span></td>
+                   <td>0</td>
+                 </tr>
+                 <tr>
+                  <td></td>
+                   <td class="center"><span class="f_size"> &#8658 </span></td>
+                   <td class="right"> <span class="val1"></span> <i>x</i> &nbsp;–&nbsp; <span class="val2"></span>  </td>               
+                    <td class="center"><span class="hidden">1</span>=<span class="hidden">1</span></td>
+                    <td>1</td>
+                </tr>
+                  <tr>
+                   <td></td>
+                     <td class="center"><span class="f_size"> &#8658 </span></td>
+                     <td class="right"> <span class="val1"></span> <i>x</i></td>
+                      <td class="center"><span class="hidden">1</span>=<span class="hidden">1</span></td>
+                      <td><span class="val3"></span><span class="hidden">11</span><span class="f_size"> &#8658 </span><span class="hidden">1</span> <i>x</i> <span class="hidden">1</span>=<span class="hidden">1</span> <span class="val4"></span></td>
+                </tr>
+                 
+                <tr>
+                   <td></td>
+                   <td colspan="5"><span class="normal">Thus</span>,  <span class="red_color">(&hairsp;<span class="val4"></span>, 0&hairsp;) </span> <span class="normal">is the zero of the function.</span>  </td>
+                </tr>
+            </table>
+            </div>
+             <div class="div2">
+            <table class="bold table1">
+                <tr>
+                       <td class="bullet"><span class="top1">&#8226 </span></td>
+                    <td colspan="5"><span class="normal" >For the vertical asymptote, we set the argument of the logarithm to zero. We get:</span></td>
+                </tr>
+                
+                <tr>
+                   <td></td>
+                   <td colspan="3" class="right"><span class="val1"></span> <i>x</i> &nbsp;–&nbsp; <span class="val2"></span> <span class="hidden">1</span>=<span class="hidden">1</span> 0 </td>
+                   <td class="center"><span class="f_size"> &#8658 </span></td>
+                    <td colspan=""><span class="val1"></span> <i>x</i> <span class="hidden">1</span>=<span class="hidden">1</span> <span class="val2"></span> </td>
+                    </tr>
+                    <tr>
+                      <td ></td>
+                          <td colspan="3"></td>
+                    <td colspan="" class="center"><span class="f_size"> &#8658 </span></td>
+                    <td colspan="2">   <span class="">   <i>x</i><span class="hidden">1</span>=<span class="hidden">1</span><div class="fraction ">
+                            <span class="fup"><span class="val2"></span></span>
+                            <span class="bar">/</span>
+                            <span class="fdn"><span class="val1"></span></span>
+                            </div></span>
+                      </td>
+                </tr>
+                <tr>
+                   <td></td>
+                    <td colspan="5"><span class="normal">Therefore,</span> &nbsp;<span class="red_color"><i>x</i> <span class="hidden">1</span>=<span class="hidden">1</span> <span class="val2"></span> / <span class="val1"></span> </span> <span class="normal">is the vertical asymptote of the function.</span></td>
+                </tr>
+                <tr>
+                   <td class="bullet" ><span class="top ">&#8226 </span></td>
+                  <td colspan="5"><span class="normal">Domain:  </span><span class="val1"></span> <i>x</i> &nbsp;>&nbsp; <span class="val2"></span> <span class="hidden">1</span><span class="f_size"> &#8658 </span><span class="hidden">1</span> <span class="red_color"><i>x</i> &nbsp;>&nbsp; <span class="val2"></span> / <span class="val1"></span><span style="visibility:hidden;">.1</span><em>or</em><span style="visibility:hidden;">.1</span>(&hairsp;<span class="val2"></span> / <span class="val1"></span>, ∞&hairsp;)</span><span class="normal"></span></span><span class="normal"></span> </td>
+                </tr>
+            </table>
+            </div>
+            </div>
+            
+            
+            </div>
+       </div>
+            
+            
+    </div><!-- solutionMainSteps end -->    
+    
+    
+    </div>	<!-- solutionContainer closed-->
+</div>	<!-- container closed-->
+
+<div class="footer">
+
+<table class="FooterTable">
+        <tr>
+          <td class="FtrTab_Td1" width="10%"><img src="image/print.png" class="print"/> </td>
+          <td class="FtrTab_Td2" width="10%"><img src="image/AutoRun.png" class="autorun"/></td>
+          <td class="FtrTab_Td3" width="50%"><div class="SpaceBarDiv"><button class="SpaceBarButton spacebar">Click or Press Spacebar to Continue</button></div></td>
+          <td class="FtrTab_Td4" width="30%"><div class="Copyright">Copyright © 2005 – 2019 <span class="ForDeviceCopy">Educo Int. Inc.</span></div></td>
+        </tr>
+</table>
+
+</div>	<!-- footer closed-->
+  
+
+</div>		<!-- container-fluid closed-->
+
+
+</body>
+</html>
