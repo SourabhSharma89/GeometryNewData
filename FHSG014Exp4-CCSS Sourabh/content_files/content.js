@@ -144,6 +144,7 @@ $(document).ready(function(){
 			});
 						 
 			 $(".newSet").click(function(){
+										 console.log("TechAdd");
 										 $(".HowGridPloating").show();
 										 $('input[name="selector"]').prop('checked',false);	
 										 if(!checkMobile){					   
