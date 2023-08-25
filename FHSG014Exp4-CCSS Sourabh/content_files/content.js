@@ -109,7 +109,7 @@ $(document).ready(function(){
 				
 				 
 				 $(".newSet").click(function(){
-											 
+					console.log("Hello")						 
 					sb=-10000;///set this as initial value..
 					 $(".howTo_div").css("right",25+"px" );
 					  animCount=1
