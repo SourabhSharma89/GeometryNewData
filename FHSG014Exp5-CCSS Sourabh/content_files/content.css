@@ -1,0 +1,5920 @@
+@charset "utf-8";
+
+/*.calc_btn{
+	width: 5%;
+	margin-left: 2%;
+	font-weight:bold;
+	border-radius:15%;
+	cursor:pointer;
+}
+	
+.ThreeCommonBtns{
+	width:6%;
+	margin-left:1.5%;
+	margin-right:0%;
+}*/
+
+circle {
+    fill: #C00!important;
+    stroke: #C00!important;
+}
+
+.ClickToAnsDivForGraph{
+	position:relative;
+	}
+
+
+
+
+.AreaForKeypadAndInputInDevice{
+	position:absolute;
+	right:0%;
+	z-index:5;
+}
+
+.remark{
+	width:auto;
+}
+.middle{
+	width:100%;
+}
+ 
+.hidden{
+	visibility:hidden;
+}	
+
+tr,td{
+	/*border:1px solid #CCC;*/
+}
+.opac{
+	visibility:hidden;
+}
+.bold{
+	font-weight:bold;
+}
+.undrlin{
+	text-decoration:underline;
+}
+.t_c{
+	text-align:center;
+}
+
+.blue_col{
+	color:#00C;
+}
+.green_color{
+	color:#090;
+}
+.Div_Radio{
+	position:relative;
+}
+.Mrgntop{
+	margin-top:1.5%;
+}
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 60px;
+	width:calc((100% - 60px));
+}
+.SolutionRemark{
+	background-color: transparent;
+	z-index:1;
+}
+.solutionContainer{
+/*	overflow-y:auto;*/
+}
+.comma1{
+	margin-top:0%;
+}
+.reflect,.reset{
+	cursor:pointer;
+	width: 100%;
+}
+.done_btn{
+	cursor:pointer;
+	width: 100% !important;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+}
+
+.svg1{
+	width:100%;
+}
+
+.howTo_div{
+	display:none;
+}
+.howTo_button:hover{
+	color:white;
+}
+
+.inputDiv{
+	position:relative;
+}
+
+.P_correct
+{
+	color:#00C;
+	font-weight:bold;
+	font-family: arial;
+	display:none;
+}
+
+.Done_con{
+	position:absolute;
+	right:2%;
+	bottom:10%;
+	background-color:#FFF;
+	display:none;
+	border:1px solid;
+	box-shadow:2px 2px 2px #666;
+}
+
+.rst{
+	border:1px solid #DDD;
+	background-color:#DDD;
+	box-shadow:1px 1px 1px #666;
+}
+.Cross_Img1{
+	width:5%;
+	position:absolute;
+	top:0%;
+	right:0%;
+}
+
+
+
+.howTo_button{
+	border:none;
+	cursor:pointer;
+	box-shadow:2px 2px 2px #C00;
+	border-radius: 2px;
+    transform: rotateX(20deg);
+    background: linear-gradient(rgb(255, 255, 0) 19%, rgb(255, 153, 0) 100%);
+}
+.howTo_button:hover{
+	color:red;
+}
+.howTo_div{
+	position:absolute;
+	z-index:5;
+	width:auto;
+	padding-left:5px;
+	padding-bottom:5px;
+	border:1px solid #CCC;	
+	background-color:white;
+	
+}
+
+.howTo{
+	position:absolute;
+	z-index:5;
+	bottom: 2%;
+    left: 80%;
+	float:right;
+}
+.container{
+	position:relative;	
+}
+
+.step_cross_stp{
+	float:left;
+	color:#C00;
+}
+.step_cross_img{
+	width:6%;	
+	float:right;
+	cursor:pointer;
+
+}
+.howTo_list{
+	clear:both;
+	padding-right:5px;
+}
+ul {
+   list-style-position: inside;
+}
+
+.Step1{
+	margin-left:2%;
+	width:58%;
+	display:inline-block;
+	float:left;
+}
+
+
+.Graph_main_div{
+	width:30%;
+	margin-top: 0px;
+	display:inline-block;
+	float:right;
+	top:0%;
+	position:relative;
+}
+
+.GraphSvg_div{
+	width:85%;
+	margin-top: 0px;
+	display:inline-block;
+	float:right;
+	
+}
+.button_div{
+	width:18%;
+	display:inline-block;
+	position:absolute;
+}
+.Btn_tb1{
+	width:100%;
+}
+.Btn_td1{
+	width:100%;
+	cursor:pointer;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	display:none;
+}
+
+
+.input{
+	width:80%;
+}
+.InputAndDoneTbl{
+	width:65%;
+}
+.InptDnTd01{
+	width:55%;
+}
+.InptDnTd{
+	width:40%;
+}
+
+.Step1{
+	position:relative;
+}
+.Done_con{
+	position:absolute;
+	right:2%;
+	bottom:4%;
+	background-color:#FFF;
+	display:none;
+	border:1px solid;
+	box-shadow:2px 2px 2px #666;
+}
+
+.rst{
+	border:1px solid #DDD;
+	background-color:#DDD;
+	box-shadow:1px 1px 1px #666;
+}
+.Cross_Img1{
+	width:5%;
+	position:absolute;
+	top:0%;
+	right:0%;
+}
+
+
+
+
+.ClickToAnsDivForGraph{
+	float:right;
+	margin-right: 4%;
+}
+
+.Enter_ans{
+	text-decoration:underline;
+	}
+
+.path2,.poly2,.path31,.path41,.path51,.path61,.path71,.path81{
+	display:none;
+}
+
+.remark, .incorrect, .correct, .P_correct {
+    position: absolute;
+    z-index: 5;
+    white-space: nowrap;
+	top:5%;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	display:none;
+}
+
+.buttonDivForDevice{
+	position:absolute;
+	display:none;
+}
+
+.AllImages{
+	width:36%;
+	position:absolute;
+	left:-36%;
+	top:12%;
+}
+.img{
+	width:100%;
+	cursor:pointer;
+
+}
+.image_part1,.image_part2{
+	width:50%;
+	float:left;
+}
+.image_Arrow{
+	position:absolute;
+	width:26%;
+	margin-top: 58%;
+    margin-left: -32%;
+	padding: 1%;
+    padding-bottom: 2%;
+	border-top: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+    border-bottom: 1px solid black;
+	border-right: 1px solid black;
+}
+.ArrowImg{
+	cursor:pointer;
+}
+.downArrow{
+	margin-left: -26%;
+    margin-bottom: -10%;
+	width:20%;
+}
+.upArrow{
+	margin-bottom: 12%;
+	width:20%;
+}
+
+.leftArrow,.rightArrow{
+	width:25%;
+}
+.leftArrow{
+	margin-left:10%;
+}
+
+.section3{
+	width:75%;	
+}
+.ques_tb{
+	width:80%;
+	border-collapse:collapse;
+	margin-left:0%;
+	margin-top:2%;
+	margin-bottom:1%;
+}
+.ques_td1{
+	width:10%;
+	border:1px solid black;
+	text-align:center;
+	padding:1%;
+}
+.ques_td2,.ques_td3,.ques_td4,.ques_td5,.ques_td6{
+	width:15%;
+	border:1px solid black;
+	text-align:center;
+	padding:1%;
+}
+.ques_td7{
+	width:15%;
+    text-align:center;
+	padding:1%;
+	position:relative;
+}
+.ques_td21,.ques_td31,.ques_td41,.ques_td51,.ques_td61{
+	width:17%;
+	text-align:center;
+	position:relative;
+}
+
+.input{
+	width:100%;
+	
+	text-align: center;
+	font-weight: bold;
+ 	font-family:"Times New Roman", Times, serif;
+}
+.Wrt, .Wrng {
+    position: absolute;
+    bottom: 0;
+    left: -0.5em;
+    
+    display: none;
+    font-size: 80%;
+	
+}
+
+
+.buttons{
+	margin-left:6%;
+	margin-top:2%;
+	display: inline-block;
+}
+
+.button {
+  display: inline-block;
+  padding:1.3%;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  outline:none;
+  background-color: #D5F3FD;
+  border: 1px solid #2FCEF0;
+  border-radius: .3em;
+  position:relative;
+}
+
+.button:hover {
+	background-color: #2FCAE0
+}
+
+.button:active {
+  background-color: #2FCAE0;
+  box-shadow: 0 2px #666;
+  transform: translateY(1px);
+}
+
+
+.button2{
+	margin-left:15%;
+}
+
+.tick{
+	color:#009933;
+	position:absolute;	
+	top:-40%;
+	right:-5%;
+	display:none;
+	font-size:1.5em;
+}
+
+
+.Step1_2,.Step1_3{
+	display:none;
+	margin-top:3%;
+}
+.Step1_3{
+	display:none;
+	margin-top:2%;
+	width:82%;
+	line-height:135%;
+}
+.Step1_4,.Step1_5{
+	display:none;
+	margin-top:2.5%;
+}
+.Step1_5{
+	display:none;
+	margin-top:2%;
+	margin-left:5%;
+	width:52%;
+	box-shadow:3px 3px 0px gray;
+}
+.Step1_6{
+	display:none;
+	margin-left:10%;
+	margin-top:2%;
+}
+.Step1_7{
+	display:none;
+	margin-top:1.5%;
+}
+.sol_tb{
+	width:100%;
+	background-color:#FFF;
+	border-collapse:collapse;
+}
+.sgnFont{
+	font-family:  sans-serif, monospace;
+}
+.prompt_New {
+    top: 0.5em;
+    white-space: nowrap;
+    left: 64%;
+    padding: 0.5%;
+    line-height: 100%;
+    margin-left: 0%;
+}
+
+
+
+
+
+.graph_anim{
+   	animation: graph_anim 2s forwards;
+}
+
+@keyframes graph_anim{
+  
+  100%{
+	  left:0px; 
+	 }
+
+}
+
+.extraclass{
+	left:0px !important;
+	}
+.pre{
+	display:inline-block;
+	}
+.disable_div{
+	position:absolute;
+	top:0%;
+	left:0%;
+	width:100%;
+	height:100%;
+	z-index:100;
+	}
+.section2{
+	position:relative;
+	}
+
+
+.table_sol{
+	width:75%;
+	border-collapse: collapse;
+	margin: 0 30%;
+}
+
+.table_sol tr td {
+    width: 15%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 0.3em;
+}
+.table_sol tr:first-child td:first-child,.table_sol tr:last-child td:first-child{
+	width:25%;
+}
+.TextDiv{
+	margin-top:2%;
+	}
+
+.ques_tb tr td{
+	width:14%;
+	border:1px solid black;
+	text-align:center;
+	padding:1%;
+}
+.ques_tb td:first-child{
+	width:15%;
+	}
+.ques_tb tr:first-child td{
+    border:none;
+	position:relative;
+}
+
+.ques_tb tr td:last-child{
+	border:none;
+}
+
+
+
+.red{color:red;}
+.blue_clr{color:black; font-size:0.9em;}
+.howTo_div{border-radius:2%;background-color:snow!important;box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); top:3rem!important;}
+
+.A1{ margin-top:0.5em;}
+.Nowrap{ white-space:nowrap;}
+.InputDiv{ width:20%;}
+.input{height: 1.4em;}
+.deeppink{color: deeppink;font-weight: bold;}
+.HowGridPloating1{ display:none;}
+.HowGridPloating1{ border:2px solid deeppink; padding:0.15em; padding-left:0.3em; background-color:#ffc10736;}
+.RemarkSet{ height:1.75em; width:100%;}
+.remark{ float:right; margin-right:3.7em;}
+.DotClass{ font-size:0.5em;}
+.InputDiv{width:6.5em;align-items: center;}
+.PortNeedHelp{ display:flex;flex-direction: column;}
+.AntiDiv {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 0.80em;
+    color: deeppink;
+    top: 1em;
+    left: 8%;
+}
+.AntiDiv1 {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 0.85em;
+    color: deeppink;
+    top: 2.25em;
+    left: 22%;
+}
+.AntiDiv11 {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 0.80em;
+    color: deeppink;
+    top: 20%;
+    left: 4%;
+}
+.AntiDiv12 {position: absolute;white-space: nowrap;font-size: 0.80em;color: deeppink;bottom: 15%;left: 22%;}
+
+.final_line{stroke-dasharray: 10!important;}
+.final_line2{stroke: red!important;}
+.txt{ font-size:19px;}
+.Graph{ width:8em;}
+.oogive{fill:transparent!important;}
+.LandScape{ display:inline-block;}
+.PortScape{ display:none;}
+
+@media (min-width: 450px) and (max-width: 530px)
+
+{
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 5px;
+	width:calc((100% - 5px));
+}
+
+.howTo_button{
+	padding:2px;
+	font-size:7px;
+}
+.howTo_button:hover{
+	color:red;
+}
+.howTo_div{
+/*	left:5%;*/
+}
+
+.howTo{
+/*	right:28%;*/
+
+}
+
+.howTo_list{
+	font-size:9px;
+}
+
+.Step1{
+	margin-left:0%;
+	width:50%;
+}
+
+.Graph_main_div{
+	width:36%;
+}
+
+.GraphSvg_div{
+	width:90%;
+}
+.button_div{
+	bottom:6px;
+	left:-7px;
+	width:23%;
+}
+
+.Btn_td1{
+	padding-top:2px;
+}
+
+.reflect,.reset{
+    padding: 1px;
+    border-radius: 3px;
+	font-size:7px;
+	height:16px;
+}
+.done_btn{
+    padding: 1px;
+	
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:9px;
+}
+.txt{
+	font-size:28px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:21px;
+}
+
+
+.container-fluid{
+	
+}
+.Mrgntop{
+	margin-top:1%;
+	margin-left:2%;
+}
+
+
+.new_h {
+    width: 68% !important;
+}
+
+.ClickToAnsDiv{
+	margin-top:2%;
+	margin-right:2%;
+}
+.header{
+	min-height:64px;
+}
+
+.button{
+	font-size:8px;
+}
+
+.prompt_New{
+	left:-12%;	
+	margin-top:0px;
+}
+.remark{
+	left:37%;
+	top:98%;
+}
+.downArrow {
+    margin-left: -26%;
+}
+.AllImages{
+	left:-40%;
+	width:35%;
+}
+.image_Arrow{
+	margin-left:-36%;
+	width:25%;
+}
+.input{
+	width:92%;
+}
+.button2{
+	margin-left:12%;
+}
+.tick{
+	top:-50%;
+}
+.ques_tb{
+	width:138%;
+	margin-left:-42%;
+	margin-top:9%;
+}
+.Step1_2{
+	margin-top:3%;
+}
+.Step1_3{
+	line-height:normal;
+	width:98%;
+	margin-top:2%;
+}
+.Step1_4,.Step1_6,.Step1_7{
+	margin-top:2%;
+}
+.Step1_5{
+	width:68%;
+	margin-top:2%;
+}
+
+.howToForDevice{
+	margin-left:10%;
+	margin-top:7%;
+}
+.clear{
+	margin-left:22%;
+}
+.ClickToAnsDiv{
+	margin-top:5%;
+	margin-right:8%;
+}
+.table_sol {
+    width: 100%;
+}
+
+	
+}
+
+
+@media (min-width: 531px) and (max-width: 610px)
+{
+
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 5px;
+	width:calc((100% - 5px));
+}
+
+.howTo_button{
+	padding:2px;
+	font-size:7px;
+}
+.howTo_button:hover{
+	color:red;
+}
+.howTo_div{
+/*	left:5%;*/
+}
+
+.howTo{
+/*	right:31%;*/
+
+}
+
+.howTo_list{
+	font-size:9px;
+}
+
+.Step1{
+	margin-left:0%;
+	width:48%;
+}
+
+.Graph_main_div{
+	width:36%;
+}
+
+.GraphSvg_div{
+	width:88%;
+}
+.button_div{
+	bottom:12px;
+	left:-15px;
+	width:20%;
+}
+
+.Btn_td1{
+	padding-top:2px;
+}
+
+.reflect,.reset{
+    padding: 2px;
+    border-radius: 2px;
+	font-size:8px;
+	height:16px;
+}
+.done_btn{
+    padding: 2px;
+	
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:9px;
+}
+.txt{
+	font-size:24px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:20px;
+}
+
+
+.container-fluid{
+	
+}
+.Mrgntop{
+	margin-top:1%;
+	margin-left:2%;
+}
+
+
+
+.new_h {
+    width: 68% !important;
+}
+.ClickToAnsDiv{
+	margin-top:2%;
+}
+
+
+.header{
+	min-height:55px;
+}
+.button{
+	font-size:9px;
+}
+
+.prompt_New{
+	left:-12%;	
+	margin-top:0px;
+}
+.remark{
+	left:37%;
+	top:25%;
+}
+.downArrow {
+    margin-left: -26%;
+}
+.AllImages{
+	left:-40%;
+	width:35%;
+}
+.image_Arrow{
+	margin-left:-36%;
+	width:25%;
+}
+.button2{
+	margin-left:12%;
+}
+.tick{
+	top:-50%;
+}
+.ques_tb {
+    width: 80%;
+    margin-left: -5%;
+    margin-top: 0%;
+}
+.Step1_2{
+	margin-top:3%;
+}
+.Step1_3{
+	line-height:normal;
+	width:98%;
+	margin-top:2%;
+}
+.Step1_4,.Step1_6,.Step1_7{
+	margin-top:2%;
+}
+.Step1_5{
+	width:68%;
+	margin-top:2%;
+}
+
+.howToForDevice{
+	margin-left:10%;
+	margin-top:6%;
+}
+
+.ClickToAnsDiv{
+	margin-top:5%;
+	margin-right:8%;
+}
+.table_sol {
+    width: 100%;
+}
+	
+.Step1Daughter {width: 130%!important; font-size:90%; margin-left:0%!important;}	
+}
+@media (min-width: 611px) and (max-width: 690px)
+{
+	
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 10px;
+	width:calc((100% - 10px));
+}
+
+.howTo_button{
+	padding:2px;
+	font-size:8px;
+
+}
+.howTo_button:hover{
+	color:red;
+}
+.howTo_div{
+/*	left:8%;*/
+	
+}
+
+.howTo{
+/*	right:31%;*/
+
+}
+.howTo_list{
+	font-size:10px;
+}
+.Step1{
+	margin-left:0%;
+	width:46%;
+}
+
+
+.Graph_main_div{
+	width:38%;
+}
+
+.GraphSvg_div{
+	width:86%;
+	
+}
+.button_div{
+	bottom:14px;
+	left:-20px;
+	width:20%;
+}
+
+.Btn_td1{
+	padding-top:3px;
+}
+
+.reflect,.reset{
+    padding: 2px;
+    border-radius: 2px;
+	font-size:8px;
+}
+.done_btn{
+    padding: 3px;
+	
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:10px;
+}
+.txt{
+	font-size:24px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:20px;
+}
+
+
+.container-fluid{
+	
+}
+.Mrgntop{
+	margin-top:1%;
+	margin-left:2%;
+}
+
+
+
+.new_h {
+    width: 68% !important;
+}
+
+.ClickToAnsDiv{
+	margin-top:2%;
+}
+
+.header{
+	min-height:85px;
+}
+.button{
+	font-size:11px;
+}
+.prompt_New{
+	left:-12%;	
+	margin-top:0px;
+}
+.remark{
+	left:37%;
+	top:25%;
+}
+.downArrow {
+    margin-left: -26%;
+}
+.AllImages{
+	left:-40%;
+	width:35%;
+}
+.image_Arrow{
+	margin-left:-36%;
+	width:25%;
+}
+.button2{
+	margin-left:12%;
+}
+.tick{
+	top:-50%;
+}
+.ques_tb {
+    width: 80%;
+    margin-left: -5%;
+    margin-top: 0%;
+}
+.Step1_2{
+	margin-top:3%;
+}
+.Step1_3{
+	line-height:normal;
+	width:98%;
+	margin-top:2%;
+}
+.Step1_4,.Step1_6,.Step1_7{
+	margin-top:2%;
+}
+.Step1_5{
+	width:74%;
+	margin-top:2%;
+}
+.howToForDevice{
+	margin-left:10%;
+	margin-top:6%;
+}
+
+.ClickToAnsDiv{
+	margin-top:4%;
+	margin-right:8%;
+}
+.table_sol {
+    width: 100%;
+}
+.Step1Daughter {width: 130%!important; font-size:90%; margin-left:0%!important;}	
+}
+@media (min-width: 691px) and (max-width: 770px)
+{
+
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 10px;
+	width:calc((100% - 10px));
+}
+
+.howTo_button{
+	padding:3px;
+	height:18px;
+	font-size:10px;
+}
+.howTo_button:hover{
+	color:red;
+}
+.howTo_div{
+/*	left:5%;*/
+}
+
+.howTo{
+/*	right:31%;*/
+}
+
+
+.howTo_list{
+	font-size:12px;
+}
+
+.Step1{
+	margin-left:0%;
+	width:62%;
+}
+
+
+.Graph_main_div{
+	width:36%;
+}
+
+.GraphSvg_div{
+	width:80%;
+	
+}
+.button_div {
+    bottom: 14px;
+    left: -10px;
+    width: 20%;
+}
+.Btn_td1{
+	padding-top:3px;
+}
+
+.reflect,.reset{
+    padding: 3px;
+    border-radius: 2px;
+	font-size:10px;
+}
+.done_btn{
+    padding: 3px;
+	
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:11px;
+}
+.txt{
+	font-size:24px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:20px;
+}
+
+
+.container-fluid{
+	
+}
+.header {
+    min-height: 94px;
+}
+.Mrgntop{
+	margin-top:1%;
+	margin-left:2%;
+}
+
+
+
+
+.new_h {
+    width: 68% !important;
+}
+
+.ClickToAnsDiv{
+	margin-top:2%;
+}
+
+
+.prompt_New{
+	left:-12%;	
+	margin-top:0px;
+}
+.remark{
+	left:37%;
+	top:25%;
+}
+.downArrow {
+    margin-left: -26%;
+}
+.AllImages{
+	left:-40%;
+	width:35%;
+}
+.image_Arrow{
+	margin-left:-36%;
+	width:25%;
+}
+.button2{
+	margin-left:12%;
+}
+.tick{
+	top:-50%;
+}
+.ques_tb {
+    width: 85%;
+    margin-left: -10%;
+    margin-top: 0%;
+}
+.Step1_2{
+	margin-top:3%;
+}
+.Step1_3{
+	line-height:normal;
+	width:98%;
+	margin-top:2%;
+}
+.Step1_4,.Step1_6,.Step1_7{
+	margin-top:2%;
+}
+.Step1_5{
+	width:77%;
+	margin-top:2%;
+}
+
+.howToForDevice{
+	margin-left:10%;
+	margin-top:4%;
+}
+
+.ClickToAnsDiv{
+	margin-top:3%;
+	margin-right:8%;
+}
+.section2 {
+    width: 19%;
+}
+.table_sol {
+    width: 100%;
+}
+.Step1Daughter {width: 120%!important; font-size:90%; margin-left:0%!important;}
+
+}
+@media (min-width: 771px) and (max-width: 850px)
+{
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 20px;
+	width:calc((100% - 20px));
+}
+
+.howTo_button{
+	padding:4px;
+	height:20px;
+	font-size:11px;
+}
+
+.howTo_div{
+/*	left:5%;*/
+}
+
+.howTo{
+/*	right:31%;*/
+}
+
+.howTo_list{
+	font-size:14px;
+}
+
+.Step1 {
+    margin-left: 0%;
+    width: 62%;
+}
+
+.Graph_main_div{
+	width:37%;
+}
+
+.GraphSvg_div{
+	width:80%;
+	
+}
+.button_div{
+	bottom:14px;
+	left:0px;
+	width:18%;
+}
+
+.Btn_td1{
+	padding-top:3px;
+}
+
+.reflect,.reset{
+    padding: 3px;
+    border-radius: 5px;
+	font-size:10px;
+	height:22px;
+}
+.done_btn{
+    padding: 3px;
+    border-radius: 5px;
+	height:22px !important;
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:12px;
+}
+.txt{
+	font-size:22px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:18px;
+}
+
+.container-fluid{
+	/*font-size:17px;*/
+}
+.Mrgntop{
+	margin-top:1%;
+	margin-left:2%;
+}
+.header{
+	
+}
+
+.new_h {
+    width: 68% !important;
+}
+.ClickToAnsDiv{
+	margin-top:2%;
+}
+
+.header{
+	min-height:95px;
+}
+
+.prompt_New{
+	left:-12%;	
+	margin-top:0px;
+}
+.remark{
+	left:37%;
+	top:25%;
+}
+.downArrow {
+    margin-left: -26%;
+}
+.AllImages{
+	left:-35%;
+	width:35%;
+}
+.image_Arrow{
+	margin-left:-31%;
+	width:25%;
+}
+.tick{
+	top:-50%;
+}
+.ques_tb {
+    width: 88%;
+    margin-left: -10%;
+    margin-top: 0%;
+}
+.Step1_2{
+	margin-top:3%;
+}
+.Step1_3{
+	line-height:normal;
+	width:98%;
+	margin-top:2%;
+}
+.Step1_4,.Step1_6,.Step1_7{
+	margin-top:2%;
+}
+.Step1_5{
+	width:75%;
+	margin-top:2%;
+}
+
+.howToForDevice{
+	margin-left:10%;
+	margin-top:3%;
+}
+
+.ClickToAnsDiv{
+	margin-top:3%;
+	margin-right:8%;
+}
+.table_sol {
+    width: 100%;
+}
+.hidden { font-size:0.45em;
+}
+.Step1Daughter {width: 120%!important; font-size:90%; margin-left:0%!important;}
+}
+@media (min-width: 851px) and (max-width: 930px)
+{
+	
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 20px;
+	width:calc((100% - 20px));
+}
+
+.howTo_button{
+	padding:4px;
+	height:22px;
+	font-size:12px;
+}
+
+.howTo_div{
+/*	left:6%;*/
+}
+
+.howTo{
+/*	right:31%;*/
+}
+
+.howTo_list{
+	font-size:15px;
+}
+
+.Step1{
+	margin-left:0%;
+	width:48%;
+}
+
+
+.Graph_main_div{
+	width:38%;
+}
+
+.GraphSvg_div{
+	width:80%;
+}
+.button_div{
+	bottom:18px;
+	left:-5px;
+	width:19%;
+}
+
+
+.Btn_td1{
+	padding-top:3px;
+}
+
+.reflect,.reset{
+    padding: 4px;
+    border-radius: 5px;
+	font-size:12px;
+	height:26px;
+}
+.done_btn{
+    padding: 4px;
+    border-radius: 5px;
+	height:26px !important;
+	font-size:12px;
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:13px;
+}
+.txt{
+	font-size:22px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:20px;
+}
+
+.container-fluid{
+	
+}
+.Mrgntop{
+	margin-top:12px;
+	margin-left:4%;
+}
+
+
+.new_h {
+    width: 68% !important;
+}
+.ClickToAnsDiv{
+	margin-top:2%;
+}
+
+.header{
+	min-height:120px;
+}
+
+.prompt_New{
+	left:-12%;	
+	margin-top:0px;
+}
+.remark{
+	left:40%;
+	top:25%;
+}
+.downArrow {
+    margin-left: -25%;
+}
+.AllImages{
+	left:-35%;
+	width:35%;
+}
+.image_Arrow{
+	margin-left:-31%;
+}
+.tick{
+	top:-50%;
+}
+.ques_tb {
+    width: 88%;
+    margin-left: -10%;
+    margin-top: 0%;
+}
+.Step1_2{
+	margin-top:3%;
+}
+.Step1_3{
+	line-height:normal;
+	width:98%;
+	margin-top:2%;
+}
+.Step1_4,.Step1_6,.Step1_7{
+	margin-top:2%;
+}
+.Step1_5{
+	width:74%;
+	margin-top:2%;
+}
+
+.howToForDevice{
+	margin-left:10%;
+	margin-top:3%;
+}
+
+.ClickToAnsDiv{
+	margin-top:3%;
+	margin-right:8%;
+}
+.hidden { font-size:0.85em;
+}
+.Step1 {
+    margin-left: 0%;
+    width: 62%;
+}
+.Step1Daughter {width: 110%!important; font-size:90%; margin-left:0%!important;}
+}
+@media (min-width: 931px) and (max-width: 1010px)
+{
+	
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 30px;
+	width:calc((100% - 30px));
+}
+
+.howTo_button{
+	padding:4px;
+	height:22px;
+	font-size:13px;
+}
+
+.howTo_div{
+/*	left:6%;*/
+
+}
+
+.howTo{
+/*	right:28%;*/
+}
+
+.howTo_list{
+	font-size:16px;
+}
+
+.Step1{
+	margin-left:0%;
+	width:52%;
+}
+
+
+.Graph_main_div{
+	width:34%;
+}
+
+.GraphSvg_div{
+	width:80%;
+	
+}
+
+.button_div {
+    bottom: 18px;
+    left: -10px;
+    width: 20%;
+}
+
+.Btn_td1{
+	padding-top:3px;
+}
+
+.reflect,.reset{
+    padding: 4px;
+    border-radius: 5px;
+	font-size:12px;
+	height:26px;
+}
+.done_btn{
+    padding: 4px;
+    border-radius: 5px;
+	height:26px !important;
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:13px;
+}
+.txt{
+	font-size:24px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:20px;
+}
+
+.container-fluid{
+	/*font-size:18px;*/
+}
+.Mrgntop{
+	margin-top:12px;
+	margin-left:4%;
+}
+
+
+.new_h {
+    width: 68% !important;
+}
+.ClickToAnsDiv{
+	margin-top:2%;
+}
+
+.header{
+	min-height:120px;
+}
+
+.prompt_New{
+	left:-12%;	
+}
+.remark{
+	left:40%;
+	top:25%;
+}
+.downArrow {
+    margin-left: -25%;
+}
+.AllImages{
+	left:-35%;
+	width:35%;
+}
+.image_Arrow{
+	margin-left:-31%;
+}
+.tick{
+	top:-50%;
+}
+.ques_tb {
+    width: 82%;
+    margin-left: -10%;
+    margin-top: 0%;
+}
+.Step1_2{
+	margin-top:3%;
+}
+.Step1_3{
+	line-height:normal;
+	width:98%;
+	margin-top:2%;
+}
+.Step1_4,.Step1_6,.Step1_7{
+	margin-top:2%;
+}
+.Step1_5{
+	width:72%;
+	margin-top:2%;
+}
+
+.howToForDevice{
+	margin-left:10%;
+	margin-top:3%;
+}
+
+.ClickToAnsDiv{
+	margin-top:3%;
+	margin-right:8%;
+}
+
+.section2 {
+    width: 22%;
+}
+.table_sol {
+    width: 100%;
+}
+.hidden { font-size:0.85em;
+}
+.Step1 {
+    margin-left: 0%;
+    width: 62%;
+}
+.Step1Daughter {width: 120%!important; font-size:95%;}
+}
+@media (min-width: 450px) and (max-width: 1100px)
+{
+.PortNeed{ margin-right:2em;}
+.prompt_New{ left:50%!important;}
+}
+@media (min-width: 1011px) and (max-width: 1100px)
+{
+
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 50px;
+	width:calc((100% - 50px));
+}
+.Mrgntop{
+	margin-top:8px;
+	margin-left:2%;
+}
+
+
+.howTo_button{
+	padding:4px;
+	height:25px;
+	font-size:13px;
+}
+
+.howTo_div{
+/*	left:10%;*/
+	
+}
+
+.howTo{
+/*	right:31%;*/
+}
+
+.howTo_list{
+	font-size:16px;
+}
+
+
+
+
+.Graph_main_div {
+    width: 32%;
+}
+
+.GraphSvg_div{
+	width:80%;
+	
+}
+
+.button_div {
+    bottom: 18px;
+    left: 0px;
+    width: 18%;
+}
+
+.Btn_td1{
+	padding-top:5px;
+}
+
+.reflect,.reset{
+    padding: 6px;
+    border-radius: 5px;
+	font-size:13px;
+	height:30px;
+}
+.done_btn{
+    padding: 6px;
+    border-radius: 5px;
+	height:30px !important;
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:13px;
+}
+.txt{
+	font-size:22px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:19px;
+}
+
+.new_h {
+    width: 68% !important;
+}
+.ClickToAnsDiv{
+	margin-top:3%;
+}
+
+.header{
+	min-height:135px;
+}
+
+.prompt_New{
+	left:-12%;	
+}
+.remark{
+	left:39%;
+	top:25%;
+}
+.downArrow {
+    margin-left: -26%;
+}
+.AllImages{
+	left:-35%;
+	width:35%;
+}
+.image_Arrow{
+	margin-left:-31%;
+}
+.tick{
+	top:-50%;
+}
+.ques_tb {
+    width: 85%;
+    margin-left: -15%;
+    margin-top: 0%;
+}
+.Step1_2{
+	margin-top:3%;
+}
+.Step1_3{
+	line-height:normal;
+	width:98%;
+	margin-top:2%;
+}
+.Step1_4,.Step1_6,.Step1_7{
+	margin-top:2%;
+}
+.Step1_5{
+	width:72%;
+	margin-top:2%;
+}
+
+.howToForDevice{
+	margin-left:10%;
+	margin-top:4%;
+}
+
+.ClickToAnsDiv{
+	margin-top:5%;
+}
+.table_sol {
+    width: 100%;
+}
+.hidden { font-size:0.45em;
+}
+.Step1 {
+    margin-left: 0%;
+    width: 68%;
+    font-size: 91%;
+}
+}
+@media (min-width: 1101px) and (max-width: 1285px)
+{
+		
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 10px;
+	width:calc((100% - 10px));
+}
+.Mrgntop{
+	margin-top:0px;
+	margin-left:5%;
+
+}
+
+.howTo_button{
+	padding:4px;
+	height:22px;
+	font-size:13px;
+}
+
+.howTo_div{
+	/* left:14%; */
+}
+
+.howTo{
+/*	right:35%;*/
+}
+
+.howTo_list{
+	font-size:17px;
+}
+
+
+.Step1{
+	margin-left:0%;
+	width:65%;
+}
+
+
+.Graph_main_div{
+	width:28%;
+}
+
+.GraphSvg_div{
+	width:86%;
+	
+}
+
+.button_div{
+	bottom:30px;
+	left:-30px;
+	width:22%;
+}
+
+.Btn_td1{
+	padding-top:0px;
+}
+
+.reflect,.reset{
+    padding: 6px;
+    border-radius: 5px;
+	font-size:13px;
+	height:35px;
+}
+.done_btn{
+    padding: 6px;
+    border-radius: 5px;
+	height:35px !important;
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:15px;
+}
+.txt{
+	font-size:25px;
+}
+
+.txt1, .txt2, .txt3, .txt4, .txt5, .txt6 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header{
+	min-height:160px;
+}
+
+.ques_tb {
+    width: 80%;
+    margin-left: -10%;
+}
+
+.prompt_New{
+	/*left:-10%;*/
+}
+.remark{
+	left:36%;
+}
+
+.downArrow {
+    margin-left: -25%;
+}
+.AllImages{
+	left:-35%;
+	width:35%;
+}
+.image_Arrow{
+	margin-left:-31%;
+	height:11%;
+}
+.tick{
+	top:-50%;
+}
+.Step1_2{
+	margin-top:3%;
+}
+.Step1_3{
+	line-height:normal;
+	width:98%;
+	margin-top:3%;
+}
+.Step1_4,.Step1_6,.Step1_7{
+	margin-top:3%;
+}
+.Step1_5{
+	width:72%;
+	margin-top:3%;
+}
+.ques_tb{
+	margin-top:2%;
+}
+.table_sol {
+    width: 60%;
+	margin:0 30%;
+}
+.newTxt{font-size:24px!important;}
+}
+@media (min-width: 1286px) and (max-width: 1400px)
+{
+	
+
+	
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 40px;
+	width:calc((100% - 40px));
+}
+
+.howTo_button{
+	padding:4px;
+}
+
+.howTo_div{
+/*	left:15%;*/
+	
+}
+
+.howTo{
+/*	right:24%;*/
+
+}
+
+.howTo_list{
+	font-size:17px;
+}
+
+.Step1 {
+    margin-left: 3%;
+    width: 65%;
+}
+
+
+.Graph_main_div{
+	width:30%;
+}
+
+.GraphSvg_div{
+	width:72%;
+	
+}
+.button_div{
+	bottom:20px;
+	left:25px;
+}
+
+.Btn_td1{
+	padding-top:5px;
+}
+
+.reflect,.reset{
+    padding: 6px;
+    border-radius: 5px;
+}
+.done_btn{
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:15px;
+}
+.txt{
+	font-size:22px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:20px;
+}
+
+.container-fluid{
+	/*font-size:22px;*/
+}
+.header {
+    min-height: 140px;
+}
+
+.remark{
+	left:48%;
+}
+.newTxt{font-size:24px!important;}
+}
+@media (min-width: 1401px) and (max-width: 1550px)
+{
+	
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 30px;
+	width:calc((100% - 30px));
+}
+
+.howTo_button{
+	padding:4px;
+	height:26px;
+	font-size:14px;
+}
+
+.howTo_div{
+/*	left:15%;*/
+}
+
+.howTo{
+/*	right:23%;*/
+}
+
+.howTo_list{
+	font-size:20px;
+}
+
+
+
+
+.Graph_main_div{
+	width:38%;
+}
+
+.GraphSvg_div{
+	width:64%;
+	
+}
+.button_div {
+    bottom: 35px;
+    left: 90px;
+    width: 16%;
+}
+
+.Btn_td1{
+	padding-top:5px;
+}
+
+.reflect,.reset{
+    padding: 5px;
+    border-radius: 5px;
+    height: 35px;
+    font-size: 16px;
+}
+.done_btn{
+    padding: 5px;
+    border-radius: 5px;
+	height:35px !important;
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:17px;
+}
+.txt{
+	font-size:26px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:20px;
+}
+
+.header {
+    min-height: 155px;
+}
+
+.button{
+	font-size:15px;
+}
+.prompt_New{
+	/*left:-22%;	*/
+}
+.remark{
+	left:50%;
+}
+
+.downArrow {
+    margin-left: -25%;
+}
+.AllImages{
+	left:-32%;
+	width:35%;
+}
+.image_Arrow{
+	margin-left:-27%;
+	width:23%;
+/*	margin-top:48%;*/
+}
+.tick{
+	top:-50%;
+}
+.Step1_2{
+	margin-top:3%;
+}
+.Step1_3{
+	line-height:normal;
+	width:98%;
+	margin-top:3%;
+}
+.Step1_4,.Step1_6,.Step1_7{
+	margin-top:3%;
+}
+.Step1_5{
+	width:68%;
+	margin-top:3%;
+}
+.ques_tb {
+    margin-top: 2%;
+}
+
+.Step1 {
+   
+    width: 60%;
+    
+}
+}
+@media (min-width: 1551px) and (max-width: 1700px)
+{
+	
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 60px;
+	width:calc((100% - 60px));
+}
+
+.howTo_button{
+	padding:5px;
+	font-size:17px;
+	height:30px;
+}
+
+.howTo_div{
+/*	left:15%;*/
+	
+}
+
+.howTo{
+/*	right:23%;*/
+}
+
+.howTo_list{
+	font-size:20px;
+}
+
+.Step1{
+	margin-left:0%;
+	
+}
+
+
+.Graph_main_div{
+	width:34%;
+}
+
+.GraphSvg_div{
+	width:65%;
+	
+}
+.button_div{
+    bottom: 40px;
+    left: 80px;
+    width: 15%;
+}
+
+.Btn_td1{
+	padding-top:5px;
+}
+
+.reflect,.reset{
+    padding: 6px;
+    border-radius: 5px;
+	font-size:17px;
+	height:38px;
+}
+.done_btn{
+    padding: 6px;
+    border-radius: 5px;
+	font-size:17px;
+	height:38px !important;
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:19px;
+}
+.txt{
+	font-size:23px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:20px;
+}
+
+.header {
+    min-height: 162px;
+}
+
+.button{
+	font-size:17px;
+}
+.prompt_New{
+	/*left:-26%;*/	
+}
+.remark{
+	left:46%;
+}
+
+.downArrow {
+    margin-left: -25%;
+}
+.AllImages{
+	left:-31%;
+	width:35%;
+}
+.image_Arrow{
+	margin-left:-24%;
+	width:20%;
+/*	margin-top:45%;*/
+}
+.tick{
+	top:-40%;
+	right:-3%;
+}
+.Step1_2{
+	margin-top:4%;
+}
+.Step1_3{
+	line-height:125%;
+	width:98%;
+	margin-top:3%;
+}
+.Step1_4,.Step1_6,.Step1_7{
+	margin-top:3%;
+}
+.Step1_5{
+	width:66%;
+	margin-top:4%;
+}
+
+
+	
+}	
+@media (min-width: 1701px) and (max-width: 1850px)
+{
+	
+
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 40px;
+	width:calc((100% - 40px));
+}
+
+.howTo_button{
+	padding:5px;
+	font-size:15px;
+	height:30px;
+}
+
+.howTo_div{
+/*	left:25%;*/	
+}
+
+.howTo{
+/*	right:23%;*/
+}
+
+.howTo_list{
+	font-size:22px;
+}
+
+
+.Step1{
+	margin-left:3%;
+	
+	margin-top:1%;
+}
+
+
+.Graph_main_div{
+	width:38%;
+}
+
+.GraphSvg_div{
+	width:65%;
+	
+}
+.button_div {
+    bottom: 44px;
+    left: 84px;
+    width: 16%;
+}
+
+.Btn_td1{
+	padding-top:5px;
+}
+
+.reflect,.reset{
+    padding: 4px;
+    border-radius: 5px;
+	font-size:18px;
+	height:40px;
+}
+.done_btn{
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 40px !important;
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:20px;
+}
+.txt{
+	font-size:22px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:18px;
+}
+
+.Mrgntop{
+	margin-top:12px;
+	margin-left:3%;
+}
+
+.header {
+    min-height: 175px;
+}
+.ques_tb{
+	margin-top:2%;
+}
+.button{
+	font-size:17px;
+}
+.prompt_New{
+	/*left:-26%;	*/
+}
+.remark{
+	left:46%;
+	top:20%;
+}
+
+.downArrow {
+    margin-left: -25%;
+}
+.AllImages{
+	left:-31%;
+	width:35%;
+}
+.image_Arrow{
+	margin-left:-24%;
+	width:18%;
+/*	margin-top:43%;*/
+}
+.tick{
+	top:-40%;
+	right:-4%;
+}
+.Step1_2{
+	margin-top:3%;
+}
+.Step1_3{
+	line-height:125%;
+	width:100%;
+	margin-top:2%;
+}
+.Step1_4,.Step1_6,.Step1_7{
+	margin-top:2%;
+}
+.Step1_5{
+	width:64%;
+	margin-top:3%;
+}
+
+	
+}
+@media (min-width: 1851px) and (max-width: 2000px)
+{
+	
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 60px;
+	width:calc((100% - 60px));
+}
+
+.howTo_button{
+	padding:5px;
+	font-size:16px;
+	height:32px;
+}
+
+.howTo_div{
+/*	left:25%;	*/
+}
+
+.howTo{
+/*	right:23%;*/
+}
+
+.howTo_list{
+	font-size:24px;
+}
+
+.Step1{
+	margin-left:2%;
+	width:57%;
+}
+.buttons {
+    margin-left: 5%;
+}
+
+.Graph_main_div{
+	width:38%;
+}
+
+.GraphSvg_div{
+	width:65%;
+	
+}
+.button_div{
+    bottom: 45px;
+    left: 110px;
+    width: 17%;
+}
+
+.Btn_td1{
+	padding-top:5px;
+}
+
+.reflect,.reset{
+    padding: 5px;
+    border-radius: 5px;
+	height:42px;
+	font-size:19px;
+}
+.done_btn{
+    padding: 5px;
+    border-radius: 5px;
+    height: 42px !important;
+    font-size: 19px;
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:20px;
+}
+.txt{
+	font-size:22px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:15px;
+}
+
+
+
+.Mrgntop{
+	margin-top:12px;
+	margin-left:3%;
+}
+
+
+.header {
+    min-height: 182px;
+}
+
+.ques_tb{
+	margin-top:2%;
+}
+.button{
+	font-size:18px;
+}
+.prompt_New{
+	/*left:-26%;*/	
+}
+.remark{
+	left:46%;
+	top:20%;
+}
+
+.downArrow {
+    margin-left: -26%;
+}
+.AllImages{
+	left:-29%;
+	width:34%;
+}
+.image_Arrow{
+	margin-left:-24%;
+	width:21%;
+/*	margin-top:41%;*/
+}
+.tick{
+	top:-40%;
+	right:-4%;
+}
+.Step1_2{
+	margin-top:4%;
+}
+.Step1_3{
+	line-height:125%;
+	width:100%;
+	margin-top:2%;
+}
+.Step1_4,.Step1_6,.Step1_7{
+	margin-top:2%;
+}
+.Step1_5{
+	width:58%;
+	margin-top:3%;
+}	
+
+}
+@media (min-width: 2001px)
+{
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 60px;
+	width:calc((100% - 60px));
+}
+
+.howTo_button{
+	padding:8px;
+	font-size:18px;
+	height:40px;
+
+}
+
+.howTo_div{
+/*	left:25%;*/	
+}
+
+.howTo{
+/*	right:23%;*/
+}
+
+.howTo_list{
+	font-size:26px;
+}
+
+.Step1{
+	margin-left:2%;
+	width:52%;
+	margin-top:0%;
+}
+
+
+.Graph_main_div{
+	width:38%;
+}
+
+.GraphSvg_div{
+	width:65%;
+	
+}
+.button_div {
+    bottom: 50px;
+    left: 94px;
+    width: 17%;
+}
+
+.Btn_td1{
+	padding-top:5px;
+}
+
+.reflect,.reset{
+    padding: 4px;
+    border-radius: 5px;
+	font-size:20px;
+	height:45px;
+}
+.done_btn{
+    padding: 4px;
+    border-radius: 5px;
+	font-size:20px;
+	height:45px !important;
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:22px;
+}
+.txt{
+	font-size:20px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:18px;
+}
+
+.Mrgntop{
+	margin-top:12px;
+	margin-left:3%;
+}
+
+
+.header {
+    min-height: 192px;
+}
+
+.ques_tb{
+	margin-top:2%;
+}
+.button{
+	font-size:22px;
+}
+.prompt_New{
+/*	left:-26%;	*/
+}
+.remark{
+	left:46%;
+	top:20%;
+}
+
+.downArrow {
+    margin-left: -26%;
+}
+.AllImages{
+	left:-31%;
+	width:34%;
+}
+.image_Arrow{
+	margin-left:-24%;
+	width:18%;
+/*	margin-top:43%;*/
+}
+.tick{
+	top:-40%;
+	right:-4%;
+}
+.Step1_2{
+	margin-top:3%;
+}
+.Step1_3{
+	line-height:125%;
+	width:100%;
+	margin-top:2%;
+}
+.Step1_4,.Step1_6,.Step1_7{
+	margin-top:2%;
+}
+.Step1_5{
+	width:56%;
+	margin-top:3%;
+}	
+
+	
+
+}
+
+
+ 			/************<-- Portrait-->*************/
+ 
+@media (min-width: 320px) and (max-width: 370px) and (orientation:portrait)
+{
+	
+.clear {
+	margin-left: 5%;
+}
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 3px;
+	width:calc((100% - 3px));
+}
+
+
+.howTo_button{
+	padding:2px;
+	font-size:10px;
+	height:15px;
+}
+
+.howTo_div{
+/*	left:0%;*/
+	
+}
+
+.howTo{
+/*	right:8%;*/
+}
+
+.howTo_list{
+	font-size:10px;
+}
+
+.Step1{
+	margin-left:0%;
+	margin-top:4%;
+	width:60%;
+}
+
+
+.Graph_main_div{
+	width:38%;
+	margin-top:4%;
+}
+
+.GraphSvg_div{
+	width:100%;
+	
+}
+.button_div{
+	width:20%;
+	bottom:10px;
+	left:-25px;
+}
+.Btn_td1{
+	padding-top:2px;
+}
+
+.BtnDevice_tb1{
+	width:102%;
+}
+.buttonDivForDevice{
+	bottom:-16%;
+	left:11%;
+}
+
+.BtnDevice_td1{
+	width:33%;
+}
+
+
+.reflect,.reset{
+    padding: 1px;
+    border-radius: 3px;
+	font-size:7px;
+	height:18px;
+}
+.done_btn{
+    padding: 1px;
+    border-radius: 3px;
+	height:20px !important;
+	
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:12px;
+}
+.txt {
+    font-size: 24px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:22px;
+}
+
+.header{
+	min-height:125px;
+	position:relative;
+}
+.Mrgntop{
+	margin-top:2%;
+	margin-left:0%;
+	white-space:nowrap;
+}
+
+
+.new_h {
+    width: 100% !important;
+}
+
+.prompt_New{
+	margin-top:0px;
+	left:-12px;
+}
+
+.remark{
+	bottom:-2%;
+	left:48%;
+}
+
+.ClickToAnsDivForGraph{
+	margin-top:45%;
+}
+.howToForDevice{
+	margin-top:31%;
+	margin-left:-25%;
+}
+.section4{
+	width:40%;
+}
+.ques_tb {
+    width: 80%;
+    margin-left: 0%;
+    margin-top: 10%;
+}
+.AllImages{
+	margin-left:-20%;
+	width:50%;
+}
+.image_Arrow{
+	width:35%;
+	top:25%;
+	left:-18%;
+}
+.downArrow{
+	margin-left:-27%;
+}
+.tick{
+	right:-8%;
+}
+.button{
+	font-size:10px;
+	width:35%;
+	padding:1%;
+}
+.buttons{
+	margin-left:3%;
+}
+.button2{
+	margin-left:12%;
+}
+.Step1_2, .Step1_3,.Step1_4,.Step1_5,.Step1_6,.Step1_7{
+	margin-top:4%;
+}
+.Step1_3{
+	width:100%;
+	line-height:normal;
+}
+.Step1_5{
+	width:84%;
+}
+
+.section3{
+	width:72%;
+}
+.Mrgntop{
+	white-space:normal;
+}
+.KeypadArea {
+    left: 27%;
+    bottom: 10%;
+    width: 60%;
+    position: absolute;
+}
+.calc_btn {
+    width: 15%;
+    margin-left: 2.2%;
+    font-weight: bold;
+        
+    
+    border-radius: 15%;
+    cursor: pointer;
+}
+.ThreeCommonBtns {
+    width: 25%;
+    margin-left: 3%;
+    margin-right: 0%;
+	font-size:8px;
+}
+.tab{
+	width:30%;
+}
+
+.newTabBtn {
+    margin-top: 2% !important;
+}
+.howTo_div{
+  right:40% !important;	
+}
+.keypadKeys { padding-bottom:0.3em!important;}
+.keypadNote {
+     font-size: unset!important; 
+}
+.section4{width: 70%;margin-left: 30%;margin-top: 5%;}
+.calc_btn {font-size: 11px;}
+.ThreeCommonBtns { font-size: 10px;}
+.Graph {
+    width: 5em!important;
+}
+.AntiDiv {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 0.80em;
+    color: deeppink;
+    top: 2em;
+    left: -18%;
+}
+.AntiDiv1 {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 0.85em;
+    color: deeppink;
+    top: 4.5em;
+    left: 6%;
+}
+}
+
+
+@media (min-width: 371px) and (max-width: 420px) and (orientation:portrait)
+{ 
+
+.clear {
+	margin-left: 5%;
+}
+
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 3px;
+	width:calc((100% - 3px));
+}
+
+
+.howTo_button{
+	padding:2px;
+	font-size:12px;
+	height:18px;
+}
+
+.howTo_div{
+/*	left:0%;*/
+	
+}
+
+.howTo{
+/*	right:8%;*/
+}
+
+.howTo_list{
+	font-size:11px;
+}
+
+.Step1{
+	margin-left:0%;
+	margin-top:4%;
+	width:60%;
+}
+
+
+.Graph_main_div{
+	width:38%;
+	margin-top:4%;
+}
+
+.GraphSvg_div{
+	width:100%;
+
+	
+}
+.button_div{
+	width:20%;
+	bottom:-42px;
+	left:10px;
+}
+.Btn_td1{
+	padding-top:2px;
+}
+
+.BtnDevice_tb1{
+	width:105%;
+}
+.buttonDivForDevice{
+	bottom:-22%;
+	left:12%;
+}
+
+.BtnDevice_td1{
+	width:33%;
+}
+
+.reflect,.reset{
+    padding: 1px;
+    border-radius: 4px;
+	font-size:8px;
+	height:20px;
+}
+.done_btn{
+    padding: 1px;
+    border-radius: 4px;
+	height:22px !important;
+	
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:14px;
+}
+.txt{
+	font-size:26px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:22px;
+}
+
+.header{
+	min-height:135px;
+	position:relative;
+}
+
+
+.Mrgntop{
+	margin-top:2%;
+	margin-left:0%;
+	white-space:nowrap;
+}
+
+
+.new_h {
+    width: 100% !important;
+}
+.new_h {
+    width: 100% !important;
+}
+.prompt_New{
+	margin-top:0px;
+	left:-12px;
+}
+
+.remark{
+	bottom:-2%;
+	left:48%;
+}
+
+.ClickToAnsDivForGraph{
+	margin-top:32%;
+}
+.howToForDevice{
+	margin-top:32%;
+	margin-left:-25%;
+}
+.section4{
+	width:40%;
+}
+.ques_tb {
+    width: 80%;
+    margin-left: 1%;
+    margin-top: 17%;
+}
+.AllImages{
+	margin-left:-25%;
+	width:55%;
+}
+.image_Arrow{
+	width:40%;
+	top:32%;
+	left:-23%;
+	height:16%;
+}
+.downArrow{
+	margin-left:-27%;
+}
+.tick{
+	right:-6%;
+	top:-35%;
+}
+.button{
+	font-size:12px;
+	width:35%;
+	padding:1%;
+}
+.buttons{
+	margin-left:3%;
+}
+.button2{
+	margin-left:12%;
+}
+.Step1_2, .Step1_3,.Step1_4,.Step1_5,.Step1_6,.Step1_7{
+	margin-top:4%;
+}
+.Step1_3{
+	width:100%;
+	line-height:normal;
+}
+.Step1_5{
+	width:84%;
+}
+
+.section3{
+	width:72%;
+	margin-left:1%;
+}
+.Mrgntop{
+	white-space:normal;
+}
+.KeypadArea {
+    left: 27%;
+    bottom: 10%;
+    width: 60%;
+    position: absolute;
+}
+.calc_btn {
+    width: 15%;
+    margin-left: 2.2%;
+    font-weight: bold;
+        
+    
+    border-radius: 15%;
+    cursor: pointer;
+}
+.ThreeCommonBtns {
+    width: 25%;
+    margin-left: 3%;
+    margin-right: 0%;
+	font-size:8px;
+}
+.tab{
+	width:28%;
+}
+
+.newTabBtn {
+    margin-top: 3% !important;
+}
+.howTo_div{
+  right:40% !important;	
+}
+
+.keypadKeys { padding-bottom:0.3em!important;}
+.keypadNote {
+     font-size: unset!important; 
+}
+.section4{width: 80%;margin-left: 22%;margin-top: 5%;}
+.calc_btn {font-size: 14px; height:24px;}
+.ThreeCommonBtns { font-size: 13px; height:24px;}
+.input { height: 1.6em; }
+.Graph {
+    width: 5em!important;
+}
+.AntiDiv {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 0.80em;
+    color: deeppink;
+    top: 2em;
+    left: -18%;
+}
+.AntiDiv1 {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 0.85em;
+    color: deeppink;
+    top: 4.5em;
+    left: 6%;
+}
+}
+
+
+@media (min-width: 421px) and (max-width: 470px) and (orientation:portrait)
+{
+
+
+
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 3px;
+	width:calc((100% - 3px));
+}
+
+
+.howTo_button{
+	padding:2px;
+	font-size:12px;
+	height:18px;
+}
+
+.howTo_div{
+/*	left:0%;*/
+	
+}
+
+.howTo{
+/*	right:8%;*/
+}
+
+.howTo_list{
+	font-size:11px;
+}
+
+.Step1{
+	margin-left:0%;
+	margin-top:4%;
+	width:64%;
+}
+
+
+.Graph_main_div{
+	width:35%;
+	margin-top:4%;
+}
+
+.GraphSvg_div{
+	width:100%;
+	
+}
+.button_div{
+	width:20%;
+	bottom:-42px;
+	left:10px;
+}
+.Btn_td1{
+	padding-top:2px;
+}
+
+
+.BtnDevice_tb1{
+	width:105%;
+}
+.buttonDivForDevice{
+	bottom:-19%;
+	left:12%;
+}
+.BtnDevice_td1{
+	width:33%;
+}
+
+.reflect,.reset{
+    padding: 2px;
+    border-radius: 5px;
+	font-size:8px;
+	height:20px;
+}
+.done_btn{
+    padding: 2px;
+    border-radius: 5px;
+	height:22px !important;
+	
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:14px;
+}
+.txt{
+	font-size:24px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:24px;
+}
+
+.header{
+	min-height:130px;
+	position:relative;
+}
+
+.Mrgntop{
+	margin-top:2%;
+	margin-left:0%;
+	white-space:nowrap;
+}
+
+
+.new_h {
+    width: 100% !important;
+}
+.prompt_New{
+	margin-top:0px;
+	left:-12px;
+}
+
+.remark{
+	bottom:-2%;
+	left:48%;
+}
+
+.ClickToAnsDivForGraph{
+	margin-top:32% !important;
+}
+.howToForDevice{
+	margin-top:28%;
+	margin-left:-25%;
+}
+.section4{
+	width:40%;
+}
+.ques_tb {
+    width: 150%;
+    margin-left: 1%;
+    margin-top: 17%;
+}
+.AllImages{
+	margin-left:-28%;
+	width:58%;
+}
+.image_Arrow{
+	width:43%;
+	top:36%;
+	left:-26%;
+	height:18%;
+}
+.downArrow{
+	margin-left:-26%;
+}
+.tick{
+	right:-6%;
+	top:-35%;
+}
+.button{
+	font-size:12px;
+	width:35%;
+	padding:1%;
+}
+.buttons{
+	margin-left:3%;
+}
+.button2{
+	margin-left:12%;
+}
+.Step1_2, .Step1_3,.Step1_4,.Step1_5,.Step1_6,.Step1_7{
+	margin-top:4%;
+}
+.Step1_3{
+	width:100%;
+	line-height:normal;
+}
+.Step1_5{
+	width:84%;
+}
+
+.section3{
+	width:72%;
+}
+.Mrgntop{
+	white-space:normal;
+}
+.KeypadArea {
+    left: 27%;
+    bottom: 10%;
+    width: 60%;
+    position: absolute;
+}
+.calc_btn {
+    width: 15%;
+    margin-left: 2.2%;
+    font-weight: bold;
+    border-radius: 15%;
+    cursor: pointer;
+}
+.ThreeCommonBtns {
+    width: 25%;
+    margin-left: 3%;
+    margin-right: 0%;
+	font-size:9px;
+}
+.tab {
+    width: 31%;
+    font-size: 9px;
+}
+
+
+.newTabBtn {
+    margin-top: 2.1% !important;
+    height: 20px;
+}
+.howTo_div{
+  right:40% !important;	
+}
+
+
+.keypadKeys { padding-bottom:0.3em!important;}
+.keypadNote {
+     font-size: unset!important; 
+}
+.section4{width: 80%;margin-left: 22%;margin-top: 5%;}
+.calc_btn {font-size: 15px; height:24px;}
+.ThreeCommonBtns { font-size: 14px; height:24px;}
+.input { height: 1.6em; }
+.Graph {
+    width: 6.5em;
+}
+}
+
+@media (min-width: 471px) and (max-width: 520px) and (orientation:portrait)
+{
+
+
+
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 3px;
+	width:calc((100% - 3px));
+}
+
+
+.howTo_button{
+	padding:2px;
+	font-size:12px;
+	height:20px;
+}
+
+.howTo_div{
+/*	left:0%;*/
+	
+}
+
+.howTo{
+/*	right:8%;*/
+}
+
+.howTo_list{
+	font-size:12px;
+}
+
+.Step1{
+	margin-left:0%;
+	margin-top:4%;
+	width:64%;
+}
+
+
+.Graph_main_div{
+	width:35%;
+	margin-top:4%;
+}
+
+.GraphSvg_div{
+	width:100%;
+	
+}
+.button_div{
+	width:20%;
+	bottom:-42px;
+	left:15px;
+}
+.Btn_td1{
+	padding-top:2px;
+}
+
+.BtnDevice_tb1{
+	width:105%;
+}
+.buttonDivForDevice{
+	bottom:-19%;
+	left:12%;
+}
+.BtnDevice_td1{
+	width:33%;
+}
+
+.reflect,.reset{
+    padding: 3px;
+    border-radius: 5px;
+	font-size:9px;
+	height:20px;
+}
+.done_btn{
+    padding: 3px;
+    border-radius: 5px;
+	height:22px !important;
+	
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:14px;
+}
+.txt {
+    font-size: 26px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:24px;
+}
+
+.header{
+	min-height:145px;
+	position:relative;
+}
+
+
+
+.Mrgntop{
+	margin-top:2%;
+	margin-left:0%;
+	white-space:nowrap;
+}
+
+
+
+.new_h {
+    width: 100% !important;
+}
+.prompt_New{
+	margin-top:0px;
+	left:-12%;
+}
+
+.remark{
+	bottom:-2%;
+	left:46%;
+}
+
+.ClickToAnsDivForGraph{
+	margin-top:30% !important;
+}
+.howToForDevice{
+	margin-top:25%;
+	margin-left:-19%;
+}
+.section4{
+	width:40%;
+}
+
+.AllImages{
+	margin-left:-28%;
+	width:60%;
+}
+.image_Arrow{
+	width:45%;
+	top:38%;
+	left:-26%;
+	height:18%;
+}
+.downArrow{
+	margin-left:-26%;
+}
+.tick{
+	right:-6%;
+	top:-35%;
+}
+.button{
+	font-size:14px;
+	width:35%;
+	padding:1%;
+}
+.buttons{
+	margin-left:3%;
+}
+.button2{
+	margin-left:12%;
+}
+.Step1_2, .Step1_3,.Step1_4,.Step1_5,.Step1_6,.Step1_7{
+	margin-top:4%;
+}
+.Step1_3{
+	width:100%;
+	line-height:normal;
+}
+.Step1_5{
+	width:84%;
+}
+
+.section3{
+	width:72%;
+}
+.Mrgntop{
+	white-space:normal;
+}
+.ques_tb {
+    width: 150%;
+    margin-left: 1%;
+    margin-top: 18%;
+}
+.KeypadArea {
+    left: 27%;
+    bottom: 10%;
+    width: 60%;
+    position: absolute;
+}
+.calc_btn {
+    width: 15%;
+    margin-left: 2.2%;
+    font-weight: bold;
+        
+    
+    border-radius: 15%;
+    cursor: pointer;
+}
+.ThreeCommonBtns {
+    width: 25%;
+    margin-left: 4%;
+    margin-right: 0%;
+	font-size: 9px;
+}
+.tab{
+	width:28%;
+}
+
+.newTabBtn {
+    margin-top: 2.3% !important;
+    height: 20px;
+}
+.howTo_div{
+  right:40% !important;	
+}
+
+
+.keypadKeys { padding-bottom:0.3em!important;}
+.keypadNote {
+     font-size: unset!important; 
+}
+.section4{width: 75%;margin-left: 25%;margin-top: 5%;}
+.calc_btn {font-size: 15px; height:24px;}
+.ThreeCommonBtns { font-size: 14px; height:24px;}
+.input { height: 1.6em; }
+.Graph {
+    width: 6.5em;
+}
+}
+
+
+@media (min-width: 521px) and (max-width: 560px) and (orientation:portrait)
+{
+
+
+
+.clear {
+	margin-left: 5%;
+}
+
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 3px;
+	width:calc((100% - 3px));
+}
+
+
+.howTo_button{
+	padding:2px;
+	font-size:12px;
+	height:20px;
+}
+
+.howTo_div{
+/*	left:2%;*/
+	
+}
+
+.howTo{
+/*	right:8%;*/
+}
+
+.howTo_list{
+	font-size:14px;
+}
+
+.Step1{
+	margin-left:0%;
+	margin-top:4%;
+	width:60.5%;
+}
+
+
+.Graph_main_div{
+	width:38%;
+	margin-top:4%;
+}
+
+.GraphSvg_div{
+	width:100%;
+	
+}
+.button_div{
+	width:20%;
+	bottom:-42px;
+	left:15px;
+}
+.Btn_td1{
+	padding-top:2px;
+}
+
+.buttonDivForDevice{
+	bottom:-15%;
+	left:12%;
+	width:60%;
+}
+.BtnDevice_tb1{
+	width:128%;
+}
+.BtnDevice_td1{
+	width:33%;
+}
+
+.reflect,.reset{
+    padding: 3px;
+    border-radius: 5px;
+	font-size:9px;
+	height:22px;
+}
+.done_btn{
+    padding: 3px;
+    border-radius: 5px;
+	height:24px !important;
+	
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:14px;
+}
+.txt{
+	font-size:26px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:24px;
+}
+
+.header{
+	min-height:152px;
+	position:relative;
+}
+
+.Mrgntop{
+	margin-top:4%;
+	margin-left:0%;
+	white-space:nowrap;
+}
+
+
+.new_h {
+    width: 100% !important;
+}
+.prompt_New{
+	margin-top:0px;
+	left:-12%;
+}
+
+.remark{
+	bottom:-2%;
+	left:46%;
+}
+
+.ClickToAnsDivForGraph{
+	margin-top:28% !important;
+}
+.howToForDevice{
+	margin-top:23%;
+	margin-left:-18%;
+}
+.section4{
+	width:40%;
+}
+.ques_tb{
+	width:150%;
+	margin-left:65%;
+	margin-top:20%;
+}
+.AllImages{
+	margin-left:-28%;
+	width:60%;
+}
+.image_Arrow{
+	width:45%;
+	top:38%;
+	left:-26%;
+	height:18%;
+}
+.downArrow{
+	margin-left:-25%;
+}
+.tick{
+	right:-6%;
+	top:-35%;
+}
+.button{
+	font-size:14px;
+	width:35%;
+	padding:1%;
+}
+.buttons{
+	margin-left:3%;
+}
+.button2{
+	margin-left:12%;
+}
+.Step1_2, .Step1_3,.Step1_4,.Step1_5,.Step1_6,.Step1_7{
+	margin-top:4%;
+}
+.Step1_3{
+	width:100%;
+	line-height:normal;
+}
+.Step1_5{
+	width:84%;
+}
+
+
+.section3{
+	width:72%;
+}
+.Mrgntop{
+	white-space:normal;
+}
+.ques_tb {
+    width: 150%;
+    margin-left: 1%;
+    margin-top: 18%;
+}
+.KeypadArea {
+    left: 27%;
+    bottom: 10%;
+    width: 60%;
+    position: absolute;
+}
+.calc_btn {
+    width: 15%;
+    margin-left: 2.2%;
+    font-weight: bold;
+    border-radius: 15%;
+    cursor: pointer;
+}
+.ThreeCommonBtns {
+    width: 25%;
+    margin-left: 4%;
+    margin-right: 0%;
+	font-size:10px;
+}
+.tab{
+	width:28%;
+}
+
+.newTabBtn {
+    margin-top: 1.2% !important;
+}
+
+.keypadKeys { padding-bottom:0.3em!important;}
+.keypadNote {
+     font-size: unset!important; 
+}
+.section4{width: 75%;margin-left: 25%;margin-top: 5%;}
+.calc_btn {font-size: 17px; height:30px;}
+.ThreeCommonBtns { font-size: 16px; height:30px;}
+.input { height: 1.6em; }
+.reflect, .reset {font-size: 12px;}
+.done1 {font-size: 11px;}
+}
+
+
+@media (min-width: 561px) and (max-width: 640px) and (orientation:portrait)
+{
+
+
+.clear {
+	margin-left: 5%;
+}
+
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 3px;
+	width:calc((100% - 3px));
+}
+
+
+
+.howTo_button{
+	padding:2px;
+	font-size:12px;
+	height:20px;
+}
+
+.howTo_div{
+/*	left:2%;*/
+	
+}
+
+.howTo{
+/*	right:8%;*/
+}
+
+.howTo_list{
+	font-size:14px;
+}
+
+.Step1{
+	margin-left:0%;
+	margin-top:4%;
+	width:60.5%;
+}
+
+
+.Graph_main_div{
+	width:38%;
+	margin-top:4%;
+}
+
+.GraphSvg_div{
+	width:100%;
+	
+}
+.button_div{
+	width:20%;
+	bottom:-42px;
+	left:15px;
+}
+.Btn_td1{
+	padding-top:2px;
+}
+
+.buttonDivForDevice{
+	bottom:-15%;
+	left:12%;
+	width:60%;
+}
+.BtnDevice_tb1{
+	width:125%;
+}
+.BtnDevice_td1{
+	width:33%;
+	padding-left:1%;
+}
+
+.reflect,.reset{
+    padding: 3px;
+    border-radius: 5px;
+	font-size:9px;
+	height:22px;
+}
+.done_btn{
+    padding: 3px;
+    border-radius: 5px;
+	height:24px !important;
+	
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:14px;
+}
+.txt{
+	font-size:26px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:23px;
+}
+
+.header{
+	min-height:148px;
+	position:relative;
+}
+
+
+
+.Mrgntop{
+	margin-top:3%;
+	margin-left:0%;
+	white-space:nowrap;
+}
+.new_h {
+    width: 100% !important;
+}
+
+
+
+.prompt_New{
+	margin-top:0px;
+	left:-12%;
+}
+
+.remark{
+	bottom:-2%;
+	left:46%;
+}
+
+.ClickToAnsDivForGraph{
+	margin-top:26% !important;
+}
+.howToForDevice{
+	margin-top:21%;
+	margin-left:-16%;
+}
+.section4{
+	width:40%;
+}
+.ques_tb{
+	width:150%;
+	margin-left:65%;
+	margin-top:16%;
+}
+.AllImages{
+	margin-left:-28%;
+	width:60%;
+}
+.image_Arrow{
+	width:45%;
+	top:38%;
+	left:-26%;
+	height:18%;
+}
+.downArrow{
+	margin-left:-25%;
+}
+.tick{
+	right:-6%;
+	top:-35%;
+}
+.button{
+	font-size:14px;
+	width:35%;
+	padding:1%;
+}
+.buttons{
+	margin-left:3%;
+}
+.button2{
+	margin-left:12%;
+}
+.Step1_2, .Step1_3,.Step1_4,.Step1_5,.Step1_6,.Step1_7{
+	margin-top:4%;
+}
+.Step1_3{
+	width:100%;
+	line-height:normal;
+}
+.Step1_5{
+	width:84%;
+}
+
+
+.section3{
+	width:72%;
+}
+.Mrgntop{
+	white-space:normal;
+}
+.ques_tb {
+    width: 150%;
+    margin-left: 1%;
+    margin-top: 16%;
+}
+.KeypadArea {
+    left: 27%;
+    bottom: 10%;
+    width: 55%;
+    position: absolute;
+}
+.calc_btn {
+    width: 15%;
+    margin-left: 2.2%;
+    font-weight: bold;
+        
+    
+    border-radius: 15%;
+    cursor: pointer;
+}
+.ThreeCommonBtns {
+    width: 25%;
+    margin-left: 4%;
+    margin-right: 0%;
+	font-size:10px;
+}
+.tab{
+	width:27%;
+}
+
+.newTabBtn {
+  margin-top:1.5% !important;
+}
+
+
+.keypadKeys { padding-bottom:0.3em!important;}
+.keypadNote {
+     font-size: unset!important; 
+}
+.section4{width: 75%;margin-left: 25%;margin-top: 5%;}
+.calc_btn {font-size: 18px; height:30px;}
+.ThreeCommonBtns {font-size: 17px; height:30px;}
+.input { height: 1.6em; }
+.reflect, .reset {font-size: 12px;}
+.done1 {font-size: 11px;}
+}
+
+
+@media (min-width:641px) and (max-width: 720px) and (orientation:portrait)
+{
+
+.clear {
+	margin-left: 5%;
+}
+
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 3px;
+	width:calc((100% - 3px));
+}
+
+
+.howTo_button{
+	padding:3px;
+	font-size:12px;
+	height:20px;
+}
+
+.howTo_div{
+/*	left:2%;*/
+	
+}
+
+.howTo{
+/*	right:8%;*/
+}
+
+.howTo_list{
+	font-size:14px;
+}
+
+.Step1{
+	margin-left:0%;
+	margin-top:4%;
+	width:56%;
+}
+
+
+.Graph_main_div{
+	width:42%;
+	margin-top:4%;
+}
+
+.GraphSvg_div{
+	width:100%;
+	
+}
+.button_div{
+	width:20%;
+	bottom:-42px;
+	left:23px;
+}
+.Btn_td1{
+	padding-top:2px;
+}
+
+.buttonDivForDevice{
+	bottom:-12%;
+	left:12%;
+	width:60%;
+}
+.BtnDevice_tb1{
+	width:120%;
+}
+.BtnDevice_td1{
+	width:33%;
+	padding-left:1%;
+}
+
+.reflect,.reset{
+    padding: 3px;
+    border-radius: 5px;
+	font-size:10px;
+	height:22px;
+}
+.done_btn{
+    padding: 3px;
+    border-radius: 5px;
+	height:24px !important;
+	font-size:10px;
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:15px;
+}
+.txt{
+	font-size:26px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:22px;
+}
+
+.header{
+	min-height:150px;
+	position:relative;
+}
+
+
+.Mrgntop{
+	margin-top:4%;
+	margin-left:0%;
+	white-space:nowrap;
+}
+
+
+
+.new_h {
+    width: 100% !important;
+}
+.prompt_New{
+	margin-top:0px;
+	left:-12%;
+}
+
+.remark{
+	bottom:-2%;
+	left:46%;
+}
+
+.ClickToAnsDivForGraph{
+	margin-top:25% !important;
+}
+.howToForDevice{
+	margin-top:23%;
+	margin-left:-14%;
+}
+.section4{
+	width:40%;
+}
+.ques_tb{
+	width:150%;
+	margin-left:1%;
+	margin-top:13%;
+}
+.AllImages{
+	margin-left:-28%;
+	width:60%;
+}
+.image_Arrow{
+	width:45%;
+	top:38%;
+	left:-26%;
+	height:18%;
+}
+.downArrow{
+	margin-left:-24%;
+}
+.tick{
+	right:-6%;
+	top:-35%;
+}
+.button{
+	font-size:16px;
+	width:35%;
+	padding:1%;
+}
+.buttons{
+	margin-left:3%;
+}
+.button2{
+	margin-left:12%;
+}
+.Step1_2, .Step1_3,.Step1_4,.Step1_5,.Step1_6,.Step1_7{
+	margin-top:4%;
+}
+.Step1_3{
+	width:100%;
+	line-height:normal;
+}
+.Step1_5{
+	width:84%;
+}
+
+.section3{
+	width:72%;
+}
+.Mrgntop{
+	white-space:normal;
+}
+.KeypadArea {
+    left: 27%;
+    bottom: 10%;
+    width: 55%;
+    position: absolute;
+}
+.calc_btn {
+    width: 15%;
+    margin-left: 2.2%;
+    font-weight: bold;
+    border-radius: 15%;
+    cursor: pointer;
+}
+.ThreeCommonBtns {
+    width: 25%;
+    margin-left: 4%;
+    margin-right: 0%;
+	font-size:10px;
+}
+.tab{
+	width:27%;
+}
+
+.newTabBtn {
+  margin-top:1.55% !important;
+}
+
+.keypadKeys {padding-bottom:0.3em!important;}
+.keypadNote {font-size: unset!important; }
+.section4{width: 75%;margin-left: 25%;margin-top: 5%;}
+.calc_btn {font-size: 18px; height:30px;}
+.ThreeCommonBtns {font-size: 17px; height:30px;}
+.input { height: 1.6em; }
+.reflect, .reset {font-size: 13px;}
+.done1 {font-size: 12px;}
+}
+
+
+@media (min-width: 721px) and (max-width: 800px) and (orientation:portrait)
+{
+
+
+.clear {
+	margin-left: 5%;
+}
+
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 3px;
+	width:calc((100% - 3px));
+}
+
+
+.howTo_button{
+	padding:3px;
+	font-size:14px;
+	height:22px;
+}
+
+.howTo_div{
+/*	left:2%;*/
+	
+}
+
+.howTo{
+/*	right:8%;*/
+}
+
+.howTo_list{
+	font-size:17px;
+}
+
+.Step1{
+	margin-left:0%;
+	margin-top:4%;
+	width:56%;
+}
+
+
+.Graph_main_div{
+	width:42%;
+	margin-top:4%;
+}
+
+.GraphSvg_div{
+	width:100%;
+	
+}
+.button_div{
+	width:20%;
+	bottom:-50px;
+	left:25px;
+}
+.Btn_td1{
+	padding-top:2px;
+}
+
+.buttonDivForDevice{
+	bottom:-15%;
+	left:12%;
+	width:62%;
+}
+.BtnDevice_tb1{
+	width:120%;
+}
+.BtnDevice_td1{
+	width:33%;
+	padding-left:2%;
+}
+
+.reflect,.reset{
+    padding: 4px;
+    border-radius: 5px;
+	font-size:14px;
+	height:30px;
+}
+.done_btn{
+    padding: 4px;
+    border-radius: 5px;
+	height:32px !important;
+	font-size:14px;
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:15px;
+}
+.txt{
+	font-size:26px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:24px;
+}
+
+.header{
+	min-height:170px;
+	position:relative;
+}
+
+
+.Mrgntop{
+	margin-top:3%;
+	margin-left:0%;
+	white-space:nowrap;
+}
+
+
+.new_h {
+    width: 100% !important;
+}
+.prompt_New{
+	margin-top:0px;
+	left:-20%;
+}
+
+.remark{
+	bottom:-2%;
+	left:46%;
+}
+
+.ClickToAnsDivForGraph{
+	margin-top:24% !important;
+}
+.howToForDevice{
+	margin-top:21%;
+	margin-left:-14%;
+}
+.section4{
+	width:40%;
+}
+.ques_tb{
+	width:150%;
+	margin-left:1%;
+	margin-top:13%;
+}
+.AllImages{
+	margin-left:-28%;
+	width:60%;
+}
+.image_Arrow{
+	width:45%;
+	top:38%;
+	left:-26%;
+	height:18%;
+}
+.downArrow{
+	margin-left:-24%;
+}
+.tick{
+	right:-6%;
+	top:-35%;
+}
+.button{
+	font-size:18px;
+	width:35%;
+	padding:1%;
+}
+.buttons{
+	margin-left:3%;
+}
+.button2{
+	margin-left:12%;
+}
+.Step1_2, .Step1_3,.Step1_4,.Step1_5,.Step1_6,.Step1_7{
+	margin-top:4%;
+}
+.Step1_3{
+	width:100%;
+	line-height:normal;
+}
+.Step1_5{
+	width:84%;
+}
+
+
+.section3{
+	width:72%;
+}
+.Mrgntop{
+	white-space:normal;
+}
+.KeypadArea {
+    left: 27%;
+    bottom: 10%;
+    width: 55%;
+    position: absolute;
+}
+.calc_btn {
+    width: 15%;
+    margin-left: 2.2%;
+    font-weight: bold;
+        
+    
+    border-radius: 15%;
+    cursor: pointer;
+}
+.ThreeCommonBtns {
+    width: 25%;
+    margin-left: 4%;
+    margin-right: 0%;
+	font-size:12px;
+}
+.tab{
+	width:27%;
+}
+
+.newTabBtn {
+  margin-top:2.2% !important;
+}
+
+
+.keypadNote {font-size: unset!important; }
+.section4{width: 70%;margin-left: 20%;margin-top: 5%;}
+.calc_btn {font-size: 18px; height:34px;}
+.ThreeCommonBtns {font-size: 17px; height:34px;}
+.input { height: 1.8em; }
+.reflect, .reset {font-size: 13px;}
+.done1 {font-size: 12px;}
+}
+
+
+@media (min-width: 801px) and (max-width: 880px) and (orientation:portrait)
+{
+
+
+
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 3px;
+	width:calc((100% - 3px));
+}
+
+
+.howTo_button{
+	padding:3px;
+	font-size:14px;
+	height:22px;
+}
+
+.howTo_div{
+/*	left:2%;*/
+	
+}
+
+.howTo{
+/*	right:8%;*/
+}
+
+.howTo_list{
+	font-size:18px;
+}
+
+.Step1{
+	margin-left:0%;
+	margin-top:4%;
+	width:54.5%;
+}
+
+
+.Graph_main_div{
+	width:43%;
+	margin-top:4%;
+}
+
+.GraphSvg_div{
+	width:100%;
+	
+}
+.button_div{
+	width:20%;
+	bottom:-50px;
+	left:25px;
+}
+.Btn_td1{
+	padding-top:2px;
+}
+
+
+.buttonDivForDevice{
+	bottom:-15%;
+	left:12%;
+	width:62%;
+}
+.BtnDevice_tb1{
+	width:107%;
+}
+.BtnDevice_td1{
+	width:33%;
+	padding-left:2%;
+}
+
+.reflect,.reset{
+    padding: 4px;
+    border-radius: 5px;
+	font-size:14px;
+	height:30px;
+}
+.done_btn{
+    padding: 4px;
+    border-radius: 5px;
+	height:32px !important;
+	font-size:14px;
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:15px;
+}
+.txt{
+	font-size:24px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:24px;
+}
+
+.container-fluid {
+    /*font-size: 21px;*/
+}
+
+.header{
+	min-height:198px;
+	position:relative;
+}
+
+.Mrgntop{
+	margin-top:3%;
+	margin-left:0%;
+	white-space:nowrap;
+}
+
+.new_h {
+    width: 100% !important;
+}
+
+.prompt_New{
+	margin-top:0px;
+	left:-20%;
+}
+
+.remark{
+	bottom:-2%;
+	left:46%;
+}
+
+.ClickToAnsDivForGraph{
+	margin-top:23% !important;
+}
+.howToForDevice{
+	margin-top:19%;
+	margin-left:-13%;
+}
+.section4{
+	width:35%;
+}
+
+.AllImages{
+	margin-left:-28%;
+	width:55%;
+}
+.image_Arrow{
+	width:42%;
+	top:30%;
+	left:-26%;
+	height:18%;
+}
+.downArrow{
+	margin-left:-24%;
+}
+.tick{
+	right:-6%;
+	top:-35%;
+}
+.button{
+	font-size:19px;
+	width:35%;
+	padding:1%;
+}
+.buttons{
+	margin-left:3%;
+}
+.button2{
+	margin-left:12%;
+}
+.Step1_2, .Step1_3,.Step1_4,.Step1_5,.Step1_6,.Step1_7{
+	margin-top:4%;
+}
+.Step1_3{
+	width:100%;
+	line-height:normal;
+}
+.Step1_5{
+	width:84%;
+}
+
+.section3{
+	width:72%;
+}
+.Mrgntop{
+	white-space:normal;
+}
+.ques_tb{
+	width:150%;
+	margin-left:1%;
+	margin-top:13%;
+}
+.KeypadArea {
+    left: 27%;
+    bottom: 10%;
+    width: 55%;
+    position: absolute;
+}
+.calc_btn {
+    width: 15%;
+    margin-left: 2.2%;
+    font-weight: bold;
+        
+    
+    border-radius: 15%;
+    cursor: pointer;
+}
+.ThreeCommonBtns {
+    width: 25%;
+    margin-left: 4%;
+    margin-right: 0%;
+}
+.tab{
+	width:27%;
+}
+
+.newTabBtn {
+    margin-top: 2.5% !important;
+}
+
+.keypadNote {font-size: unset!important; }
+.section4{width: 70%;margin-left: 28%;margin-top: 5%;}
+.calc_btn {font-size: 22px!important; height:38px;}
+.ThreeCommonBtns {font-size: 20px!important; height:38px;}
+.input { height: 1.8em; }
+.reflect, .reset {font-size: 15px;}
+.done1 {font-size: 14px;}
+}
+
+
+@media (min-width: 881px) and (max-width: 960px) and (orientation:portrait)
+{
+
+
+.clear {
+	margin-left: 5%;
+}
+
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 3px;
+	width:calc((100% - 3px));
+}
+.Mrgntop{
+	margin-top:1%;
+	margin-left:0%;
+}
+
+.howTo_button{
+	padding:3px;
+	font-size:16px;
+	height:25px;
+}
+
+.howTo_div{
+/*	left:2%;*/
+	
+}
+
+.howTo{
+	/*right:8%;*/
+}
+
+.howTo_list{
+	font-size:18px;
+}
+
+.Step1{
+	margin-left:0%;
+	margin-top:4%;
+	width:54.5%;
+}
+
+
+.Graph_main_div{
+	width:43%;
+	margin-top:4%;
+}
+
+.GraphSvg_div{
+	width:100%;
+	
+}
+.button_div{
+	width:18%;
+	bottom:-50px;
+	left:32px;
+}
+.Btn_td1{
+	padding-top:3px;
+}
+
+.buttonDivForDevice{
+	bottom:-12%;
+	left:12%;
+	width:62%;
+}
+.BtnDevice_tb1{
+	width:105%;
+}
+.BtnDevice_td1{
+	width:33%;
+	padding-left:2%;
+}
+
+.reflect,.reset{
+    padding: 4px;
+    border-radius: 5px;
+	font-size:14px;
+	height:30px;
+}
+.done_btn{
+    padding: 4px;
+    border-radius: 5px;
+	height:32px !important;
+	font-size:14px;
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:15px;
+}
+.txt{
+	font-size:24px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:22px;
+}
+
+.container-fluid {
+    /*font-size: 21px;*/
+}
+
+.header{
+	min-height:200px;
+	position:relative;
+}
+
+.Mrgntop{
+	margin-top:2%;
+	margin-left:0%;
+	white-space:nowrap;
+}
+
+
+.new_h {
+    width: 100% !important;
+}
+.prompt_New{
+	margin-top:0px;
+	left:-33%;
+}
+
+.remark{
+	bottom:-2%;
+	left:50%;
+}
+
+.ClickToAnsDivForGraph{
+	margin-top:23% !important;
+}
+.howToForDevice{
+	margin-top:21%;
+	margin-left:-13%;
+}
+.section4{
+	width:35%;
+}
+.ques_tb{
+	width:150%;
+	margin-left:75%;
+	margin-top:28%;
+}
+.AllImages{
+	margin-left:-28%;
+	width:55%;
+}
+.image_Arrow{
+	width:42%;
+	top:30%;
+	left:-26%;
+	height:17%;
+}
+.downArrow{
+	margin-left:-24%;
+}
+.tick{
+	right:-6%;
+	top:-35%;
+}
+.button{
+	font-size:21px;
+	width:35%;
+	padding:1%;
+}
+.buttons{
+	margin-left:3%;
+}
+.button2{
+	margin-left:12%;
+}
+.Step1_2, .Step1_3,.Step1_4,.Step1_5,.Step1_6,.Step1_7{
+	margin-top:4%;
+}
+.Step1_3{
+	width:100%;
+	line-height:normal;
+}
+.Step1_5{
+	width:84%;
+}
+
+.section3{
+	width:72%;
+}
+.Mrgntop{
+	white-space:normal;
+}
+.ques_tb{
+	width:150%;
+	margin-left:1%;
+	margin-top:18%;
+}
+.KeypadArea {
+    left: 27%;
+    bottom: 10%;
+    width: 55%;
+    position: absolute;
+}
+.calc_btn {
+    width: 15%;
+    margin-left: 2.2%;
+    font-weight: bold;
+        
+    
+    border-radius: 15%;
+    cursor: pointer;
+}
+.ThreeCommonBtns {
+    width: 25%;
+    margin-left: 4%;
+    margin-right: 0%;
+}
+.tab{
+	width:27%;
+}
+.keypadNote {font-size: unset!important; }
+.section4{width: 70%;margin-left: 28%;margin-top: 5%;}
+.calc_btn {font-size: 22px!important; height:38px;}
+.ThreeCommonBtns {font-size: 20px!important; height:38px;}
+.input { height: 1.8em; }
+.reflect, .reset {font-size: 15px;}
+.done1 {font-size: 14px;}
+}
+
+@media (min-width: 961px) and (max-width: 1040px) and (orientation:portrait)
+{
+
+
+.clear {
+	margin-left: 5%;
+}
+
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 3px;
+	width:calc((100% - 3px));
+}
+.Mrgntop{
+	margin-top:1%;
+	margin-left:0%;
+}
+
+.howTo_button{
+	padding:5px;
+	font-size:18px;
+	height:34px;
+}
+
+.howTo_div{
+/*	left:6%;*/
+	
+}
+
+.howTo{
+/*	right:8%;*/
+}
+
+.howTo_list{
+	font-size:20px;
+}
+
+.Step1{
+	margin-left:0%;
+	margin-top:4%;
+	width:53%;
+}
+
+
+.Graph_main_div{
+	width:46%;
+	margin-top:4%;
+}
+
+.GraphSvg_div{
+	width:100%;
+	
+}
+.button_div{
+	width:17%;
+	bottom:-65px;
+	left:44px;
+}
+.Btn_td1{
+	padding-top:5px;
+}
+
+.buttonDivForDevice{
+	bottom:-12%;
+	left:12%;
+	width:62%;
+}
+.BtnDevice_tb1{
+	width:105%;
+}
+.BtnDevice_td1{
+	width:33%;
+	padding-left:2%;
+}
+
+.reflect,.reset{
+    padding: 4px;
+    border-radius: 5px;
+	font-size:18px;
+	height:36px;
+}
+.done_btn{
+    padding: 4px;
+    border-radius: 5px;
+	height:38px !important;
+	font-size:18px;
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:15px;
+}
+.txt{
+	font-size:24px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:22px;
+}
+
+.container-fluid {
+    /*font-size: 24px;*/
+}
+
+.header{
+	min-height:215px;
+	position:relative;
+}
+
+.Mrgntop{
+	margin-top:2%;
+	margin-left:0%;
+	white-space:nowrap;
+}
+
+
+.new_h {
+    width: 100% !important;
+}
+.prompt_New{
+	margin-top:0px;
+	left:-17%;
+}
+
+.remark{
+	bottom:-2%;
+	left:50%;
+}
+
+.ClickToAnsDivForGraph{
+	margin-top:22% !important;
+}
+.howToForDevice{
+	margin-top:20%;
+	margin-left:-13%;
+}
+.section4{
+	width:35%;
+}
+.ques_tb{
+	width:150%;
+	margin-left:75%;
+	margin-top:24%;
+}
+.AllImages{
+	margin-left:-28%;
+	width:55%;
+}
+.image_Arrow{
+	width:42%;
+	top:30%;
+	left:-26%;
+	height:17%;
+}
+.downArrow{
+	margin-left:-24%;
+}
+.tick{
+	right:-6%;
+	top:-35%;
+}
+.button{
+	font-size:22px;
+	width:35%;
+	padding:1%;
+}
+.buttons{
+	margin-left:3%;
+}
+.button2{
+	margin-left:12%;
+}
+.Step1_2, .Step1_3,.Step1_4,.Step1_5,.Step1_6,.Step1_7{
+	margin-top:4%;
+}
+.Step1_3{
+	width:100%;
+	line-height:normal;
+}
+.Step1_5{
+	width:84%;
+}
+
+.section3{
+	width:72%;
+}
+.Mrgntop{
+	white-space:normal;
+}
+.ques_tb{
+	width:150%;
+	margin-left:1%;
+	margin-top:16%;
+}
+.KeypadArea {
+    left: 27%;
+    bottom: 10%;
+    width: 55%;
+    position: absolute;
+}
+.calc_btn {
+    width: 15%;
+    margin-left: 2.2%;
+    font-weight: bold;
+    border-radius: 15%;
+    cursor: pointer;
+}
+.ThreeCommonBtns {
+    width: 25%;
+    margin-left: 4%;
+    margin-right: 0%;
+}
+.tab{
+	width:27%;
+}
+
+
+.newTabBtn {
+    margin-top: 3% !important;
+}
+.keypadNote {font-size: unset!important; }
+.section4{width: 70%;margin-left: 28%;margin-top: 5%;}
+.calc_btn {font-size: 24px!important; height:38px;}
+.ThreeCommonBtns {font-size: 22px!important; height:38px;}
+.input { height: 1.8em; }
+.reflect, .reset {font-size: 16px;}
+.done1 {font-size: 15px;}
+}
+
+@media (min-width: 1041px)  and (orientation:portrait)
+{
+
+
+.clear {
+	margin-left: 5%;
+}
+
+
+.solutionMainSteps{
+	margin-top: 0px;
+	margin-left: 10px;
+	width:calc((100% - 10px));
+}
+.Mrgntop{
+	margin-top:1%;
+	margin-left:0%;
+}
+
+.howTo_button{
+	padding:5px;
+	font-size:19px;
+	height:32px;
+}
+
+.howTo_div{
+/*	left:6%;*/
+	
+}
+
+.howTo{
+/*	right:8%;*/
+}
+
+.howTo_list{
+	font-size:20px;
+}
+
+.Step1{
+	margin-left:0%;
+	margin-top:4%;
+	width:52%;
+}
+
+
+.Graph_main_div{
+	width:47%;
+	margin-top:4%;
+}
+
+.GraphSvg_div{
+	width:100%;
+	
+}
+.button_div{
+	width:17%;
+	bottom:-70px;
+	left:45px;
+}
+.Btn_td1{
+	padding-top:5px;
+}
+
+.buttonDivForDevice{
+	bottom:-11%;
+	left:12%;
+	width:62%;
+}
+.BtnDevice_tb1{
+	width:105%;
+}
+.BtnDevice_td1{
+	width:33%;
+	padding-left:2%;
+}
+
+
+.reflect,.reset{
+    padding: 4px;
+    border-radius: 5px;
+	font-size:20px;
+	height:40px;
+}
+.done_btn{
+    padding: 4px;
+    border-radius: 5px;
+	height:42px !important;
+	font-size:20px;
+}
+
+.svg1{
+	width:100%;
+}
+
+.ShowCoOrdinates{
+	position:absolute;
+	font-size:15px;
+}
+.txt{
+	font-size:22px;
+}
+
+.txt1,.txt2,.txt3,.txt4,.txt5,.txt6{
+	font-size:20px;
+}
+
+.container-fluid {
+    /*font-size: 24px;*/
+}
+
+.header{
+	min-height:230px;
+	position:relative;
+}
+
+
+.section3{
+	margin-left:0%;
+	width:68%;
+}
+
+
+.Mrgntop{
+	margin-top:2%;
+	margin-left:0%;
+	white-space:nowrap;
+}
+.new_h {
+    width: 100% !important;
+}
+
+.prompt_New{
+	margin-top:0px;
+	left:-12%;
+}
+
+.remark{
+	bottom:-2%;
+	left:50%;
+}
+
+.ClickToAnsDivForGraph{
+	margin-top:22% !important;
+}
+.howToForDevice{
+	margin-top:18%;
+	margin-left:-12%;
+}
+.section4{
+	width:32%;
+}
+.ques_tb{
+	width:150%;
+	margin-left:80%;
+	margin-top:26%;
+}
+.AllImages{
+	margin-left:-28%;
+	width:55%;
+}
+.image_Arrow{
+	width:42%;
+	top:30%;
+	left:-26%;
+	height:17%;
+}
+.downArrow{
+	margin-left:-24%;
+}
+.tick{
+	right:-6%;
+	top:-35%;
+}
+.button{
+	font-size:23px;
+	width:35%;
+	padding:1%;
+}
+.buttons{
+	margin-left:3%;
+}
+.button2{
+	margin-left:12%;
+}
+.Step1_2, .Step1_3,.Step1_4,.Step1_5,.Step1_6,.Step1_7{
+	margin-top:4%;
+}
+.Step1_3{
+	width:100%;
+	line-height:normal;
+}
+.Step1_5{
+	width:84%;
+}
+
+.Mrgntop{
+	white-space:normal;
+}
+.ques_tb{
+	width:100%;
+	margin-left:1%;
+	margin-top:7%;
+}
+.KeypadArea {
+    left: 27%;
+    bottom: 10%;
+    width: 45%;
+    position: absolute;
+}
+.calc_btn {
+    width: 15%;
+    margin-left: 2.2%;
+    font-weight: bold;
+        
+    
+    border-radius: 15%;
+    cursor: pointer;
+}
+.ThreeCommonBtns {
+    width: 25%;
+    margin-left: 4%;
+    margin-right: 0%;
+}
+.tab{
+	width:27%;
+}
+
+.newTabBtn {
+    margin-top: 3% !important;
+}
+.prompt_New {
+       
+       left: -395%;
+    }	
+.remark {
+   left: -395% !important;
+}
+.remark, .incorrect, .correct, .P_correct {
+	top: 250%;
+}
+.newTabBtn {
+  margin-right:4%;
+}
+.howTo {
+  bottom: 0.5%;
+  left: 10%;
+}
+.table_ques {
+	width: 98%;
+}
+.port_pre{
+	display:inline-block;
+}
+.ques_tb tr td{
+	width:13.8%;
+	border:1px solid black;
+	text-align:center;
+	padding:1%;
+}
+.ques_tb td:first-child{
+   width:17%;
+}
+.TextDiv {
+   margin-top: 3%;
+}
+.table_sol {
+    width: 85%;
+    border-collapse: collapse;
+    margin: 0 5%;
+}
+
+.keypadNote {font-size: unset!important; }
+.section4{width: 70%;margin-left: 28%;margin-top: 5%;}
+.calc_btn {font-size: 24px!important; height:38px;}
+.ThreeCommonBtns {font-size: 22px!important; height:38px;}
+.input { height: 1.8em; }
+.reflect, .reset {font-size: 16px;}
+.done1 {font-size: 15px;}
+}
+
+
+@media (min-width: 320px) and (orientation:portrait)
+{
+	.BtnDevice_td1{
+		width:50%;
+		}
+	.BtnDevice_tb1{
+        width:100%;	
+	}
+    .buttonDivForDevice{
+		width:70%;
+		}	
+	
+	.newTabBtn {
+	  margin-right:4%;
+	}
+	.ClickToAnsDivForGraph{
+	   margin-top:0%;
+   }
+   .ques_tb {
+    width: 96%;
+    margin-left: -12%;
+    margin-top: 4%;
+}
+   .AllImages {
+      top: 5%;
+   }
+   .image_Arrow {
+      margin-top: 52%;
+   }
+   .howTo {
+	  bottom: 0.8%;
+	  left: 10%;
+   }
+   .table_sol {
+		width: 100%;
+		border-collapse: collapse;
+		margin: 0;
+	}
+	.table_sol tr:first-child td:first-child, .table_sol tr:last-child td:first-child {
+		width: 30%;
+	}
+	.table_sol tr td {
+		width: 14%;
+	}
+	.table_ques {
+		width: 98%;
+	}
+	.port_pre{
+		display:inline-block;
+	}
+	.ques_tb tr td{
+		width:13.8%;
+		border:1px solid black;
+		text-align:center;
+		padding:1%;
+	}
+    .ques_tb td:first-child{
+	   width:17%;
+	}
+	.TextDiv {
+       margin-top: 3%;
+    }
+  
+.Step1Daughter {
+    width: 100%!important;
+    margin: 0 auto;
+    margin-top: 0em!important;
+}
+.reset {
+  
+    position: static!important;
+}
+.done_btn { position:static!important;}
+.prompt_New {
+    
+    margin-left: unset!important;;
+	margin-bottom:unset!important;;
+	margin-top:unset!important;;
+	right:25%!important;
+	left:unset!important;
+}
+.hidden {
+    font-size: 0.35em;
+}
+.Opt{display: flex;align-items: center;}
+.ClickToAnsDivForGraph {
+    margin-top: 0em!important;
+}
+.PortNeed{justify-content: center!important;}
+.HowGridPloating{ display:none;}
+.HowGridPloating1{ display:inline-block;}
+.InputDiv {
+    width: 25%;
+}
+.section4 {
+   
+    margin-top: 0%!important;
+}
+.porTDisplay{ display:none!important;}
+.LandScape{ display:none;}
+.PortScape{ display:inline-block;}
+.Graph {
+    width: 6.5em;
+}
+}
+/*----- 27 -------*/
+
+.howTo_button{
+	background:#09F;
+	box-shadow:none;
+	color:white;
+}
+.howTo_button:hover{
+	color:#AFF;
+	box-shadow:1px 1px 1px #09F;
+}
+
+.reflect,.reset{
+	cursor:pointer;
+	width: 100%;
+}
+
+.done_btn{
+	cursor:pointer;
+    width: 100% !important;
+    bottom: 0%;
+    left: 18%;
+	position: absolute;
+}
+.header{
+	position:relative;
+}
+
+ul li {
+    list-style-position: outside;
+    margin-left: 1em;	
+	margin-top:0.15em;
+}
+.tab_hide{
+	position:absolute;
+	top:-50%;
+}
+
+.remark {
+	position:static;
+}
+.pre{
+	display: inline-block;
+}
+.howToForDevice {
+    position: absolute;
+    bottom: 4%;
+    right: 10%;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+/*.crcl{opacity:1!important;}*/
+/*.remark,.P_correct{
+	display:block;
+}*/
+.tab:focus,.done1:focus{outline:none;}
+.remark{display:inline;}
+.header {background-image:none;}
+.reset{
+	position: absolute;
+    top: -6em;
+    left: 0.8em;
+    padding-left: 0.35em;
+}
+
+.txt1,.txt2,.txt3{ fill:#6f207c; font-weight:bold}
+.txt4,.txt5,.txt6{ fill:deeppink;bold}
+.table_sol td{ border-collapse:collapse;}
+.Step1Daughter {
+    flex-direction: column;
+    width: 68%;
+    margin-left: 0%;
+    margin: 0 auto;
+    margin-top: 1.0em;
+}
+.fraction > span {
+    display: block;
+    padding-top: 0.1em;
+}
+.whiteSpace{ white-space:nowrap;}
+.fraction {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.1em 0.4ex;
+    text-align: center;
+}
+.bracketNew{ display:inline-block; transform:scale(1,2); font-weight:bold;}
+.leftTest{ text-align:left!important;}
+.Wrt1, .Wrng1 {
+    right: unset;
+    left: 0em;
+    top: 0em;
+}
